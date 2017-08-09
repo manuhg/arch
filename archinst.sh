@@ -45,7 +45,7 @@ pacman -S xf86-video-intel xf86-input-synaptics xf86-video-vesa
 #xf86-video-vesa is generic & fallback driver
 # kde5 plasma -sddm , gnome GDM , lightgdm -universal
 # pacman -Rcs => recursive remove
-pacman -S plasma kde-applications
+pacman -S sddm plasma kde-applications
 #gnome gnome-extra
 #lightgdm i3
 systemctl enable sddm
