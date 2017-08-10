@@ -10,3 +10,6 @@ git commit -m  "$(date +%Y%m%d)"
 git clone ssh://gk1000@198.199.121.120:17/home/git/arch.git
 git remote -v
 git remote set-url origin ssh://root@198.199.121.120:17/home/git/alldev.git
+
+#find group of a user
+groups gk1000
