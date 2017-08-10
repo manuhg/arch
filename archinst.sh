@@ -61,10 +61,11 @@ makepkg -si
 cd ..
 rm -dR package-query yaourt
 
-pacman -S hexedit  python   nitrogen arduino  testdisk rng-tools \
-steghide foremost exiv2  whois geoip virtualbox  nasm gcc  php \
-qemu geany vlc python-pip aircrack-ng  automake ruby  nodejs npm \
-ruby-native-package-installer screenfetch synapse zsh encfs docker 
+pacman -S hexedit python nitrogen arduino namcap testdisk \
+rng-tools steghide foremost exiv2 whois geoip virtualbox \
+nasm gcc php qemu geany vlc python-pip aircrack-ng automake \ 
+ruby nodejs npm ruby-native-package-installer screenfetch \
+synapse zsh encfs docker 
 
 yaourt -S visual-studio-code-oss google-chrome plymouth
 nano /etc/mkinitcpio.conf

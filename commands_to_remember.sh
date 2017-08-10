@@ -11,5 +11,10 @@ git clone ssh://gk1000@198.199.121.120:17/home/git/arch.git
 git remote -v
 git remote set-url origin ssh://gk1000@198.199.121.120:17/home/gk1000/arch.git
 
+#to decrypt
+encfs encrypted_dir unencrypted_dir
+#to encrypt
+encfs unencrypted_dir encrypted_dir
+
 #find group of a user
 groups gk1000
