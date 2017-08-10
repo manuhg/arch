@@ -1,4 +1,4 @@
-pacman -S --needed git wget yajl
+pacman -S --needed wget yajl
 git clone https://aur.archlinux.org/package-query.git
 cd package-query
 makepkg -si
