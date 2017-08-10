@@ -41,6 +41,6 @@ systemctl enable gdm-plymouth
 #->atom  xampp #smartmontools
 npm -g install react react-dom webpack babel create-react-app
 
-DWM, i3, openbox, bspwm
+#DWM, i3, openbox, bspwm
 
 pip install matplotlib numpy
