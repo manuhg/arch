@@ -30,3 +30,10 @@ rngd -r /dev/urandom
 
 # dd
 dd if=blah.iso of=/dev/sdd bs=4M status=progress && sync
+
+#To prevent history from recording duplicated entries (such as ls -l entered many times during single shell session), the hist_ignore_all_dups option can be set:
+
+setopt hist_ignore_all_dups
+#A useful trick to PREVENT particular entries from being recorded into a history by preceding them with at least one space.
+
+setopt hist_ignore_space

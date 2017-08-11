@@ -53,8 +53,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions colourize history sudo fasd commmand-not-found )
-
-
+setopt hist_save_no_dups hist_ignore_all_dups hist_ignore_space
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -83,5 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
