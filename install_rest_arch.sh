@@ -14,7 +14,8 @@ rng-tools steghide foremost exiv2 whois geoip virtualbox \
 nasm gcc php qemu geany vlc python-pip aircrack-ng automake \ 
 ruby nodejs npm ruby-native-package-installer screenfetch \
 synapse zsh encfs docker dmenu firefox thunar qbittorrent \
-tmux kgpg gpg-crypter emacs wget curl
+tmux kgpg gpg-crypter emacs wget curl powerline \
+powerline-fonts ttf-inconsolata awesome-terminal-fonts powerline-vim
 
 yaourt -S visual-studio-code google-chrome plymouth redshiftgui-bin
 nano /etc/mkinitcpio.conf
@@ -40,6 +41,7 @@ systemctl enable gdm-plymouth
 #./preztosetup.sh
 bash
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 #########################################################
 #cryptsetup-bin gnome-tweak-tool filezilla irssi
@@ -48,7 +50,7 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 npm -g install react react-dom webpack babel create-react-app serve
 
 #DWM, i3, openbox, bspwm
-
+cp konsole/gk1000.profile  ~/.local/share/konsole/gk1000.profile 
 #pip install matplotlib numpy
 https://github.com/clvv/fasd.git
 cd fasd
