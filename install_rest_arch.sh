@@ -14,7 +14,7 @@ rng-tools steghide foremost exiv2 whois geoip virtualbox \
 nasm gcc php qemu geany vlc python-pip aircrack-ng automake \ 
 ruby nodejs npm ruby-native-package-installer screenfetch \
 synapse zsh encfs docker dmenu firefox thunar qbittorrent \
-tmux kgpg gpg-crypter
+tmux kgpg gpg-crypter emacs wget curl
 
 yaourt -S visual-studio-code google-chrome plymouth redshiftgui-bin
 nano /etc/mkinitcpio.conf
@@ -37,7 +37,10 @@ plymouth-set-default-theme -R themenames
 
 systemctl disable gdm
 systemctl enable gdm-plymouth
-./preztosetup.sh
+#./preztosetup.sh
+bash
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 #########################################################
 #cryptsetup-bin gnome-tweak-tool filezilla irssi
 #synaptic tasksel openjdk-7-* vlc-plugin-libde265 w3af p7zip-full 
