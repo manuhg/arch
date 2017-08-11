@@ -49,5 +49,6 @@ pacman -S xf86-video-intel xf86-input-synaptics xf86-video-vesa
 pacman -S gdm gnome gnome-extra
 #lightgdm i3
 systemctl enable gdm
+systemctl enable netctl
 systemctl disable httpd
 ./install_rest_arch.sh

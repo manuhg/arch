@@ -13,9 +13,10 @@ pacman -S hexedit python nitrogen arduino namcap testdisk \
 rng-tools steghide foremost exiv2 whois geoip virtualbox \
 nasm gcc php qemu geany vlc python-pip aircrack-ng automake \ 
 ruby nodejs npm ruby-native-package-installer screenfetch \
-synapse zsh encfs docker dmenu firefox thunar
+synapse zsh encfs docker dmenu firefox thunar qbittorrent \
+tmux kgpg gpg-crypter
 
-yaourt -S visual-studio-code google-chrome plymouth
+yaourt -S visual-studio-code google-chrome plymouth redshiftgui-bin
 nano /etc/mkinitcpio.conf
 #ADD plymouth AT END OF HOOKS AFTER fsck
 mkinitcpio -p linux
@@ -36,6 +37,7 @@ plymouth-set-default-theme -R themenames
 
 systemctl disable gdm
 systemctl enable gdm-plymouth
+./preztosetup.sh
 #########################################################
 #cryptsetup-bin gnome-tweak-tool filezilla irssi
 #synaptic tasksel openjdk-7-* vlc-plugin-libde265 w3af p7zip-full 
@@ -45,3 +47,6 @@ npm -g install react react-dom webpack babel create-react-app serve
 #DWM, i3, openbox, bspwm
 
 #pip install matplotlib numpy
+https://github.com/clvv/fasd.git
+cd fasd
+sudo make install
