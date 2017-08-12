@@ -18,7 +18,9 @@ tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode\
 powerline-fonts ttf-inconsolata awesome-terminal-fonts \
  
 
-yaourt -S --noconfirm visual-studio-code google-chrome plymouth redshiftgui-bin
+yaourt -S --noconfirm visual-studio-code google-chrome plymouth redshiftgui-bin \
+urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo
+
 nano /etc/mkinitcpio.conf
 #ADD plymouth AT END OF HOOKS AFTER fsck
 mkinitcpio -p linux
@@ -43,5 +45,6 @@ systemctl enable gdm-plymouth
 #cryptsetup-bin gnome-tweak-tool filezilla irssi
 #synaptic tasksel openjdk-7-* vlc-plugin-libde265 w3af p7zip-full 
 #->atom  xampp #smartmontools
-npm -g install react react-dom webpack babel create-react-app serve
 
+#npm -g install react react-dom webpack babel create-react-app serve
+./shell_setup.sh install
