@@ -2,13 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/gk1000/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
   export www=/run/media/gk1000/1010/Webroot
   export NODE_ENV=development
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+
+ZSH_THEME="gk1000"
 HISTFILE=~/.histfile
 HISTSIZE=2000
 SAVEHIST=2000
@@ -43,7 +44,7 @@ bindkey -e
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
