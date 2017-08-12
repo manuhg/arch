@@ -9,7 +9,12 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
-
+HISTFILE=~/.histfile
+HISTSIZE=2000
+SAVEHIST=2000
+bindkey -e
+#zstyle: compinstall filename '~/.zshrc'
+#autoload -Uz compinit
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
