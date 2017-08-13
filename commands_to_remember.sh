@@ -37,3 +37,7 @@ setopt hist_ignore_all_dups
 #A useful trick to PREVENT particular entries from being recorded into a history by preceding them with at least one space.
 
 setopt hist_ignore_space
+#if tzfiles get screwed up
+pacman -S tzdata
+# to set timezone more easily
+tzselect
