@@ -17,6 +17,8 @@ synapse zsh encfs docker dmenu firefox thunar qbittorrent \
 tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode\
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups
 #cups is for printing
+systemctl enable org.cups.cupsd.service
+systemctl start org.cups.cupsd.service
  
 
 yaourt -S --noconfirm visual-studio-code google-chrome plymouth redshiftgui-bin \
