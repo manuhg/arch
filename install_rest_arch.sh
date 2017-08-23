@@ -15,11 +15,13 @@ nasm gcc php qemu geany vlc python-pip aircrack-ng automake \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse zsh encfs docker dmenu firefox thunar qbittorrent \
 tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode\
-powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar \
+powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups
+#cups is for printing
  
 
 yaourt -S --noconfirm visual-studio-code google-chrome plymouth redshiftgui-bin \
-urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar
+urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar \
+epson-inkjet-printer-201401w
 
 nano /etc/mkinitcpio.conf
 #ADD plymouth AT END OF HOOKS AFTER fsck
