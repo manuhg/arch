@@ -13,9 +13,9 @@ pacman -S --noconfirm hexedit python nitrogen arduino namcap testdisk \
 rng-tools steghide foremost exiv2 whois geoip virtualbox xsel \
 nasm gcc php qemu geany vlc python-pip aircrack-ng automake \ 
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
-synapse zsh encfs docker dmenu firefox thunar qbittorrent \
+synapse zsh encfs docker dmenu firefox thunar qbittorrent  scrot \
 tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode dmenu\
-powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups scrot
+powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups
 #cups is for printing
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
@@ -23,7 +23,7 @@ systemctl start org.cups.cupsd.service
 
 yaourt -S --noconfirm visual-studio-code google-chrome plymouth redshiftgui-bin \
 urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar \
-epson-inkjet-printer-201401w zip
+epson-inkjet-printer-201401w zip rslsync
 
 nano /etc/mkinitcpio.conf
 #ADD plymouth AT END OF HOOKS AFTER fsck

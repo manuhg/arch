@@ -3,7 +3,6 @@ iwconfig
 iwlist scan
 wpa_supplicant -i wlp2s0f0 -c <(wpa_passphrase [SSID] [PASSPHRASE])
 dhcp wlp2s0f0
-git remote set-url origin git+ssh://git@github.com/harshalbhatia/chotu.git
 
 #toilet libcaca
 git commit -m  "$(date +%Y%m%d)"
@@ -23,6 +22,8 @@ groups gk1000
 
 #gpg
 gpg --cipher-algo aes256 -c xyz.tar
+gpg -ac something.txt  # creates ASCII armored output
+gpg -d something.txt.asc 
 gpg -o xyz.tar -d xyz.tar.gpg
 gpg --use-embedded-filename xyz.gpg
 #for key gen entropy
@@ -46,3 +47,5 @@ tzselect
 ps -A --sort -rss -o comm,rss | grep docker | awk '{ sum+=$2} END { print sum/1024 } '
 #copy prev command
 echo "$!!" | pbcopy
+#resilio sync
+systemctl start rslsync
