@@ -41,3 +41,8 @@ setopt hist_ignore_space
 pacman -S tzdata
 # to set timezone more easily
 tzselect
+
+#mem used by chrome
+ps -A --sort -rss -o comm,rss | grep docker | awk '{ sum+=$2} END { print sum/1024 } '
+#copy prev command
+echo "$!!" | pbcopy
