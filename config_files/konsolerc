@@ -4,8 +4,17 @@ DefaultProfile=gk1000.profile
 [Favorite Profiles]
 Favorites=
 
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/gjfnf.txt,file:$HOME/gjfnf.txt
+
 [MainWindow]
-Height 768=729
-State=AAAA/wAAAAD9AAAAAAAAAqcAAALFAAAABAAAAAQAAAAIAAAACPwAAAAA
+Height 1080=667
+Height 768=455
+State=AAAA/wAAAAD9AAAAAAAABPgAAAJ9AAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1366=679
+Width 1366=902
+Width 1920=1272
+Window-Maximized 768x1366=true
+
+[TabBar]
+ShowQuickButtons=true
