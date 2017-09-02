@@ -92,9 +92,3 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gs='git status'
-alias ga='git add -A'
-alias gc='git commit'
-alias gpom='git push origin master'
-alias gpl='git pull'
-alias ghist="git log --pretty=format:'%H %ad | %s%d [%an]' --graph --date=short"
