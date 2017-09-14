@@ -8,14 +8,14 @@ cd yaourt
 makepkg -si
 cd ..
 rm -dR package-query yaourt
-
-pacman -S --noconfirm hexedit python nitrogen arduino namcap testdisk \
-rng-tools steghide foremost exiv2 whois geoip virtualbox xsel \
-nasm gcc php qemu geany vlc python-pip aircrack-ng automake \ 
+ 
+pacman -S --noconfirm hexedit python nitrogen arduino namcap testdisk   \
+rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2  \
+nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake \ 
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
-synapse zsh encfs docker dmenu firefox thunar qbittorrent  scrot \
+synapse zsh encfs docker dmenu firefox thunar qbittorrent scrot ipython \
 tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode dmenu\
-powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups
+powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups \ 
 #cups is for printing
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
@@ -51,4 +51,5 @@ systemctl enable gdm-plymouth
 #->atom  xampp #smartmontools
 
 #npm -g install react react-dom webpack babel create-react-app serve
+# pip install tensorflow sklearn auto-sklearn cPickle numpy pylab matplotlib
 ./shell_setup.sh install
