@@ -9,7 +9,10 @@ git commit -m  "$(date +%Y%m%d)"
 git clone ssh://gk1000@198.199.121.120:17/home/git/arch.git
 git remote -v
 git remote set-url origin ssh://gk1000@198.199.121.120:17/home/gk1000/arch.git
-
+#or for github
+git remote add origin git@github.com:gk1000/DCNlab.git
+#to remove
+git remote remove origin
 
 #to encrypt
 encfs unencrypted_dir encrypted_dir
@@ -49,3 +52,8 @@ ps -A --sort -rss -o comm,rss | grep docker | awk '{ sum+=$2} END { print sum/10
 echo "$!!" | pbcopy
 #resilio sync
 systemctl start rslsync
+
+#hash sum mismatch ubuntu
+rm /var/lib/apt/lists
+
+#
