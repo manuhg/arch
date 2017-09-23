@@ -16,6 +16,9 @@ ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse zsh encfs docker dmenu firefox thunar qbittorrent scrot ipython \
 tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode dmenu\
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups \ 
+gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme              \
+chrome-gnome-shell-git
+
 #cups is for printing
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
@@ -23,7 +26,7 @@ systemctl start org.cups.cupsd.service
 
 yaourt -S --noconfirm visual-studio-code google-chrome plymouth redshiftgui-bin \
 urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar \
-epson-inkjet-printer-201401w zip rslsync
+epson-inkjet-printer-201401w zip rslsync teamspeak3 discord
 
 nano /etc/mkinitcpio.conf
 #ADD plymouth AT END OF HOOKS AFTER fsck

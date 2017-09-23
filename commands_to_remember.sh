@@ -1,3 +1,5 @@
+#to update packages from yaourt
+yaourt -Syu --aur --noconfirm
 #connect to wifi
 iwconfig
 iwlist scan
