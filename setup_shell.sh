@@ -1,7 +1,7 @@
 #!/bin/zsh
 archdir="/home/gk1000/arch/config_files"
-dirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.config" "$HOME" "$HOME" "$HOME" "$HOME/.config/nitrogen" "$HOME/.config/i3" )
-files=(".zshrc" "gk1000.zsh-theme" "gk1000.profile" "konsolerc" ".tmux.conf" ".Xresources" ".gitconfig" "bg-saved.cfg" "config" )
+dirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.config" "$HOME" "$HOME" "$HOME" "$HOME/.config/nitrogen" "$HOME/.config/i3" "$HOME/.config/gtk-3.0" )
+files=(".zshrc" "gk1000.zsh-theme" "gk1000.profile" "konsolerc" ".tmux.conf" ".Xresources" ".gitconfig" "bg-saved.cfg" "config" "settings.ini" )
 k=0
 if [  $# -eq 0 ]; then
     echo "Please enter an argument. backup or restore"

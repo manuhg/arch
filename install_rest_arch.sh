@@ -24,6 +24,10 @@ tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode dmenu atom \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text 
 
+#git clone https://github.com/madmaxms/theme-obsidian-2.git
+git clone https://github.com/KDE/breeze-gtk.git /
+sudo cp -r breeze-gtk/Breeze-* /usr/share/themes
+
 
 #cups is for printing
 systemctl enable org.cups.cupsd.service
