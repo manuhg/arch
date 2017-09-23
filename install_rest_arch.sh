@@ -21,7 +21,7 @@ nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse zsh encfs docker dmenu firefox thunar qbittorrent scrot ipython \
 tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode dmenu atom \
-powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups \
+powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text 
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
