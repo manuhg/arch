@@ -53,5 +53,4 @@ systemctl enable gdm
 systemctl enable netctl
 systemctl disable httpd
 ./install_rest_arch.sh
-#view hidden files dolphin 
-Alt .
+

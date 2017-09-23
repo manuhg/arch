@@ -8,25 +8,32 @@ cd yaourt
 makepkg -si
 cd ..
 rm -dR package-query yaourt
- 
+
+#sublime text
+curl -O https://download.sublimetext.com/sublimehq-pub.gpg && \
+sudo pacman-key --add sublimehq-pub.gpg && \
+sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
+echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
+
 pacman -S --noconfirm hexedit python nitrogen arduino namcap testdisk   \
 rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2  \
-nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake \ 
+nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse zsh encfs docker dmenu firefox thunar qbittorrent scrot ipython \
-tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode dmenu\
-powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups \ 
-gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme              \
-chrome-gnome-shell-git
+tmux kgpg gpg-crypter emacs wget curl powerline rxvt-unicode dmenu atom \
+powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups \
+gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text 
+
 
 #cups is for printing
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
  
 
-yaourt -S --noconfirm visual-studio-code google-chrome plymouth redshiftgui-bin \
+yaourt -Syu --aur --noconfirm visual-studio-code google-chrome plymouth \
 urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar \
-epson-inkjet-printer-201401w zip rslsync teamspeak3 discord
+epson-inkjet-printer-201401w zip rslsync teamspeak3 discord chrome-gnome-shell-git
+#redshiftgui-bin \
 
 nano /etc/mkinitcpio.conf
 #ADD plymouth AT END OF HOOKS AFTER fsck

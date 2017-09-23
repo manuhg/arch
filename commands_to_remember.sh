@@ -58,4 +58,5 @@ systemctl start rslsync
 #hash sum mismatch ubuntu
 rm /var/lib/apt/lists
 
-#
+#view hidden files dolphin 
+Alt .
