@@ -6,6 +6,12 @@ iwlist scan
 wpa_supplicant -i wlp2s0f0 -c <(wpa_passphrase [SSID] [PASSPHRASE])
 dhcp wlp2s0f0
 
+git config --global pack.windowMemory "100m"
+git config --global pack.SizeLimit "100m" 
+git config --global pack.threads "1"
+git config --global pack.window "0"
+#git repack --window 2 --window-memory "50m"
+
 #toilet libcaca
 git commit -m  "$(date +%Y%m%d)"
 git clone ssh://gk1000@198.199.121.120:17/home/git/arch.git
