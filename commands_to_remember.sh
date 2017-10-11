@@ -72,3 +72,12 @@ rm /var/lib/apt/lists
 
 #view hidden files dolphin 
 Alt .
+
+modprobe nbd
+qemu-nbd -c /dev/nbd0 /media/gk1000/1010/Virtual/ta.vdi
+cryptsetup luksOpen /dev/nbd0 cryptEd
+mount /dev/mapper/cryptEd /mnt
+umount /mnt
+cryptsetup luksClose  cryptEd
+qemu-nbd -d /dev/nbd0
+
