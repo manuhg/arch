@@ -28,6 +28,20 @@ git remote add origin git@github.com:gk1000/DCNlab.git
 #to remove
 git remote remove origin
 
+#multiple push locs
+git remote set-url origin --push --add <a remote>
+git remote set-url origin --push --add <another remote>
+
+#You can configure multiple remote repositories with the git remote command:
+git remote add alt alt-machine:/path/to/repo
+git remote add origin ssh://198.199.121.120:17/home/gk1000/scripts.git 
+git remote add alt https://gk1000@bitbucket.org/gk1000/scripts.git
+#To fetch from all the configured remotes and update tracking branches, but not merge into HEAD, do:
+git remote update
+#To fetch the master branch from alt and pull it into your current head, do:
+git pull alt master
+
+
 #to encrypt
 encfs unencrypted_dir encrypted_dir
 #to decrypt
