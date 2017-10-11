@@ -12,11 +12,17 @@ git config --global pack.threads "1"
 git config --global pack.window "0"
 #git repack --window 2 --window-memory "50m"
 
+git config --global pack.window 2
+git config --global pack.windowMemory "50m"
 #toilet libcaca
 git commit -m  "$(date +%Y%m%d)"
+#for vps
 git clone ssh://gk1000@198.199.121.120:17/home/git/arch.git
 git remote -v
 git remote set-url origin ssh://gk1000@198.199.121.120:17/home/gk1000/arch.git
+#for github.com
+git remote add origin ssh://git@github.com/gk1000/unmin-coinhive.git
+git push -u origin master
 #or for github
 git remote add origin git@github.com:gk1000/DCNlab.git
 #to remove
