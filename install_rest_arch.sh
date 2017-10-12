@@ -15,7 +15,7 @@ sudo pacman-key --add sublimehq-pub.gpg && \
 sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 
-pacman -S --noconfirm hexedit python nitrogen arduino namcap testdisk   \
+pacman -S --noconfirm hexedit python nitrogen arduino namcap testdisk htop  \
 rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2  \
 nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
@@ -25,9 +25,9 @@ powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text 
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
-git clone https://github.com/KDE/breeze-gtk.git /
+git clone https://github.com/KDE/breeze-gtk.git 
 sudo cp -r breeze-gtk/Breeze-* /usr/share/themes
-
+rm -rf breeze-gtk
 
 #cups is for printing
 systemctl enable org.cups.cupsd.service
