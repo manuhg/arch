@@ -8,11 +8,23 @@ dhcp wlp2s0f0
 #ssh copy id
 ssh -i ~/.ssh/mykey user@host
 
+git config --global pack.windowMemory "100m"
+git config --global pack.SizeLimit "100m" 
+git config --global pack.threads "1"
+git config --global pack.window "0"
+#git repack --window 2 --window-memory "50m"
+
+git config --global pack.window 2
+git config --global pack.windowMemory "50m"
 #toilet libcaca
 git commit -m  "$(date +%Y%m%d)"
+#for vps
 git clone ssh://gk1000@198.199.121.120:17/home/git/arch.git
 git remote -v
 git remote set-url origin ssh://gk1000@198.199.121.120:17/home/gk1000/arch.git
+#for github.com
+git remote add origin ssh://git@github.com/gk1000/unmin-coinhive.git
+git push -u origin master
 #or for github
 git remote add origin git@github.com:gk1000/DCNlab.git
 #to remove
@@ -21,6 +33,19 @@ git remote remove origin
 git config --global pack.windowMemory "100m"
 git config --global pack.SizeLimit "100m" 
 git config --global pack.threads "1"
+#multiple push locs
+git remote set-url origin --push --add <a remote>
+git remote set-url origin --push --add <another remote>
+
+#You can configure multiple remote repositories with the git remote command:
+git remote add alt alt-machine:/path/to/repo
+git remote add origin ssh://198.199.121.120:17/home/gk1000/scripts.git 
+git remote add alt https://gk1000@bitbucket.org/gk1000/scripts.git
+#To fetch from all the configured remotes and update tracking branches, but not merge into HEAD, do:
+git remote update
+#To fetch the master branch from alt and pull it into your current head, do:
+git pull alt master
+
 
 #to encrypt
 encfs unencrypted_dir encrypted_dir
@@ -66,3 +91,12 @@ rm /var/lib/apt/lists
 
 #view hidden files dolphin 
 Alt .
+
+modprobe nbd
+qemu-nbd -c /dev/nbd0 /media/gk1000/1010/Virtual/ta.vdi
+cryptsetup luksOpen /dev/nbd0 cryptEd
+mount /dev/mapper/cryptEd /mnt
+umount /mnt
+cryptsetup luksClose  cryptEd
+qemu-nbd -d /dev/nbd0
+
