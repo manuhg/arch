@@ -29,6 +29,10 @@ git clone https://github.com/KDE/breeze-gtk.git
 sudo cp -r breeze-gtk/Breeze-* /usr/share/themes
 rm -rf breeze-gtk
 
+git clone https://github.com/spwhitton/git-remote-gcrypt.git
+cd git-remote-gcrypt
+chmod +x install.sh
+./install.sh
 #cups is for printing
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service

@@ -5,17 +5,13 @@ iwconfig
 iwlist scan
 wpa_supplicant -i wlp2s0f0 -c <(wpa_passphrase [SSID] [PASSPHRASE])
 dhcp wlp2s0f0
-#ssh copy id
-ssh -i ~/.ssh/mykey user@host
 
-git config --global pack.windowMemory "100m"
+git config --global pack.windowMemory "50m"
 git config --global pack.SizeLimit "100m" 
 git config --global pack.threads "1"
-git config --global pack.window "0"
+git config --global pack.window 2
 #git repack --window 2 --window-memory "50m"
 
-git config --global pack.window 2
-git config --global pack.windowMemory "50m"
 #toilet libcaca
 git commit -m  "$(date +%Y%m%d)"
 #for vps
@@ -30,9 +26,6 @@ git remote add origin git@github.com:gk1000/DCNlab.git
 #to remove
 git remote remove origin
 
-git config --global pack.windowMemory "100m"
-git config --global pack.SizeLimit "100m" 
-git config --global pack.threads "1"
 #multiple push locs
 git remote set-url origin --push --add <a remote>
 git remote set-url origin --push --add <another remote>
@@ -46,6 +39,9 @@ git remote update
 #To fetch the master branch from alt and pull it into your current head, do:
 git pull alt master
 
+git fsck
+git gc
+git repack -adf --window=200 --depth=200
 
 #to encrypt
 encfs unencrypted_dir encrypted_dir
