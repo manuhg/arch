@@ -8,6 +8,8 @@ swapon /dev/sda2
 mkfs.ext4 /dev/sda3 -L Arch
 mount /dev/sda3 /mnt
 mkdir /mnt/boot
+mkdir /mnt/home
+#mount /dev/sda4 /mnt/home
 mount /dev/sda1 /mnt/boot
 nano /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
