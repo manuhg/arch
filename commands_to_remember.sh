@@ -96,3 +96,19 @@ umount /mnt
 cryptsetup luksClose  cryptEd
 qemu-nbd -d /dev/nbd0
 
+#optimize database access speed#
+  pacman -Sc && pacman-optimize
+#
+
+## DANGER ZONE ##
+##Removing unused packages (orphans)##
+
+#For recursively removing orphans and their configuration files:#
+  pacman -Rns $(pacman -Qtdq)
+  #If no orphans were found, pacman errors with error: no targets specified. This is expected as no arguments were passed to pacman -Rns.
+  #Note: The arguments -Qt list only true orphans. To include packages which are optionally required by another package, pass the -t flag twice (i.e., -Qtt).
+
+##Removing everything but base group##
+  #If it is ever necessary to remove all packages except the base group, try this one liner:#
+  pacman -R $(comm -23 <(pacman -Qq | sort) <((for i in $(pacman -Qqg base); do pactree -ul "$i"; done) | sort -u))
+##

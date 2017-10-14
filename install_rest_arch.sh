@@ -40,7 +40,8 @@ systemctl start org.cups.cupsd.service
 
 yaourt -Syu --aur --noconfirm visual-studio-code google-chrome plymouth \
 urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar \
-epson-inkjet-printer-201401w zip rslsync teamspeak3 discord chrome-gnome-shell-git
+epson-inkjet-printer-201401w zip rslsync teamspeak3 discord chrome-gnome-shell-git \
+obsidian-icon-theme
 #redshiftgui-bin \
 
 nano /etc/mkinitcpio.conf
