@@ -33,7 +33,9 @@ exit
 reboot
 #nano /etc/pacman.conf
 #[multilib]
-#Include = /etc/pacman.d/mirrorlist
+#Include = /etc/pacman.d/
+systemctl start dhcpcd
+
 groupadd spherical 
 groupadd dialout
 useradd -m -g spherical -G users,dialout,wheel,storage,power -s /bin/zsh gk1000
@@ -47,10 +49,12 @@ pacman -S xf86-video-intel xf86-input-synaptics xf86-video-vesa
 # kde5 plasma -sddm , gnome GDM , lightgdm -universal
 # pacman -Rcs => recursive remove
 #pacman -S sddm plasma kde-applications
-pacman -S gdm gnome gnome-extra
+pacman -S gdm gnome gnome-extra 
+pacman -S network-manager-applet networkmanager dhclient
 #lightgdm i3
 systemctl enable gdm
 systemctl enable netctl
+systemctl enable dhcpcd
 systemctl disable httpd
 ./install_rest_arch.sh
 
