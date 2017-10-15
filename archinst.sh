@@ -15,7 +15,8 @@ nano /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
-ln -sf /etc/localtime /usr/share/zoneinfo/Asia/Kolkata
+#ln -sf /etc/localtime /usr/share/zoneinfo/Asia/Kolkata
+timedatectl set-timezone Asia/Kolkata
 timedatectl set-local-rtc true
 hwclock --systohc
 nano /etc/locale.gen

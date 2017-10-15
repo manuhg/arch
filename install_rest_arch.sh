@@ -20,7 +20,7 @@ rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop\
 nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython \
-tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom \
+tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text 
 
@@ -41,7 +41,8 @@ systemctl start org.cups.cupsd.service
 yaourt -Syu --aur --noconfirm visual-studio-code google-chrome plymouth \
 urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar \
 epson-inkjet-printer-201401w zip rslsync teamspeak3 discord chrome-gnome-shell-git \
-obsidian-icon-theme
+obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git \
+numix-icon-theme-git gtk-theme-numix-solarized
 #redshiftgui-bin \
 
 nano /etc/mkinitcpio.conf

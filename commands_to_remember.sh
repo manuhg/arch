@@ -1,3 +1,7 @@
+#backup gnome settings
+dconf dump /org/gnome/ > dconfgnome
+#to load
+dconf load /org/gnome/ < dconfgnome
 #to update packages from yaourt
 yaourt -Syu --aur --noconfirm
 #connect to wifi
@@ -112,3 +116,55 @@ qemu-nbd -d /dev/nbd0
   #If it is ever necessary to remove all packages except the base group, try this one liner:#
   pacman -R $(comm -23 <(pacman -Qq | sort) <((for i in $(pacman -Qqg base); do pactree -ul "$i"; done) | sort -u))
 ##
+
+
+
+
+#WebGUI can be accessed via following URL: http://localhost:8888
+	
+#   * Running rslsync system instance (using dedicated rslsync:rslsync account)
+
+  	#   System instance of rslsync is preconfigured (configuration file located
+	#   at /etc/rslsync.conf) and can be used directly after installation.
+
+	#   Execute:
+
+	#     to reload system systemd modules:     
+	     systemctl daemon-reload
+	#     to start rslsync manually:             
+	     systemctl start rslsync
+	#     to autostart rslsync on system start:  
+	     systemctl enable rslsync
+
+	# * Running rslsync user instance (using current user account)
+
+	#   User instance MUST be configured before use. To perform configuration, 
+	#   install rslsync-autoconfig package or follow manual configuration steps:
+
+  	#     1. Copy /etc/rslsync/rslsync.conf to ~/.config/rslsync/rslsync.conf for
+ 	#     the user you wish to configure rslsync:
+ 	
+	       mkdir -p ~/.config/rslsync	
+	       cp /etc/rslsync.conf ~/.config/rslsync/rslsync.conf
+ 
+	#     2. Replace user-specific references with the appropriate information,
+	#     including the following settings:
+ 
+	#       - storage_path
+	#       - pid_file
+	#       - webui.listen
+	#       - webui.login
+	#       - webui.password
+
+	#     3. Make sure folder you specified as storage_path and folder where pid_file will
+	#     be located both exist in the filesystem, since rslsync will not create it for you.
+
+	#   Execute:
+
+	#     to reload user systemd modules:       
+	systemctl --user daemon-reload
+	#     to start rslsync manually:             
+	systemctl --user start rslsync
+	#     to autostart rslsync on user login:    
+	systemctl --user enable rslsync
+
