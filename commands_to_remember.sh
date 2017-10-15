@@ -100,6 +100,8 @@ umount /mnt
 cryptsetup luksClose  cryptEd
 qemu-nbd -d /dev/nbd0
 
+#install from file offline
+pacman -U blah.tar.gz
 #optimize database access speed#
   pacman -Sc && pacman-optimize
 #
