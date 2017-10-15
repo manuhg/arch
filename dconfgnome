@@ -430,7 +430,7 @@ use-theme-colors=false
 font='Monospace 11'
 use-theme-transparency=false
 bold-color-same-as-fg=true
-background-color='rgb(46,52,54)'
+background-color='rgb(39,36,36)'
 
 [terminal/legacy]
 schema-version=uint32 3
