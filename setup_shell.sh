@@ -26,8 +26,16 @@ elif [ $1 = "restore" ] ; then
 elif [ $1 = "install" ] ; then
     yaourt -Syu obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git  \
       numix-icon-theme-git gtk-theme-numix-solarized
+    
     sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
     git clone git://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/plugins/zsh-autosuggestions
+    
+    git clone https://github.com/numixproject/numix-folders.git
+    cp numix-folders.sh numix-folders/numix-folders
+    chmod +x numix-folders/numix-folders
+    ./numix-folders/numix-folders -t 6 green
+    rm -rf numix-folders
+    
     for ((i=1;i<=${#files};i++)) do
         [ -d $fdirs[$i] ] && cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
     done
