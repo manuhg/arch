@@ -170,3 +170,6 @@ pacman -U blah.tar.gz
 	#     to autostart rslsync on user login:    
 	systemctl --user enable rslsync
 
+ufw allow from 106.51.0.0/16 to any port 17
+iptables -A INPUT -p tcp -m tcp --dport 17 --src 106.51.0.0/16 -j ACCEPT
+iptables -A INPUT -m string --algo bm  --string "ZmEu" -j DROP
