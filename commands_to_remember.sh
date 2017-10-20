@@ -105,7 +105,8 @@ pacman -U blah.tar.gz
 #optimize database access speed#
   pacman -Sc && pacman-optimize
 #
-
+#+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
+#+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 ## DANGER ZONE ##
 ##Removing unused packages (orphans)##
 
@@ -169,7 +170,60 @@ pacman -U blah.tar.gz
 	systemctl --user start rslsync
 	#     to autostart rslsync on user login:    
 	systemctl --user enable rslsync
-
+#+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
+#+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 ufw allow from 106.51.0.0/16 to any port 17
 iptables -A INPUT -p tcp -m tcp --dport 17 --src 106.51.0.0/16 -j ACCEPT
 iptables -A INPUT -m string --algo bm  --string "ZmEu" -j DROP
+
+
+#Tab
+#Auto complete
+^a
+#Beginning of line
+^e
+#End of line
+^f
+#Forward one character
+^b
+#Back one character
+^h
+#Delete one character (backw­ards)
+%f
+#Forward one word
+%b
+#Back one word
+^w
+#Delete one word (backw­ards)
+^u
+#Clear to beginning of line
+^k
+#Clear to end of line
+^y
+#Paste from Kill Ring
+^t
+#Swap cursor with previous character
+%t
+#Swap cursor with previous word
+^p
+#Previous line in history
+^n
+#Next line in history
+^r
+#Search backwards in history
+^l
+#Clear screen
+^o
+#Execute command but keep line
+^z
+#Suspend process
+#fg
+#restore process
+#bg
+#continue process in background
+^c
+#Kill current process
+^d
+#Exit shell
+^ - Hold Control while pressing key
+% - Hold meta (alt, or command on mac)
