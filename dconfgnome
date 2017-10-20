@@ -104,9 +104,10 @@ target-currency=''
 show-zeroes=false
 source-currency=''
 show-thousands=false
-button-mode='advanced'
+button-mode='basic'
 target-units='radian'
 word-size=64
+window-position=(23, 15)
 number-format='automatic'
 angle-units='degrees'
 base=16
@@ -153,9 +154,9 @@ sort-directories-first=true
 default-sort-order='type'
 
 [nautilus/window-state]
-sidebar-width=163
+sidebar-width=155
 geometry='1010x584+23+15'
-maximized=false
+maximized=true
 
 [nautilus/icon-view]
 captions=['none', 'none', 'none']
@@ -206,7 +207,7 @@ migrated=true
 app-picker-view=uint32 1
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop']
 
 [shell/extensions/user-theme]
 name=''
@@ -239,7 +240,7 @@ gtk-theme='Arc-Dark'
 clock-show-date=true
 
 [desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent']
 
 [desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -267,6 +268,9 @@ application-id='org.gnome.Software.desktop'
 
 [desktop/notifications/application/org-gnome-chromegnomeshell]
 application-id='org.gnome.ChromeGnomeShell.desktop'
+
+[desktop/notifications/application/qbittorrent]
+application-id='qbittorrent.desktop'
 
 [desktop/notifications/application/ca-desrt-dconf-editor]
 application-id='ca.desrt.dconf-editor.desktop'
@@ -349,11 +353,11 @@ close=['<Alt>F4']
 screen-reader-enabled=false
 
 [desktop/background]
-picture-uri='file:///home/gk1000/Pictures/18930-game-of-thrones-game-of-thrones.jpg'
+picture-uri='file:///home/gk1000/Pictures/Wallpapers/geek-wallpaper-9.jpg'
 color-shading-type='solid'
-primary-color='#000000000000'
+primary-color='#000000'
 picture-options='zoom'
-secondary-color='#000000000000'
+secondary-color='#000000'
 
 [desktop/input-sources]
 current=uint32 0

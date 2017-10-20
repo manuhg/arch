@@ -1,27 +1,31 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="1" last-seen="1508004252"/>
     <application id="keybase.desktop" open-window-count="0" score="100" last-seen="1507999342"/>
-    <application id="atom.desktop" open-window-count="0" score="0" last-seen="1507994191"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="15" last-seen="1508485646"/>
+    <application id="org.kde.konsole.desktop" open-window-count="0" score="0" last-seen="0"/>
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="1" last-seen="1508004252"/>
     <application id="firefox.desktop" open-window-count="0" score="174" last-seen="1508043721"/>
-    <application id="visual-studio-code.desktop" open-window-count="1" score="156" last-seen="1508091153"/>
-    <application id="vlc.desktop" open-window-count="0" score="146" last-seen="1508087744"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="516" last-seen="1508091103"/>
-    <application id="gnome-control-center.desktop" open-window-count="0" score="4" last-seen="1507988545"/>
-    <application id="synapse.desktop" open-window-count="0" score="2" last-seen="1508079177"/>
-    <application id="gnome-tweak-tool.desktop" open-window-count="0" score="62" last-seen="1508081051"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="295" last-seen="1508494120"/>
+    <application id="vlc.desktop" open-window-count="1" score="1331" last-seen="1508493455"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="947" last-seen="1508494443"/>
+    <application id="atom.desktop" open-window-count="0" score="0" last-seen="1507994191"/>
     <application id="geany.desktop" open-window-count="0" score="32" last-seen="1508081400"/>
-    <application id="eog.desktop" open-window-count="0" score="1" last-seen="1508076208"/>
-    <application id="google-chrome.desktop" open-window-count="0" score="2054" last-seen="1508089869"/>
-    <application id="Thunar.desktop" open-window-count="0" score="2" last-seen="1508076651"/>
+    <application id="synapse.desktop" open-window-count="0" score="6" last-seen="1508306850"/>
+    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="7" last-seen="1508487082"/>
+    <application id="gnome-tweak-tool.desktop" open-window-count="0" score="62" last-seen="1508081051"/>
+    <application id="qbittorrent.desktop" open-window-count="0" score="6" last-seen="1508478577"/>
+    <application id="eog.desktop" open-window-count="0" score="4" last-seen="1508477879"/>
+    <application id="google-chrome.desktop" open-window-count="0" score="5089" last-seen="1508493896"/>
+    <application id="Thunar.desktop" open-window-count="0" score="3" last-seen="1508476744"/>
     <application id="org.gnome.gedit.desktop" open-window-count="0" score="77" last-seen="1508091102"/>
     <application id="ca.desrt.dconf-editor.desktop" open-window-count="0" score="24" last-seen="1508081437"/>
     <application id="sublime_text.desktop" open-window-count="0" score="4" last-seen="1508085584"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="1506" last-seen="1508091154"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="4" score="3654" last-seen="1508494692"/>
     <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="45" last-seen="1508040701"/>
     <application id="org.gnome.baobab.desktop" open-window-count="0" score="0" last-seen="1508004845"/>
     <application id="org.gnome.Builder.desktop" open-window-count="0" score="5" last-seen="1508085679"/>
-    <application id="org.gnome.Totem.desktop" open-window-count="0" score="0" last-seen="1507990566"/>
+    <application id="electron.desktop" open-window-count="0" score="2" last-seen="1508305039"/>
+    <application id="org.gnome.Totem.desktop" open-window-count="0" score="0" last-seen="1508485612"/>
   </context>
 </application-state>
