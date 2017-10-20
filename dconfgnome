@@ -424,6 +424,34 @@ ignore-ca-cert=false
 subtitle-encoding='UTF-8'
 active-plugins=['movie-properties', 'recent', 'media_player_keys', 'variable-rate', 'save-file', 'skipto', 'autoload-subtitles', 'vimeo', 'apple-trailers', 'screensaver', 'screenshot']
 
+[terminal/legacy/profiles:/:98e1fe04-8e5a-49c5-a383-acd78823e520]
+foreground-color='rgb(131,148,150)'
+visible-name='gk1000'
+palette=['#070736364242', '#dcdc32322f2f', '#858599990000', '#b5b589890000', '#26268b8bd2d2', '#ecec00004848', '#2a2aa1a19898', '#9494a3a3a5a5', '#58586e6e7575', '#cbcb4b4b1616', '#858599990000', '#b5b589890000', '#26268b8bd2d2', '#d3d336368282', '#2a2aa1a19898', '#6c6c7171c4c4']
+cursor-shape='ibeam'
+use-system-font=false
+use-theme-colors=false
+font='Monospace 11'
+use-theme-transparency=false
+use-theme-background=false
+bold-color-same-as-fg=true
+bold-color='#9494a3a3a5a5'
+background-color='rgb(0,43,54)'
+
+[terminal/legacy/profiles:/:03552f37-3e02-41d3-8b0d-bd4a8ed55a9c]
+foreground-color='#838394949696'
+visible-name='Solarized-dark'
+palette=['#070736364242', '#DCDC32322F2F', '#858599990000', '#CFCF9A9A6B6B', '#26268B8BD2D2', '#D3D336368282', '#2A2AA1A19898', '#EEEEE8E8D5D5', '#65657B7B8383', '#D8D879797979', '#8888CFCF7676', '#65657B7B8383', '#26269999FFFF', '#D3D336368282', '#4343B8B8C3C3', '#FDFDF6F6E3E3']
+cursor-shape='ibeam'
+use-system-font=false
+use-theme-colors=false
+font='Monospace 11'
+use-theme-transparency=false
+use-theme-background=false
+bold-color-same-as-fg=false
+bold-color='#93A1A1'
+background-color='#00002B2B3636'
+
 [terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 foreground-color='rgb(74,140,11)'
 visible-name='gk1000'
@@ -435,6 +463,9 @@ font='Monospace 11'
 use-theme-transparency=false
 bold-color-same-as-fg=true
 background-color='rgb(39,36,36)'
+
+[terminal/legacy/profiles:]
+list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55a9c']
 
 [terminal/legacy]
 schema-version=uint32 3

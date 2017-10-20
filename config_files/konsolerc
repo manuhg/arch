@@ -8,13 +8,12 @@ Favorites=
 Recent Files[$e]=file:$HOME/gjfnf.txt,file:$HOME/gjfnf.txt
 
 [MainWindow]
-Height 1080=1021
+Height 1080=548
 Height 768=455
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAPoAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAABAAAAAILAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1366=902
-Width 1920=1440
-Window-Maximized 1080x1920=true
+Width 1920=1024
 Window-Maximized 768x1366=true
 
 [TabBar]
