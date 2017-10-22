@@ -64,7 +64,7 @@ gpg -o xyz.tar -d xyz.tar.gpg
 gpg --use-embedded-filename xyz.gpg
 #for key gen entropy
 rngd -r /dev/urandom
-
+chown root $(tty) # in case of permission denied
 # dd
 dd if=blah.iso of=/dev/sdd bs=4M status=progress && sync
 

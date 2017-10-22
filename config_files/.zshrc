@@ -98,3 +98,4 @@ alias gc='git commit'
 alias gpom='git push origin master'
 alias gpl='git pull'
 alias ghist="git log --pretty=format:'%H %ad | %s%d [%an]' --graph --date=short"
+alias git-secret='/usr/local/bin/git-secret'
