@@ -1,14 +1,18 @@
 sudo pacman -S --noconfirm --needed wget yajl
-git clone https://aur.archlinux.org/package-query.git
-cd package-query
+#git clone https://aur.archlinux.org/package-query.git
+#cd package-query
+#makepkg -si
+#cd ..
+#git clone https://aur.archlinux.org/yaourt.git
+#cd yaourt
+#makepkg -si
+#cd ..
+#rm -dR package-query yaourt
+sudo pacman-key --refresh-keys && sudo pacman -Syyu
+curl "https://pgp.mit.edu/pks/lookup?op=get&search=0x1EB2638FF56C0C53" -o - | gpg --import
+mkdir pacaur && cd pacaur
+curl https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur -o PKGBUILD
 makepkg -si
-cd ..
-git clone https://aur.archlinux.org/yaourt.git
-cd yaourt
-makepkg -si
-cd ..
-rm -dR package-query yaourt
-
 #sublime text
 curl -O https://download.sublimetext.com/sublimehq-pub.gpg && \
 sudo pacman-key --add sublimehq-pub.gpg && \
@@ -42,7 +46,7 @@ yaourt -Syu --aur --noconfirm visual-studio-code google-chrome plymouth \
 urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar \
 epson-inkjet-printer-201401w zip rslsync teamspeak3 discord chrome-gnome-shell-git \
 obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git \
-numix-icon-theme-git gtk-theme-numix-solarized
+numix-icon-theme-git gtk-theme-numix-solarized apparmor apparmor-profiles
 #redshiftgui-bin \
 
 nano /etc/mkinitcpio.conf
