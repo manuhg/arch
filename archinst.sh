@@ -56,7 +56,8 @@ pacman -S gdm gnome gnome-extra
 pacman -S network-manager-applet networkmanager dhclient
 #lightgdm i3
 systemctl enable gdm
-systemctl enable netctl
+#systemctl enable netctl
+systemctl enable NetworkManager
 systemctl enable dhcpcd
 systemctl disable httpd
 

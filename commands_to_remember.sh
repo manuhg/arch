@@ -57,6 +57,8 @@ fusermount -u /~/unencrypted_dir
 groups gk1000
 
 #gpg
+gpg --recv-keys --keyserver hkp://pgp.mit.edu 6689E64E3D3664BB  
+
 gpg --cipher-algo aes256 -c xyz.tar
 gpg -ac something.txt  # creates ASCII armored output
 gpg -d something.txt.asc 

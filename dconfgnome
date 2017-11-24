@@ -1,6 +1,39 @@
+[shell]
+app-picker-view=uint32 1
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+remember-mount-password=false
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop', 'org.kde.konsole.desktop']
+
+[shell/extensions/user-theme]
+name=''
+
+[shell/extensions/dash-to-dock]
+apply-custom-theme=false
+shortcut=['<Super>q']
+
+[shell/calendar]
+show-weekdate=false
+
 [software]
 first-run=false
 check-timestamp=int64 1507890180
+
+[settings-daemon/plugins/power]
+sleep-inactive-battery-type='nothing'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout=1800
+
+[settings-daemon/plugins/color]
+night-light-last-coordinates=(12.9833, 77.583299999999994)
+
+[settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Primary><Alt>t'
+command='konsole'
+name='open terminal'
 
 [settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
@@ -118,12 +151,9 @@ base=16
 source-units='degree'
 accuracy=9
 
-[gnome-screenshot]
-include-pointer=false
-include-border=true
-border-effect='none'
-delay=0
-last-save-directory='file:///home/gk1000/Desktop'
+[anjuta]
+toolbar-visible=true
+remembered-plugins=''
 
 [gedit/preferences/editor]
 wrap-last-split-mode='word'
@@ -145,44 +175,20 @@ replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h
 
 [gedit/state/window]
 size=(1920, 1010)
-state=43652
+state=132
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
 
-[nautilus/preferences]
-search-view='list-view'
-default-folder-viewer='icon-view'
-search-filter-time-type='last_modified'
-sort-directories-first=true
-default-sort-order='type'
-
-[nautilus/window-state]
-sidebar-width=155
-geometry='1066x644+23+15'
-maximized=false
-
-[nautilus/icon-view]
-captions=['none', 'none', 'none']
-default-zoom-level='small'
-
-[nautilus/desktop]
-home-icon-visible=false
-network-icon-visible=false
-volumes-visible=true
-
-[nautilus/list-view]
-default-visible-columns=['name', 'size', 'type', 'date_modified']
-default-zoom-level='small'
-use-tree-view=true
-default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where']
+[gnome-nettool]
+hostnames=['198.199.121.120']
 
 [evince]
 document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(2.4242424242424243, 1.7205882352941178)
+window-ratio=(2.2957983193277309, 0.8895486935866983)
 
 [file-roller/listing]
 sort-method='name'
@@ -202,27 +208,19 @@ recreate-folders=true
 
 [file-roller/ui]
 sidebar-width=200
-window-height=700
-window-width=1366
+window-height=693
+window-width=445
 
 [evolution-data-server]
 network-monitor-gio-name=''
 migrated=true
 
-[shell]
-app-picker-view=uint32 1
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop', 'org.kde.konsole.desktop']
-
-[shell/extensions/user-theme]
-name=''
-
-[shell/extensions/dash-to-dock]
-shortcut=['<Super>q']
-
-[shell/calendar]
-show-weekdate=false
+[gnome-screenshot]
+include-pointer=false
+include-border=true
+border-effect='none'
+delay=0
+last-save-directory='file:///home/gk1000/Desktop'
 
 [deja-dup]
 backend='file'
@@ -286,6 +284,7 @@ application-id='rhythmbox.desktop'
 
 [desktop/media-handling]
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media', 'x-content/blank-dvd']
+autorun-never=true
 autorun-x-content-ignore=['x-content/bootable-media', 'x-content/blank-dvd']
 autorun-x-content-open-folder=@as []
 
@@ -314,6 +313,11 @@ secondary-color='#000000000000'
 
 [desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[desktop/privacy]
+remove-old-temp-files=true
+old-files-age=uint32 3
+remove-old-trash-files=true
 
 [desktop/wm/preferences]
 button-layout='appmenu:minimize,close'
@@ -359,7 +363,7 @@ close=['<Alt>F4']
 screen-reader-enabled=false
 
 [desktop/background]
-picture-uri='file:///home/gk1000/Pictures/Wallpapers/minimalistic_arch_linux_wallpaper_by_malkowitch-dahpghs.jpg'
+picture-uri='file:///home/gk1000/Wallpapers/archwp.jpg'
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -373,6 +377,33 @@ xkb-options=@as []
 [orca]
 active-profile=['Default', 'default']
 
+[nautilus/preferences]
+search-view='list-view'
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+sort-directories-first=true
+default-sort-order='type'
+
+[nautilus/window-state]
+sidebar-width=155
+geometry='1066x644+23+15'
+maximized=true
+
+[nautilus/icon-view]
+captions=['none', 'none', 'none']
+default-zoom-level='small'
+
+[nautilus/desktop]
+home-icon-visible=false
+network-icon-visible=false
+volumes-visible=true
+
+[nautilus/list-view]
+default-visible-columns=['name', 'size', 'type', 'date_modified']
+default-zoom-level='small'
+use-tree-view=true
+default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where']
+
 [simple-scan]
 save-directory='/home/gk1000/Desktop'
 document-type='photo'
@@ -380,6 +411,12 @@ document-type='photo'
 [eog/view]
 background-color='rgb(0,0,0)'
 use-background-color=true
+
+[eog/ui]
+sidebar=false
+
+[devhelp/state/main/contents]
+group-books-by-language=false
 
 [rhythmbox/library/source]
 show-browser=true
@@ -497,6 +534,10 @@ list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55
 
 [terminal/legacy]
 schema-version=uint32 3
+
+[nm-applet/eap/8d1f98a3-62af-494d-a13f-afc038032021]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
 
 [nm-applet/eap/6b4644c2-b570-4ed1-a976-9de7da7425d6]
 ignore-phase2-ca-cert=false
