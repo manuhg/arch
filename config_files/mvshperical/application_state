@@ -2,11 +2,12 @@
 <application-state>
   <context id="">
     <application id="geany.desktop" open-window-count="0" score="3" last-seen="1511524400"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="63" last-seen="1511524418"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="130" last-seen="1511525415"/>
     <application id="eog.desktop" open-window-count="0" score="0" last-seen="1511454826"/>
     <application id="qbittorrent.desktop" open-window-count="0" score="514" last-seen="1511457013"/>
     <application id="google-chrome.desktop" open-window-count="0" score="11889" last-seen="1511457057"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="7353" last-seen="1511524473"/>
+    <application id="sublime_text.desktop" open-window-count="1" score="6" last-seen="1511525414"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="7413" last-seen="1511525357"/>
     <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="23" last-seen="1511498853"/>
     <application id="org.gnome.baobab.desktop" open-window-count="0" score="0" last-seen="1511457305"/>
     <application id="evince.desktop" open-window-count="0" score="10" last-seen="1511454964"/>

@@ -50,4 +50,10 @@ elif [ $1 = "install" ] ; then
     ((k=k+1))
     echo "[[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome"
     echo "Config Files copied : $k"
+    echo "setting git global configs"
+    git config --global user.name "$HOST-$USER"
+    git config --global user.email "gk1010100@gmail.com"
+    echo 'git config --global user.name "$HOST-$USER"'
+    echo 'git config --global user.email "gk1010100@gmail.com"'
+
 fi
