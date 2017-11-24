@@ -22,7 +22,8 @@ ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython konsole \
 tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 \
-gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text 
+gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
+libreoffice-fresh
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
 git clone https://github.com/KDE/breeze-gtk.git 
