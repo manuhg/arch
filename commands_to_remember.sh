@@ -10,6 +10,11 @@ iwlist scan
 wpa_supplicant -i wlp2s0f0 -c <(wpa_passphrase [SSID] [PASSPHRASE])
 dhcp wlp2s0f0
 
+#copy based on checksum, preserve perms
+rsync -rcpv dir1 dir2
+#changes made in resp commits
+git log -p
+
 git config --global pack.windowMemory "50m"
 git config --global pack.SizeLimit "100m" 
 git config --global pack.threads "1"

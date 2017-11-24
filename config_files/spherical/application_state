@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="5" last-seen="1510967318"/>
+    <application id="visual-studio-code.desktop" open-window-count="1" score="390" last-seen="1511524566"/>
+    <application id="vlc.desktop" open-window-count="1" score="1471" last-seen="1511522659"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="2" score="706" last-seen="1511524568"/>
+    <application id="geany.desktop" open-window-count="0" score="562" last-seen="1511519684"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="16088" last-seen="1511523454"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="3" last-seen="1511519635"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="8970" last-seen="1511524577"/>
+    <application id="evince.desktop" open-window-count="0" score="84" last-seen="1510968371"/>
+    <application id="emacs.desktop" open-window-count="0" score="0" last-seen="1510965956"/>
+  </context>
+</application-state>

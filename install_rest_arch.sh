@@ -21,7 +21,7 @@ echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable
 
 sudo pacman -Syu --noconfirm hexedit python nitrogen arduino namcap testdisk \
 rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop\
-nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake \
+nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake rsync \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython konsole \
 tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd \
