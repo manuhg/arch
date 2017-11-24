@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="geany.desktop" open-window-count="0" score="3" last-seen="1511524400"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="63" last-seen="1511524418"/>
+    <application id="eog.desktop" open-window-count="0" score="0" last-seen="1511454826"/>
+    <application id="qbittorrent.desktop" open-window-count="0" score="514" last-seen="1511457013"/>
+    <application id="google-chrome.desktop" open-window-count="0" score="11889" last-seen="1511457057"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="7353" last-seen="1511524473"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="23" last-seen="1511498853"/>
+    <application id="org.gnome.baobab.desktop" open-window-count="0" score="0" last-seen="1511457305"/>
+    <application id="evince.desktop" open-window-count="0" score="10" last-seen="1511454964"/>
+    <application id="virtualbox.desktop" open-window-count="0" score="27" last-seen="1511457289"/>
+  </context>
+</application-state>
