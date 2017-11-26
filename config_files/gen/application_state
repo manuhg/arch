@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.kde.konsole.desktop" open-window-count="0" score="0" last-seen="0"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="428" last-seen="1511546292"/>
+    <application id="vlc.desktop" open-window-count="0" score="1679" last-seen="1511545675"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="729" last-seen="1511673194"/>
+    <application id="geany.desktop" open-window-count="0" score="562" last-seen="1511519684"/>
+    <application id="qbittorrent.desktop" open-window-count="1" score="6" last-seen="1511673427"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="16349" last-seen="1511673920"/>
+    <application id="Thunar.desktop" open-window-count="0" score="4" last-seen="1511673136"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="3" last-seen="1511524868"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="0" score="11587" last-seen="1511672730"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="17" last-seen="1511673198"/>
+    <application id="Thunar-folder-handler.desktop" open-window-count="0" score="0" last-seen="0"/>
+  </context>
+</application-state>
