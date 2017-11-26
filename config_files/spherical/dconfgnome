@@ -132,7 +132,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/arch/config_files'
+virtual-root='file:///home/gk1000/arch/config_files/spherical'
 tree-view=true
 root='file:///'
 
@@ -159,8 +159,8 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='1066x644+23+15'
-maximized=true
+geometry='944x544+23+15'
+maximized=false
 
 [nautilus/compression]
 default-compression-format='tar.xz'
@@ -216,7 +216,7 @@ migrated=true
 app-picker-view=uint32 1
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop', 'org.kde.konsole.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop', 'org.kde.konsole.desktop']
 
 [shell/extensions/user-theme]
 name=''

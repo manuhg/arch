@@ -1,4 +1,3 @@
-sudo pacman -S --noconfirm --needed wget yajl
 #git clone https://aur.archlinux.org/package-query.git
 #cd package-query
 #makepkg -si
@@ -8,11 +7,17 @@ sudo pacman -S --noconfirm --needed wget yajl
 #makepkg -si
 #cd ..
 #rm -dR package-query yaourt
-sudo pacman-key --refresh-keys && sudo pacman -Syyu
-curl "https://pgp.mit.edu/pks/lookup?op=get&search=0x1EB2638FF56C0C53" -o - | gpg --import
+#sudo pacman-key --refresh-keys && sudo pacman -Syyu
+#curl "https://pgp.mit.edu/pks/lookup?op=get&search=0x1EB2638FF56C0C53" -o - | gpg --import
+
+sudo pacman -S --noconfirm --needed expac wget yajl 
+gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
 mkdir pacaur && cd pacaur
-curl https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur -o PKGBUILD
-makepkg -si
+curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
+makepkg -i PKGBUILD --noconfirm
+curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
+makepkg -i PKGBUILD --noconfirm
+
 #sublime text
 curl -O https://download.sublimetext.com/sublimehq-pub.gpg && \
 sudo pacman-key --add sublimehq-pub.gpg && \
