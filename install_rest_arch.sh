@@ -32,7 +32,7 @@ synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython konsole \
 tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
-libreoffice-fresh
+libreoffice-fresh 
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
 git clone https://github.com/KDE/breeze-gtk.git 
@@ -48,11 +48,13 @@ systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
  
 
-yaourt -Syu --aur --noconfirm visual-studio-code google-chrome plymouth \
+pacaur -Syu --aur --noconfirm visual-studio-code google-chrome plymouth \
 urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar \
 epson-inkjet-printer-201401w zip rslsync teamspeak3 discord chrome-gnome-shell-git \
-obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git \
-numix-icon-theme-git gtk-theme-numix-solarized apparmor apparmor-profiles
+obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git linux-headers \
+numix-icon-theme-git gtk-theme-numix-solarized apparmor apparmor-profiles \
+ virtualbox-ext-oracle virtualbox-guest-iso 
+
 #redshiftgui-bin \
 
 nano /etc/mkinitcpio.conf
