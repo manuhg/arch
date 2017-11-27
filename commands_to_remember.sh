@@ -37,7 +37,7 @@ git remote remove origin
 
 #push to all branches
 git remote | xargs -L1 git push --all
-git config  --global alias.pushall '!git remote | xargs -L1 git push'                                                                                                                                      1 ↵
+git config  --global alias.pushall '!git remote | xargs -L1 git push'
 
 #push to all pull only from origin
 git remote add origin https://exampleuser@example.com/path/to/repo1
