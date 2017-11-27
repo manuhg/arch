@@ -35,6 +35,16 @@ git remote add origin git@github.com:gk1000/DCNlab.git
 #to remove
 git remote remove origin
 
+#push to all branches
+git remote | xargs -L1 git push --all
+git config  --global alias.pushall '!git remote | xargs -L1 git push'                                                                                                                                      1 ↵
+
+#push to all pull only from origin
+git remote add origin https://exampleuser@example.com/path/to/repo1
+git remote set-url --push --add origin https://exampleuser@example.com/path/to/repo1
+git remote set-url --push --add origin https://exampleuser@example.com/path/to/repo2
+git remote set-url --push --add origin https://exampleuser@example.com/path/to/repo3
+
 #multiple push locs
 git remote set-url origin --push --add <a remote>
 git remote set-url origin --push --add <another remote>
@@ -52,6 +62,8 @@ git fsck
 git gc
 git repack -adf --window=200 --depth=200
 
+#git submodule 
+git submodule add https://somerepo.git
 #to encrypt
 encfs unencrypted_dir encrypted_dir
 #to decrypt
@@ -89,7 +101,7 @@ tzselect
 #mem used by chrome
 ps -A --sort -rss -o comm,rss | grep docker | awk '{ sum+=$2} END { print sum/1024 } '
 #copy prev command
-echo "$!!" | pbcopy
+echo "!!" | pbcopy
 #resilio sync
 systemctl start rslsync
 
