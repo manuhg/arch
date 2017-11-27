@@ -52,8 +52,8 @@ elif [ $1 = "install" ] ; then
     echo "Config Files copied : $k"
     echo "setting git global configs"
     git config --global user.name "$HOST-$USER"
-    git config --global user.email "gk1010100@gmail.com"
+    git config --global user.email "manu@gk1000.me"
     echo 'git config --global user.name "$HOST-$USER"'
-    echo 'git config --global user.email "gk1010100@gmail.com"'
+    echo 'git config --global user.email "manu@gk1000.me"'
 
 fi
