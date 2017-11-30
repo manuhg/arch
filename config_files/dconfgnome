@@ -20,7 +20,7 @@ numlock-state='on'
 [builder]
 window-position=(0, 0)
 window-maximized=true
-window-size=(1920, 1010)
+window-size=(1366, 698)
 
 [builder/workbench]
 bottom-position=200
@@ -140,7 +140,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/VirtualBox%20VMs/mac%20os%20elcap/Logs'
+virtual-root='file:///home/gk1000'
 tree-view=true
 root='file:///'
 
@@ -168,7 +168,7 @@ default-sort-order='type'
 [nautilus/window-state]
 sidebar-width=155
 geometry='1203x642+23+15'
-maximized=true
+maximized=false
 
 [nautilus/compression]
 default-compression-format='tar.xz'
@@ -213,8 +213,8 @@ recreate-folders=true
 
 [file-roller/ui]
 sidebar-width=200
-window-height=698
-window-width=1366
+window-height=512
+window-width=1024
 
 [calendar]
 active-view='month'
