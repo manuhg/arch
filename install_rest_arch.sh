@@ -28,11 +28,11 @@ sudo pacman -Syu --noconfirm hexedit python nitrogen arduino namcap testdisk \
 rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop\
 nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake rsync \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
-synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython konsole \
+synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython \
 tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
-libreoffice-fresh 
+libreoffice-fresh gparted
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
 git clone https://github.com/KDE/breeze-gtk.git 
@@ -56,6 +56,7 @@ numix-icon-theme-git gtk-theme-numix-solarized apparmor apparmor-profiles \
  virtualbox-ext-oracle virtualbox-guest-iso 
 
 #redshiftgui-bin \
+#sudo chmod 644 /usr/share/applications/* -v 
 
 nano /etc/mkinitcpio.conf
 #ADD plymouth AT END OF HOOKS AFTER fsck

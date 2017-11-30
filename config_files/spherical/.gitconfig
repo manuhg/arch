@@ -5,6 +5,7 @@ st = status
 br = branch
 
 hist=log --pretty=format:'%H %ad | %s%d [%an]' --graph --date=short
+	pushall = !git remote | xargs -L1 git push
 [user]
 	email = gk1010100@gmail.com
 	name = spherical-gk1000
