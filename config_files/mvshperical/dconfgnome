@@ -2,7 +2,7 @@
 app-picker-view=uint32 1
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop', 'org.kde.konsole.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop', 'org.gnome.Terminal.desktop']
 
 [shell/extensions/user-theme]
 name=''
@@ -45,7 +45,7 @@ numlock-state='on'
 [builder]
 window-position=(0, 0)
 window-maximized=true
-window-size=(1366, 698)
+window-size=(1920, 1010)
 
 [builder/workbench]
 bottom-position=200
@@ -162,7 +162,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000'
+virtual-root='file:///home/gk1000/VirtualBox%20VMs/mac%20os%20elcap/Logs'
 tree-view=true
 root='file:///'
 
@@ -174,8 +174,8 @@ search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'f
 replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
 
 [gedit/state/window]
-size=(1920, 1010)
-state=132
+size=(1366, 698)
+state=43908
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
@@ -188,7 +188,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(2.2957983193277309, 0.88004750593824232)
+window-ratio=(2.3071895424836599, 1.047979797979798)
 
 [file-roller/listing]
 sort-method='name'
@@ -208,19 +208,16 @@ recreate-folders=true
 
 [file-roller/ui]
 sidebar-width=200
-window-height=693
-window-width=445
+window-height=698
+window-width=1366
+
+[calendar]
+active-view='month'
+window-maximized=true
 
 [evolution-data-server]
 network-monitor-gio-name=''
 migrated=true
-
-[gnome-screenshot]
-include-pointer=false
-include-border=true
-border-effect='none'
-delay=0
-last-save-directory='file:///home/gk1000/Desktop'
 
 [deja-dup]
 backend='file'
@@ -244,13 +241,16 @@ gtk-theme='Arc-Dark'
 clock-show-date=true
 
 [desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'gnome-network-panel']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar']
 
 [desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
 [desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[desktop/notifications/application/thunar]
+application-id='Thunar.desktop'
 
 [desktop/notifications/application/nautilus]
 application-id='nautilus.desktop'
@@ -313,6 +313,12 @@ primary-color='#000000000000'
 lock-delay=uint32 0
 picture-options='zoom'
 secondary-color='#000000000000'
+
+[desktop/peripherals/touchpad]
+tap-to-click=true
+
+[desktop/calendar]
+show-weekdate=false
 
 [desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
@@ -380,6 +386,13 @@ xkb-options=@as []
 [orca]
 active-profile=['Default', 'default']
 
+[gnome-screenshot]
+include-pointer=false
+include-border=true
+border-effect='none'
+delay=0
+last-save-directory='file:///run/media/gk1000/fl_linux/MFB'
+
 [nautilus/preferences]
 search-view='list-view'
 default-folder-viewer='icon-view'
@@ -389,8 +402,11 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='1066x644+23+15'
+geometry='1203x642+23+15'
 maximized=true
+
+[nautilus/compression]
+default-compression-format='tar.xz'
 
 [nautilus/icon-view]
 captions=['none', 'none', 'none']
@@ -492,6 +508,18 @@ version='3.26.1'
 subtitle-encoding='UTF-8'
 active-plugins=['movie-properties', 'recent', 'media_player_keys', 'variable-rate', 'save-file', 'skipto', 'autoload-subtitles', 'vimeo', 'apple-trailers', 'screensaver', 'screenshot']
 
+[terminal/legacy]
+new-terminal-mode='tab'
+schema-version=uint32 3
+
+[terminal/legacy/keybindings]
+copy-html='<Primary><Shift>h'
+select-all='<Primary><Shift>a'
+move-tab-right='<Primary><Shift>Right'
+prev-tab='<Shift>Left'
+next-tab='<Shift>Right'
+move-tab-left='<Primary><Shift>Left'
+
 [terminal/legacy/profiles:/:98e1fe04-8e5a-49c5-a383-acd78823e520]
 foreground-color='rgb(131,148,150)'
 visible-name='gk1000'
@@ -534,9 +562,6 @@ background-color='rgb(39,36,36)'
 
 [terminal/legacy/profiles:]
 list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55a9c']
-
-[terminal/legacy]
-schema-version=uint32 3
 
 [nm-applet/eap/8d1f98a3-62af-494d-a13f-afc038032021]
 ignore-phase2-ca-cert=false
