@@ -2,6 +2,14 @@
 first-run=false
 check-timestamp=int64 1507890180
 
+[settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Primary><Alt>t'
+command='gnome-terminal'
+name='open terminal'
+
 [settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
 hinting='slight'
@@ -375,7 +383,7 @@ active-profile=['Default', 'default']
 app-picker-view=uint32 1
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop', 'org.gnome.Terminal.desktop']
+favorite-apps=['google-chrome.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'geany.desktop', 'firefox.desktop', 'vlc.desktop']
 
 [shell/extensions/user-theme]
 name=''

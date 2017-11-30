@@ -4,20 +4,20 @@
     <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="1" last-seen="1512015063"/>
     <application id="gnome-control-center.desktop" open-window-count="0" score="7" last-seen="1512013073"/>
     <application id="firefox.desktop" open-window-count="0" score="111" last-seen="1511887476"/>
-    <application id="visual-studio-code.desktop" open-window-count="1" score="615" last-seen="1512042379"/>
+    <application id="visual-studio-code.desktop" open-window-count="1" score="749" last-seen="1512043540"/>
     <application id="org.gnome.Calculator.desktop" open-window-count="0" score="60" last-seen="1511887816"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="1181" last-seen="1512023208"/>
-    <application id="vlc.desktop" open-window-count="0" score="2585" last-seen="1512021927"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="1183" last-seen="1512045036"/>
+    <application id="vlc.desktop" open-window-count="1" score="2782" last-seen="1512045034"/>
     <application id="synapse.desktop" open-window-count="0" score="1" last-seen="1512022838"/>
     <application id="eog.desktop" open-window-count="0" score="7" last-seen="1512022994"/>
     <application id="geany.desktop" open-window-count="0" score="562" last-seen="1511519684"/>
     <application id="qbittorrent.desktop" open-window-count="0" score="53" last-seen="1511703391"/>
     <application id="gparted.desktop" open-window-count="0" score="26" last-seen="1512021662"/>
-    <application id="google-chrome.desktop" open-window-count="0" score="18680" last-seen="1512022411"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="18705" last-seen="1512043635"/>
     <application id="Thunar.desktop" open-window-count="0" score="43" last-seen="1512018967"/>
     <application id="org.gnome.gedit.desktop" open-window-count="0" score="22" last-seen="1512023040"/>
     <application id="nitrogen.desktop" open-window-count="0" score="7" last-seen="1512013008"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="11757" last-seen="1512042364"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="11971" last-seen="1512046420"/>
     <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="29" last-seen="1512017907"/>
     <application id="org.gnome.Calendar.desktop" open-window-count="0" score="0" last-seen="1511683755"/>
     <application id="virtualbox.desktop" open-window-count="0" score="149" last-seen="1512023365"/>
