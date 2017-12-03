@@ -29,10 +29,10 @@ rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop\
 nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake rsync \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython lshw \
-tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd \
-powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 \
+tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd gparted \
+powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 dmg2img \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
-libreoffice-fresh gparted
+libreoffice-fresh
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
 git clone https://github.com/KDE/breeze-gtk.git 
@@ -53,7 +53,7 @@ urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rxvt-unicode-terminfo rar 
 epson-inkjet-printer-201401w zip rslsync teamspeak3 discord chrome-gnome-shell-git \
 obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git linux-headers \
 numix-icon-theme-git gtk-theme-numix-solarized apparmor apparmor-profiles \
- virtualbox-ext-oracle virtualbox-guest-iso 
+ virtualbox-ext-oracle virtualbox-guest-iso hfsprogs
 
 #redshiftgui-bin \
 #sudo chmod 644 /usr/share/applications/* -v 
@@ -83,6 +83,6 @@ systemctl enable gdm-plymouth
 #synaptic tasksel openjdk-7-* vlc-plugin-libde265 w3af p7zip-full 
 #->atom  xampp #smartmontools
 
-#npm -g install react react-dom webpack babel create-react-app serve
+npm -g install react react-dom webpack babel create-react-app serve
 # pip install tensorflow sklearn auto-sklearn cPickle numpy pylab matplotlib
 ./shell_setup.sh install
