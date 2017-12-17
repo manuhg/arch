@@ -2,7 +2,7 @@
 app-picker-view=uint32 1
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'geany.desktop', 'firefox.desktop', 'visual-studio-code.desktop', 'vlc.desktop', 'org.gnome.Terminal.desktop']
+favorite-apps=['firefox.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'geany.desktop', 'vlc.desktop']
 
 [shell/extensions/user-theme]
 name=''
@@ -32,7 +32,7 @@ custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybin
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Primary><Alt>t'
-command='konsole'
+command='gnome-terminal'
 name='open terminal'
 
 [settings-daemon/plugins/xsettings]
@@ -45,7 +45,7 @@ numlock-state='on'
 [builder]
 window-position=(0, 0)
 window-maximized=true
-window-size=(1920, 1010)
+window-size=(1366, 698)
 
 [builder/workbench]
 bottom-position=200
@@ -162,7 +162,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/VirtualBox%20VMs/mac%20os%20elcap/Logs'
+virtual-root='file:///home/gk1000/dev/manuhg.github.io'
 tree-view=true
 root='file:///'
 
@@ -188,7 +188,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(2.3071895424836599, 1.047979797979798)
+window-ratio=(2.2320261437908497, 0.93560606060606055)
 
 [file-roller/listing]
 sort-method='name'
@@ -208,8 +208,8 @@ recreate-folders=true
 
 [file-roller/ui]
 sidebar-width=200
-window-height=698
-window-width=1366
+window-height=512
+window-width=1024
 
 [calendar]
 active-view='month'
@@ -241,7 +241,7 @@ gtk-theme='Arc-Dark'
 clock-show-date=true
 
 [desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel']
 
 [desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -329,7 +329,7 @@ old-files-age=uint32 3
 remove-old-trash-files=true
 
 [desktop/wm/preferences]
-button-layout='appmenu:minimize,close'
+button-layout='close,minimize,maximize:appmenu'
 theme='Ambiance'
 
 [desktop/wm/keybindings]
@@ -402,8 +402,8 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='1203x642+23+15'
-maximized=true
+geometry='1203x642+26+128'
+maximized=false
 
 [nautilus/compression]
 default-compression-format='tar.xz'

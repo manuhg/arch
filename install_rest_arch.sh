@@ -30,7 +30,7 @@ nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake rsync \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim \
 synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython lshw \
 tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd \
-powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 \
+powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 go \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
 libreoffice-fresh gparted
 

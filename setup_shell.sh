@@ -18,6 +18,7 @@ elif [ $1 = "backup" ] ; then
     for ((i=1;i<=${#files};i++)) do
     [[ -f $fdirs[$i]/$files[$i] ]] && cp -v $fdirs[$i]/$files[$i] $dir/$files[$i] && ((k=k+1))
     done
+    [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
     dconf dump /org/gnome/ > $cnfdir/dconfgnome
     dconf dump /org/gnome/ > $dir/dconfgnome
     ((k=k+1))
@@ -26,6 +27,7 @@ elif [ $1 = "backup" ] ; then
 
     echo "Config Files backed up : $k"
 elif [ $1 = "restore" ] ; then
+    [ -d ~/.config/xfce4 ] && cp -rapv $dir/xfce4 ~/.config/ 
     for ((i=1;i<=${#files};i++)) do
         [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] && cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
     done
@@ -45,7 +47,7 @@ elif [ $1 = "install" ] ; then
     chmod +x numix-folders/numix-folders
     ./numix-folders/numix-folders -t 6 green
     rm -rf numix-folders
-    
+    [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
     for ((i=1;i<=${#files};i++)) do
         [ -d $fdirs[$i] ] && cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
     done
