@@ -131,32 +131,10 @@ include-pointer=false
 include-border=true
 border-effect='none'
 delay=0
-last-save-directory='file:///run/media/gk1000/fl_linux/MFB'
+last-save-directory='file:///home/gk1000/Pictures'
 
-[gedit/preferences/editor]
-wrap-last-split-mode='word'
-
-[gedit/preferences/ui]
-show-tabs-mode='auto'
-
-[gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000'
-tree-view=true
-root='file:///'
-
-[gedit/plugins]
-active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
-
-[gedit/state/history-entry]
-search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
-replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
-
-[gedit/state/window]
-size=(1366, 698)
-state=43908
-bottom-panel-size=140
-side-panel-size=200
-side-panel-active-page='GeditWindowDocumentsPanel'
+[Weather/Application]
+locations=[<(uint32 2, <('Bangalore', 'VOBG', true, [(0.22601989378717041, 1.3555659188172149)], [(0.22631101470640302, 1.3537937114947398)])>)>]
 
 [nautilus/preferences]
 search-view='list-view'
@@ -167,7 +145,7 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='1203x642+23+15'
+geometry='892x560+23+15'
 maximized=false
 
 [nautilus/compression]
@@ -193,7 +171,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(2.3071895424836599, 1.047979797979798)
+window-ratio=(2.1790123456790123, 1.0498084291187739)
 
 [file-roller/listing]
 sort-method='name'
@@ -246,7 +224,7 @@ gtk-theme='Arc-Dark'
 clock-show-date=true
 
 [desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel']
 
 [desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -271,6 +249,9 @@ application-id='vlc.desktop'
 
 [desktop/notifications/application/transmission-gtk]
 application-id='transmission-gtk.desktop'
+
+[desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
 
 [desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
@@ -322,7 +303,7 @@ sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gn
 show-weekdate=false
 
 [desktop/wm/preferences]
-button-layout='appmenu:minimize,close'
+button-layout='close,minimize,maximize:appmenu'
 theme='Ambiance'
 
 [desktop/wm/keybindings]
@@ -397,6 +378,31 @@ show-weekdate=false
 [simple-scan]
 save-directory='/home/gk1000/Desktop'
 document-type='photo'
+
+[gedit/preferences/editor]
+wrap-last-split-mode='word'
+
+[gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[gedit/plugins/filebrowser]
+virtual-root='file:///home/gk1000/dev/gk1000.github.io'
+tree-view=true
+root='file:///'
+
+[gedit/plugins]
+active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
+
+[gedit/state/history-entry]
+search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
+replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
+
+[gedit/state/window]
+size=(680, 312)
+state=87168
+bottom-panel-size=140
+side-panel-size=200
+side-panel-active-page='GeditWindowDocumentsPanel'
 
 [eog/view]
 background-color='rgb(0,0,0)'
