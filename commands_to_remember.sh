@@ -12,6 +12,10 @@ dhcp wlp2s0f0
 
 #copy based on checksum, preserve perms
 rsync -rcpv dir1 dir2
+
+#crontab
+0 1,12 * * * /usr/bin/certbot renew --quiet
+
 #changes made in resp commits
 git log -p
 
