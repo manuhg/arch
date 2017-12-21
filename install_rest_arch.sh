@@ -32,7 +32,7 @@ synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython lshw go \
 tmux kgpg gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd gparted \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4 dmg2img \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
-libreoffice-fresh
+libreoffice-fresh jdk8-openjdk
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
 git clone https://github.com/KDE/breeze-gtk.git 

@@ -28,7 +28,12 @@ sleep-inactive-battery-timeout=1800
 night-light-last-coordinates=(12.9833, 77.583299999999994)
 
 [settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Primary>space'
+command='synpase'
+name='synapse'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Primary><Alt>t'
@@ -188,7 +193,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(2.2320261437908497, 0.93560606060606055)
+window-ratio=(2.2957983193277309, 0.88004750593824232)
 
 [file-roller/listing]
 sort-method='name'
@@ -402,8 +407,8 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='1203x642+26+128'
-maximized=false
+geometry='1203x642+26+87'
+maximized=true
 
 [nautilus/compression]
 default-compression-format='tar.xz'
