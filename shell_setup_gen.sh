@@ -29,5 +29,3 @@ done
 ((k=k+1))
 echo "[[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome"
 echo "Config Files copied : $k"
-
-
