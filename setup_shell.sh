@@ -53,7 +53,7 @@ elif [ $1 = "restore" ] ; then
     [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || \
     dconf load /org/gnome/ < $cnfdir/dconfgnome  && ((k=k+1))
     echo $c1"Restoring gnome settings"$nc
-    echo "$c1 $bold $k "$c2"Config files restored $nc"
+    echo "$c1$bold$k "$c2"Config files restored $nc"
 
 
 elif [ $1 = "install" ] ; then
@@ -82,7 +82,7 @@ elif [ $1 = "install" ] ; then
     [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || dconf load /org/gnome/ < $cnfdir/dconfgnome
     ((k=k+1))
     echo $c1"Restoring gnome settings "$nc
-    echo "$c1 $bold $k "$c2"Config files copied $nc"
+    echo "$c1$bold$k "$c2"Config files copied $nc"
     echo "Setting git global configs"
     git config --global user.name "$HOST-$USER"
     git config --global user.email "manu@gk1000.me"
