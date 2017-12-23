@@ -30,7 +30,7 @@ passwd
 pacman -Syu intel-ucode grub efibootmgr os-prober 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Arch --debug
 grub-mkconfig -o /boot/grub/grub.cfg
-pacman -S dnsutils wireless_tools wpa_supplicant wpa_actiond dialog sudo zsh git openssh
+pacman -S dnsutils wireless_tools wpa_supplicant wpa_actiond dialog sudo zsh git openssh vim
 #systemctl enable net-autowireless.service
 exit
 reboot
