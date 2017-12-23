@@ -1,32 +1,19 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="7" last-seen="1512121912"/>
-    <application id="gnome-control-center.desktop" open-window-count="0" score="23" last-seen="1512291614"/>
-    <application id="gparted.desktop" open-window-count="0" score="52" last-seen="1512114836"/>
-    <application id="firefox.desktop" open-window-count="0" score="111" last-seen="1511887476"/>
-    <application id="visual-studio-code.desktop" open-window-count="0" score="772" last-seen="1512296821"/>
-    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="61" last-seen="1512049838"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="2" score="1822" last-seen="1512341083"/>
-    <application id="vlc.desktop" open-window-count="0" score="3848" last-seen="1512305664"/>
-    <application id="synapse.desktop" open-window-count="0" score="3" last-seen="1512293910"/>
-    <application id="eog.desktop" open-window-count="0" score="22" last-seen="1512293028"/>
-    <application id="geany.desktop" open-window-count="0" score="625" last-seen="1512116408"/>
-    <application id="nitrogen.desktop" open-window-count="0" score="7" last-seen="1512013008"/>
-    <application id="qbittorrent.desktop" open-window-count="0" score="56" last-seen="1512124252"/>
-    <application id="google-chrome.desktop" open-window-count="0" score="24067" last-seen="1512305677"/>
-    <application id="Thunar.desktop" open-window-count="0" score="94" last-seen="1512122610"/>
-    <application id="org.gnome.gedit.desktop" open-window-count="0" score="84" last-seen="1512296164"/>
-    <application id="gimp.desktop" open-window-count="0" score="1" last-seen="1512114081"/>
-    <application id="keybase.desktop" open-window-count="0" score="7" last-seen="1512059811"/>
-    <application id="sublime_text.desktop" open-window-count="0" score="4" last-seen="1512296205"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="15657" last-seen="1512341700"/>
-    <application id="evince.desktop" open-window-count="0" score="185" last-seen="1512206117"/>
-    <application id="virtualbox.desktop" open-window-count="0" score="149" last-seen="1512023365"/>
-    <application id="gnome-tweak-tool.desktop" open-window-count="0" score="3" last-seen="1512098715"/>
-    <application id="org.gnome.Builder.desktop" open-window-count="0" score="1" last-seen="1512049949"/>
-    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="62" last-seen="1512114489"/>
-    <application id="org.gnome.Screenshot.desktop" open-window-count="0" score="1" last-seen="1512293008"/>
-    <application id="org.gnome.Weather.Application.desktop" open-window-count="0" score="5" last-seen="1512291544"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="3" last-seen="1513569962"/>
+    <application id="visual-studio-code.desktop" open-window-count="1" score="658" last-seen="1514017184"/>
+    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="11" last-seen="1513941718"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="2054" last-seen="1514017225"/>
+    <application id="vlc.desktop" open-window-count="1" score="2970" last-seen="1514017225"/>
+    <application id="synapse.desktop" open-window-count="0" score="10" last-seen="1513570062"/>
+    <application id="geany.desktop" open-window-count="0" score="11" last-seen="1513690909"/>
+    <application id="qbittorrent.desktop" open-window-count="0" score="8" last-seen="1513999283"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="18591" last-seen="1514012540"/>
+    <application id="Thunar.desktop" open-window-count="0" score="24" last-seen="1514008067"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="80" last-seen="1513999251"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="11542" last-seen="1514017220"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="16" last-seen="1513567281"/>
+    <application id="evince.desktop" open-window-count="0" score="1" last-seen="1514008410"/>
   </context>
 </application-state>

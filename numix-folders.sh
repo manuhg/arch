@@ -20,56 +20,56 @@ else
     case "$1" in
         -c|--colours)
             echo -e \
-                "This is a list of currently supported folder\n" \
-                "\rcolours that can be used to replace the default.\n\n" \
-                "\rdefault  - reverts any previous colour change\n" \
-                "\rblue     - 42a5f5\n" \
-                "\rbrown    - 8d6e63\n" \
-                "\rgreen    - 66bb6a\n" \
-                "\rgrey     - bdbdbd\n" \
-                "\rorange   - f57c00\n" \
-                "\rpink     - f06292\n" \
-                "\rpurple   - 7e57c2\n" \
-                "\rred      - ef5350\n" \
-                "\ryellow   - ffca28\n" \
-                "\rstyle{#} - use colours from default style #\n" \
-                "\rcustom   - choose your own colours"
-            sucess ;;
+            "This is a list of currently supported folder\n" \
+            "\rcolours that can be used to replace the default.\n\n" \
+            "\rdefault  - reverts any previous colour change\n" \
+            "\rblue     - 42a5f5\n" \
+            "\rbrown    - 8d6e63\n" \
+            "\rgreen    - 66bb6a\n" \
+            "\rgrey     - bdbdbd\n" \
+            "\rorange   - f57c00\n" \
+            "\rpink     - f06292\n" \
+            "\rpurple   - 7e57c2\n" \
+            "\rred      - ef5350\n" \
+            "\ryellow   - ffca28\n" \
+            "\rstyle{#} - use colours from default style #\n" \
+            "\rcustom   - choose your own colours"
+        sucess ;;
         -s|--styles)
             echo -e \
-                "This is a list of currently supported folder\n" \
-                "\rstyles that can be used to replace the default.\n\n" \
-                "\r0 - default folder theme (uninstall)\n" \
-                "\r1 - the original folder design\n" \
-                "\r2 - plain design which matches our Legacy themes\n" \
-                "\r3 - tilted design which never made it to production\n" \
-                "\r4 - one that launched with the redesign of Circle\n" \
-                "\r5 - curvy design which never made it to production\n" \
-                "\r6 - the current new design that landed in 2015"
-            sucess ;;
+            "This is a list of currently supported folder\n" \
+            "\rstyles that can be used to replace the default.\n\n" \
+            "\r0 - default folder theme (uninstall)\n" \
+            "\r1 - the original folder design\n" \
+            "\r2 - plain design which matches our Legacy themes\n" \
+            "\r3 - tilted design which never made it to production\n" \
+            "\r4 - one that launched with the redesign of Circle\n" \
+            "\r5 - curvy design which never made it to production\n" \
+            "\r6 - the current new design that landed in 2015"
+        sucess ;;
         -h|--help)
             echo -e \
-                "A script for changing the Numix base folder\n" \
-                "\rstyle and colour.\n\n" \
-                "\rRunning as root makes the change globally,\n" \
-                "\rotherwise it is only made locally. Run as\n" \
-                "\rappropriate to your Numix installation.\n\n" \
-                "\rUsage: numix-folders [OPTION]\n" \
-                "\r  -c, --colours \t List of available colours.\n" \
-                "\r  -s, --styles \t\t List of available styles.\n" \
-                "\r  -h, --help \t\t Displays this help menu.\n"\
-                "\r  -p, --prev \t\t Use previous settings.\n"\
-                "\r  -t, --cli \t\t Use script in terminal"
-            sucess ;;
+            "A script for changing the Numix base folder\n" \
+            "\rstyle and colour.\n\n" \
+            "\rRunning as root makes the change globally,\n" \
+            "\rotherwise it is only made locally. Run as\n" \
+            "\rappropriate to your Numix installation.\n\n" \
+            "\rUsage: numix-folders [OPTION]\n" \
+            "\r  -c, --colours \t List of available colours.\n" \
+            "\r  -s, --styles \t\t List of available styles.\n" \
+            "\r  -h, --help \t\t Displays this help menu.\n"\
+            "\r  -p, --prev \t\t Use previous settings.\n"\
+            "\r  -t, --cli \t\t Use script in terminal"
+        sucess ;;
         -p|--prev)
-                runmode=1;;
+        runmode=1;;
         -t|--cli)
-                runmode=0;;
+        runmode=0;;
         *)
             echo -e \
-                "numix-folders: invalid option -- '$1'\n" \
-                "\rTry 'numix-folders --help' for more information."
-            gerror ;;
+            "numix-folders: invalid option -- '$1'\n" \
+            "\rTry 'numix-folders --help' for more information."
+        gerror ;;
     esac
 fi
 
@@ -77,7 +77,7 @@ cuser="${SUDO_USER:-$USER}"
 
 config_file="$(eval echo "~$cuser")/.config/numix-folders"
 if [ ! -f "$config_file" ];then
-  touch "$config_file"
+    touch "$config_file"
 fi
 
 scriptpath=$(dirname "$(readlink -f "$0")")
@@ -119,27 +119,27 @@ scriptpath=$(dirname "$(readlink -f "$0")")
 #     fi
 
 #else
-if [ "$runmode" -ne 2 ]; then 
+if [ "$runmode" -ne 2 ]; then
     if [ -d /home/"$cuser"/.local/share/icons/Numix/ ]; then
         dir=/home/"$cuser"/.local/share/icons
-    elif [ -d /home/"$cuser"/.icons/Numix ]; then
+        elif [ -d /home/"$cuser"/.icons/Numix ]; then
         dir=/home/"$cuser"/.icons
-    elif [ -d /usr/share/icons/Numix/ ]; then
+        elif [ -d /usr/share/icons/Numix/ ]; then
         if [[ $UID -ne 0 ]]; then
             echo -e \
-                "You appear to have Numix installed globally.\n" \
-                "\rPlease run this script again as root."
+            "You appear to have Numix installed globally.\n" \
+            "\rPlease run this script again as root."
             gerror
         else
             dir=/usr/share/icons
         fi
     else
         echo -e \
-            "You don't appear to have Numix installed! Please\n" \
-            "\rinstall it and run this script again."
+        "You don't appear to have Numix installed! Please\n" \
+        "\rinstall it and run this script again."
         gerror
     fi
-
+    
     exitloop=0
     until [ "$exitloop" -eq 1 ]; do
         case $runmode in
@@ -152,17 +152,17 @@ if [ "$runmode" -ne 2 ]; then
                 #echo "answer=$answer"
                 if [ -z "$answer" ]; then
                     style="0"
-                elif [ -d "$scriptpath"/styles/"$answer" ]; then
+                    elif [ -d "$scriptpath"/styles/"$answer" ]; then
                     style="$answer"
                 else
                     echo -e \
-                        "Oops! You've chosen an invalid style number.\n" \
-                        "\rRun 'numix-folders --styles' for an option list."
+                    "Oops! You've chosen an invalid style number.\n" \
+                    "\rRun 'numix-folders --styles' for an option list."
                     gerror
                 fi
-
+                
                 #read -r -p "Which folder colour do you want? " answer
-                answer= $3 #$("${@: -1}" | sed -e 's/ //g;') 
+                answer= $3 #$("${@: -1}" | sed -e 's/ //g;')
                 echo "answer2=$answer"
                 answer="$(tr '[:upper:]' '[:lower:]' <<< "$answer")" #convert answer to lowercase
                 colour1="000000"
@@ -170,9 +170,9 @@ if [ "$runmode" -ne 2 ]; then
                 colour3="000000"
                 if [ -z "$answer" ]; then
                     colour="default"
-                elif [ "$answer" == "custom" ] || [[ $answer == "style"[1-6] ]]; then
+                    elif [ "$answer" == "custom" ] || [[ $answer == "style"[1-6] ]]; then
                     colour="custom"
-
+                    
                     styledef=$style
                     if [[ $answer == "style"[1-6] ]]; then
                         styledef=${answer#"style"}
@@ -182,43 +182,43 @@ if [ "$runmode" -ne 2 ]; then
                             col1def="c4905e"
                             col2def="b07f51"
                             col3def="f9f9f9"
-                            ;;
+                        ;;
                         "2")
                             col1def="e8b07f"
                             col2def="9e7757"
                             col3def="9e7757"
-                            ;;
+                        ;;
                         "3")
                             col1def="f2bb64"
                             col2def="ea9036"
                             col3def="b58c4b"
-                            ;;
+                        ;;
                         "4")
                             col1def="f5c14e"
                             col2def="e9a439"
                             col3def="c79d41"
-                            ;;
+                        ;;
                         "5")
                             col1def="ffb300"
                             col2def="f57c00"
                             col3def="fff8e1"
-                            ;;
+                        ;;
                         "6" | "0")
                             col1def="ffa726"
                             col2def="ef6c00"
                             col3def="b17621"
-                            ;;
+                        ;;
                     esac
-
+                    
                     function checkhex() {
                         if ! [[ $1 =~ ^[0-9A-Fa-f]{6}$ ]]; then
-                           echo -e \
-                               "Oops! The colour: $1 is an invalid hex value.\n" \
-                               "\rBe sure to use valid hex values with six digits (e.g. 000000)."
-                           gerror
+                            echo -e \
+                            "Oops! The colour: $1 is an invalid hex value.\n" \
+                            "\rBe sure to use valid hex values with six digits (e.g. 000000)."
+                            gerror
                         fi
                     }
-
+                    
                     if [[ $answer == "custom" ]]; then
                         if grep -q "replacecolour1" styles/"${style}"/Numix/48/places/custom-folder-video.svg; then
                             read -r -p "Choose primary colour in hex notation (default: $col1def): " colour1
@@ -246,16 +246,16 @@ if [ "$runmode" -ne 2 ]; then
                         colour2=$col2def
                         colour3=$col3def
                     fi
-                elif [ -d colours/"$answer" ]; then
+                    elif [ -d colours/"$answer" ]; then
                     colour="$answer"
                 else
                     echo -e \
-                        "Oops! You've chosen an invalid colour.\n" \
-                        "\rRun 'numix-folders --colours' for an option list."
+                    "Oops! You've chosen an invalid colour.\n" \
+                    "\rRun 'numix-folders --colours' for an option list."
                     gerror
                 fi
                 exitloop=1
-                ;;
+            ;;
             1)
                 echo "Trying to use previously stored settings"
                 style=$(sed -n 1p "$config_file")
@@ -278,7 +278,7 @@ if [ "$runmode" -ne 2 ]; then
                     fi
                 fi
                 exitloop=1
-                ;;
+            ;;
         esac
     done
 fi
@@ -287,9 +287,9 @@ cp -rf "$scriptpath"/styles/"${style}"/Numix/* "${dir}"/Numix/
 
 if [ "$colour" == "custom" ]; then
     find ${dir}/Numix/*/{actions,places}/*custom* \
-        -exec sed -i --follow-symlinks "s/replacecolour1/#$colour1/g" {} \; \
-        -exec sed -i --follow-symlinks "s/replacecolour2/#$colour2/g" {} \; \
-        -exec sed -i --follow-symlinks "s/replacecolour3/#$colour3/g" {} \;
+    -exec sed -i --follow-symlinks "s/replacecolour1/#$colour1/g" {} \; \
+    -exec sed -i --follow-symlinks "s/replacecolour2/#$colour2/g" {} \; \
+    -exec sed -i --follow-symlinks "s/replacecolour3/#$colour3/g" {} \;
 fi
 
 currentcolour=$(readlink ${dir}/Numix/16/places/folder.svg | cut -d '-' -f 1)

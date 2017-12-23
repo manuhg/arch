@@ -20,7 +20,7 @@ rsync -rcpv dir1 dir2
 git log -p
 
 git config --global pack.windowMemory "50m"
-git config --global pack.SizeLimit "100m" 
+git config --global pack.SizeLimit "100m"
 git config --global pack.threads "1"
 git config --global pack.window 2
 #git repack --window 2 --window-memory "50m"
@@ -55,7 +55,7 @@ git remote set-url origin --push --add <another remote>
 
 #You can configure multiple remote repositories with the git remote command:
 git remote add alt alt-machine:/path/to/repo
-git remote add origin ssh://198.199.121.120:17/home/gk1000/scripts.git 
+git remote add origin ssh://198.199.121.120:17/home/gk1000/scripts.git
 git remote add alt https://gk1000@bitbucket.org/gk1000/scripts.git
 #To fetch from all the configured remotes and update tracking branches, but not merge into HEAD, do:
 git remote update
@@ -66,7 +66,7 @@ git fsck
 git gc
 git repack -adf --window=200 --depth=200
 
-#git submodule 
+#git submodule
 git submodule add https://somerepo.git
 #to encrypt
 encfs unencrypted_dir encrypted_dir
@@ -78,11 +78,11 @@ fusermount -u /~/unencrypted_dir
 groups gk1000
 
 #gpg
-gpg --recv-keys --keyserver hkp://pgp.mit.edu 6689E64E3D3664BB  
+gpg --recv-keys --keyserver hkp://pgp.mit.edu 6689E64E3D3664BB
 
 gpg --cipher-algo aes256 -c xyz.tar
 gpg -ac something.txt  # creates ASCII armored output
-gpg -d something.txt.asc 
+gpg -d something.txt.asc
 gpg -o xyz.tar -d xyz.tar.gpg
 gpg --use-embedded-filename xyz.gpg
 #for key gen entropy
@@ -112,7 +112,7 @@ systemctl start rslsync
 #hash sum mismatch ubuntu
 rm /var/lib/apt/lists
 
-#view hidden files dolphin 
+#view hidden files dolphin
 Alt .
 
 modprobe nbd
@@ -126,7 +126,7 @@ qemu-nbd -d /dev/nbd0
 #install from file offline
 pacman -U blah.tar.gz
 #optimize database access speed#
-  pacman -Sc && pacman-optimize
+pacman -Sc && pacman-optimize
 #
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
@@ -134,65 +134,65 @@ pacman -U blah.tar.gz
 ##Removing unused packages (orphans)##
 
 #For recursively removing orphans and their configuration files:#
-  pacman -Rns $(pacman -Qtdq)
-  #If no orphans were found, pacman errors with error: no targets specified. This is expected as no arguments were passed to pacman -Rns.
-  #Note: The arguments -Qt list only true orphans. To include packages which are optionally required by another package, pass the -t flag twice (i.e., -Qtt).
+pacman -Rns $(pacman -Qtdq)
+#If no orphans were found, pacman errors with error: no targets specified. This is expected as no arguments were passed to pacman -Rns.
+#Note: The arguments -Qt list only true orphans. To include packages which are optionally required by another package, pass the -t flag twice (i.e., -Qtt).
 
 ##Removing everything but base group##
-  #If it is ever necessary to remove all packages except the base group, try this one liner:#
-  pacman -R $(comm -23 <(pacman -Qq | sort) <((for i in $(pacman -Qqg base); do pactree -ul "$i"; done) | sort -u))
+#If it is ever necessary to remove all packages except the base group, try this one liner:#
+pacman -R $(comm -23 <(pacman -Qq | sort) <((for i in $(pacman -Qqg base); do pactree -ul "$i"; done) | sort -u))
 ##
 
 
 
 
 #WebGUI can be accessed via following URL: http://localhost:8888
-	
+
 #   * Running rslsync system instance (using dedicated rslsync:rslsync account)
 
-  	#   System instance of rslsync is preconfigured (configuration file located
-	#   at /etc/rslsync.conf) and can be used directly after installation.
+#   System instance of rslsync is preconfigured (configuration file located
+#   at /etc/rslsync.conf) and can be used directly after installation.
 
-	#   Execute:
+#   Execute:
 
-	#     to reload system systemd modules:     
-	     systemctl daemon-reload
-	#     to start rslsync manually:             
-	     systemctl start rslsync
-	#     to autostart rslsync on system start:  
-	     systemctl enable rslsync
+#     to reload system systemd modules:
+systemctl daemon-reload
+#     to start rslsync manually:
+systemctl start rslsync
+#     to autostart rslsync on system start:
+systemctl enable rslsync
 
-	# * Running rslsync user instance (using current user account)
+# * Running rslsync user instance (using current user account)
 
-	#   User instance MUST be configured before use. To perform configuration, 
-	#   install rslsync-autoconfig package or follow manual configuration steps:
+#   User instance MUST be configured before use. To perform configuration,
+#   install rslsync-autoconfig package or follow manual configuration steps:
 
-  	#     1. Copy /etc/rslsync/rslsync.conf to ~/.config/rslsync/rslsync.conf for
- 	#     the user you wish to configure rslsync:
- 	
-	       mkdir -p ~/.config/rslsync	
-	       cp /etc/rslsync.conf ~/.config/rslsync/rslsync.conf
- 
-	#     2. Replace user-specific references with the appropriate information,
-	#     including the following settings:
- 
-	#       - storage_path
-	#       - pid_file
-	#       - webui.listen
-	#       - webui.login
-	#       - webui.password
+#     1. Copy /etc/rslsync/rslsync.conf to ~/.config/rslsync/rslsync.conf for
+#     the user you wish to configure rslsync:
 
-	#     3. Make sure folder you specified as storage_path and folder where pid_file will
-	#     be located both exist in the filesystem, since rslsync will not create it for you.
+mkdir -p ~/.config/rslsync
+cp /etc/rslsync.conf ~/.config/rslsync/rslsync.conf
 
-	#   Execute:
+#     2. Replace user-specific references with the appropriate information,
+#     including the following settings:
 
-	#     to reload user systemd modules:       
-	systemctl --user daemon-reload
-	#     to start rslsync manually:             
-	systemctl --user start rslsync
-	#     to autostart rslsync on user login:    
-	systemctl --user enable rslsync
+#       - storage_path
+#       - pid_file
+#       - webui.listen
+#       - webui.login
+#       - webui.password
+
+#     3. Make sure folder you specified as storage_path and folder where pid_file will
+#     be located both exist in the filesystem, since rslsync will not create it for you.
+
+#   Execute:
+
+#     to reload user systemd modules:
+systemctl --user daemon-reload
+#     to start rslsync manually:
+systemctl --user start rslsync
+#     to autostart rslsync on user login:
+systemctl --user enable rslsync
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 ufw allow from 106.51.0.0/16 to any port 17

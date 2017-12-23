@@ -9,16 +9,16 @@
 #rm -dR package-query yaourt
 #sudo pacman-key --refresh-keys && sudo pacman -Syyu
 #curl "https://pgp.mit.edu/pks/lookup?op=get&search=0x1EB2638FF56C0C53" -o - | gpg --import
-pacman -Syu haveged
-systemctl start haveged
-systemctl enable haveged
+sudo pacman -Syu haveged
+sudo systemctl start haveged
+sudo systemctl enable haveged
 
-rm -fr /etc/pacman.d/gnupg
-pacman-key --init
-pacman-key --populate archlinux
+sudo rm -fr /etc/pacman.d/gnupg
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
 
-sudo pacman -S --noconfirm --needed expac wget yajl 
-gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
+sudo pacman -S --noconfirm --needed expac wget yajl
+gpg --recv-keys --keyserver hkp://pgp.mit.edu 6689E64E3D3664BB 1EB2638FF56C0C53
 mkdir pacaur && cd pacaur
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
 makepkg -i PKGBUILD --noconfirm
@@ -40,11 +40,11 @@ tmux gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd gparted \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4  \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
 libreoffice-fresh jdk8-openjdk linux-headers rxvt-unicode-terminfo \
-virtualbox-guest-iso 
+virtualbox-guest-iso
 # teamspeak3
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
-git clone https://github.com/KDE/breeze-gtk.git 
+git clone https://github.com/KDE/breeze-gtk.git
 sudo cp -r breeze-gtk/Breeze-* /usr/share/themes
 rm -rf breeze-gtk
 
@@ -55,17 +55,17 @@ chmod +x install.sh
 #cups is for printing
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
- 
 
-pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome plymouth \
-urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex  rar \
-epson-inkjet-printer-201401w  rslsync  discord chrome-gnome-shell-git \
-obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git  \
-numix-icon-theme-git gtk-theme-numix-solarized apparmor apparmor-profiles \
- virtualbox-ext-oracle hfsprogs dmg2img
 
+pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome \
+plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar \
+rslsync chrome-gnome-shell-git obsidian-icon-theme numix-folders-git \
+apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img \
+numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized
+
+#discord
 #redshiftgui-bin \
-#sudo chmod 644 /usr/share/applications/* -v 
+#sudo chmod 644 /usr/share/applications/* -v
 
 #nano /etc/mkinitcpio.conf
 #ADD plymouth AT END OF HOOKS AFTER fsck
@@ -89,7 +89,7 @@ numix-icon-theme-git gtk-theme-numix-solarized apparmor apparmor-profiles \
 #systemctl enable gdm-plymouth
 #########################################################
 #cryptsetup-bin gnome-tweak-tool filezilla irssi
-#synaptic tasksel openjdk-7-* vlc-plugin-libde265 w3af p7zip-full 
+#synaptic tasksel openjdk-7-* vlc-plugin-libde265 w3af p7zip-full
 #->atom  xampp #smartmontools
 
 npm -g install react react-dom webpack babel create-react-app serve preact preact-cli

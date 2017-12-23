@@ -1,38 +1,13 @@
-[shell]
-app-picker-view=uint32 1
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-remember-mount-password=false
-favorite-apps=['firefox.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'geany.desktop', 'vlc.desktop']
-
-[shell/extensions/user-theme]
-name=''
-
-[shell/extensions/dash-to-dock]
-apply-custom-theme=false
-shortcut=['<Super>q']
-
-[shell/calendar]
-show-weekdate=false
-
 [software]
 first-run=false
 check-timestamp=int64 1507890180
-
-[settings-daemon/plugins/power]
-sleep-inactive-battery-type='nothing'
-sleep-inactive-ac-timeout=3600
-sleep-inactive-ac-type='nothing'
-sleep-inactive-battery-timeout=1800
-
-[settings-daemon/plugins/color]
-night-light-last-coordinates=(12.9833, 77.583299999999994)
 
 [settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Primary>space'
-command='synpase'
+command='synapse'
 name='synapse'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom0]
@@ -156,65 +131,55 @@ base=16
 source-units='degree'
 accuracy=9
 
-[anjuta]
-toolbar-visible=true
-remembered-plugins=''
+[gnome-screenshot]
+include-pointer=false
+include-border=true
+border-effect='none'
+delay=0
+last-save-directory='file:///home/gk1000/Pictures'
 
-[gedit/preferences/editor]
-wrap-last-split-mode='word'
+[Weather/Application]
+locations=[<(uint32 2, <('Bangalore', 'VOBG', true, [(0.22601989378717041, 1.3555659188172149)], [(0.22631101470640302, 1.3537937114947398)])>)>]
 
-[gedit/preferences/ui]
-show-tabs-mode='auto'
+[nautilus/preferences]
+search-view='list-view'
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+sort-directories-first=true
+default-sort-order='type'
 
-[gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/dev/manuhg.github.io'
-tree-view=true
-root='file:///'
+[nautilus/window-state]
+sidebar-width=155
+geometry='964x506+23+15'
+maximized=true
 
-[gedit/plugins]
-active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
+[nautilus/compression]
+default-compression-format='tar.xz'
 
-[gedit/state/history-entry]
-search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
-replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
+[nautilus/icon-view]
+captions=['none', 'none', 'none']
+default-zoom-level='small'
 
-[gedit/state/window]
-size=(1366, 698)
-state=43908
-bottom-panel-size=140
-side-panel-size=200
-side-panel-active-page='GeditWindowDocumentsPanel'
+[nautilus/desktop]
+home-icon-visible=false
+network-icon-visible=false
+volumes-visible=true
 
-[gnome-nettool]
-hostnames=['198.199.121.120']
+[nautilus/list-view]
+default-visible-columns=['name', 'size', 'type', 'date_modified']
+default-zoom-level='small'
+use-tree-view=true
+default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where']
 
 [evince]
 document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(2.2957983193277309, 0.88004750593824232)
+window-ratio=(2.1080246913580245, 0.94636015325670497)
 
-[file-roller/listing]
-sort-method='name'
-name-column-width=492
-sort-type='descending'
-list-mode='as-folder'
-show-path=false
-
-[file-roller/dialogs/new]
-default-extension='.7z'
-volume-size=104857
-encrypt-header=true
-
-[file-roller/dialogs/extract]
-skip-newer=false
-recreate-folders=true
-
-[file-roller/ui]
-sidebar-width=200
-window-height=512
-window-width=1024
+[Disks]
+image-dir-uri='file:///home/gk1000/Documents'
 
 [calendar]
 active-view='month'
@@ -292,7 +257,6 @@ application-id='rhythmbox.desktop'
 
 [desktop/media-handling]
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media', 'x-content/blank-dvd']
-autorun-never=true
 autorun-x-content-ignore=['x-content/bootable-media', 'x-content/blank-dvd']
 autorun-x-content-open-folder=@as []
 
@@ -319,19 +283,11 @@ lock-delay=uint32 0
 picture-options='zoom'
 secondary-color='#000000000000'
 
-[desktop/peripherals/touchpad]
-tap-to-click=true
-
-[desktop/calendar]
-show-weekdate=false
-
 [desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
-[desktop/privacy]
-remove-old-temp-files=true
-old-files-age=uint32 3
-remove-old-trash-files=true
+[desktop/calendar]
+show-weekdate=false
 
 [desktop/wm/preferences]
 button-layout='close,minimize,maximize:appmenu'
@@ -377,7 +333,7 @@ close=['<Alt>F4']
 screen-reader-enabled=false
 
 [desktop/background]
-picture-uri='file:///home/gk1000/Wallpapers/archwp.jpg'
+picture-uri='file:///home/gk1000/Pictures/Wallpapers/archwp.jpg'
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -388,59 +344,77 @@ current=uint32 0
 sources=[('xkb', 'us')]
 xkb-options=@as []
 
+[file-roller/listing]
+sort-method='name'
+name-column-width=492
+sort-type='descending'
+list-mode='as-folder'
+show-path=false
+
+[file-roller/dialogs/new]
+default-extension='.7z'
+volume-size=104857
+encrypt-header=true
+
+[file-roller/dialogs/extract]
+skip-newer=false
+recreate-folders=true
+
+[file-roller/ui]
+sidebar-width=200
+window-height=512
+window-width=383
+
 [orca]
 active-profile=['Default', 'default']
-
-[gnome-screenshot]
-include-pointer=false
-include-border=true
-border-effect='none'
-delay=0
-last-save-directory='file:///run/media/gk1000/fl_linux/MFB'
-
-[nautilus/preferences]
-search-view='list-view'
-default-folder-viewer='icon-view'
-search-filter-time-type='last_modified'
-sort-directories-first=true
-default-sort-order='type'
-
-[nautilus/window-state]
-sidebar-width=155
-geometry='1203x642+26+87'
-maximized=true
-
-[nautilus/compression]
-default-compression-format='tar.xz'
-
-[nautilus/icon-view]
-captions=['none', 'none', 'none']
-default-zoom-level='small'
-
-[nautilus/desktop]
-home-icon-visible=false
-network-icon-visible=false
-volumes-visible=true
-
-[nautilus/list-view]
-default-visible-columns=['name', 'size', 'type', 'date_modified']
-default-zoom-level='small'
-use-tree-view=true
-default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where']
 
 [simple-scan]
 save-directory='/home/gk1000/Desktop'
 document-type='photo'
 
+[gedit/preferences/editor]
+wrap-last-split-mode='word'
+
+[gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[gedit/plugins/filebrowser]
+virtual-root='file:///run/media/gk1000/Hegde/Manu_Hegde/.others'
+tree-view=true
+root='file:///'
+
+[gedit/plugins]
+active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
+
+[gedit/state/history-entry]
+search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
+replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
+
+[gedit/state/window]
+size=(680, 312)
+state=87168
+bottom-panel-size=140
+side-panel-size=200
+side-panel-active-page='GeditWindowDocumentsPanel'
+
 [eog/view]
 background-color='rgb(0,0,0)'
 use-background-color=true
 
-[eog/ui]
-sidebar=false
+[shell]
+app-picker-view=uint32 1
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+remember-mount-password=false
+favorite-apps=['google-chrome.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'geany.desktop', 'firefox.desktop', 'vlc.desktop']
 
-[devhelp/state/main/contents]
-group-books-by-language=false
+[shell/extensions/user-theme]
+name=''
+
+[shell/extensions/dash-to-dock]
+shortcut=['<Super>q']
+
+[shell/calendar]
+show-weekdate=false
 
 [rhythmbox/library/source]
 show-browser=true
@@ -567,10 +541,6 @@ background-color='rgb(39,36,36)'
 
 [terminal/legacy/profiles:]
 list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55a9c']
-
-[nm-applet/eap/8d1f98a3-62af-494d-a13f-afc038032021]
-ignore-phase2-ca-cert=false
-ignore-ca-cert=false
 
 [nm-applet/eap/6b4644c2-b570-4ed1-a976-9de7da7425d6]
 ignore-phase2-ca-cert=false
