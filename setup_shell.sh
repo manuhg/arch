@@ -47,8 +47,8 @@ elif [ $1 = "restore" ] ; then
         [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] && cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
     done
     for ((i=1;i<=${#edirs};i++)) do
-        [[ -d $dir/$edf[i] ]] && cp -rap $dirs/$edf[i] $edirs[i]/$edf[i] && ((k=k+1)) && \
-        echo $c1"'$dirs/$edf[i]'$nc -> $c2'$edirs[i]/$edf[i]'$nc"
+        [[ -d $dir/$edf[i] ]] && cp -rap $dir/$edf[i] $edirs[i]/$edf[i] && ((k=k+1)) && \
+        echo $c1"'$dir/$edf[i]'$nc -> $c2'$edirs[i]/$edf[i]'$nc"
     done
     [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || \
     dconf load /org/gnome/ < $cnfdir/dconfgnome  && ((k=k+1))
@@ -73,8 +73,8 @@ elif [ $1 = "install" ] ; then
     cat vscode_extensions| xargs -L 1 code --install-extension
     [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
     for ((i=1;i<=${#edirs};i++)) do
-        [[ -d $dir/$edf[i] ]] && cp -rap $dirs/$edf[i] $edirs[i]/$edf[i] && ((k=k+1)) && \
-        echo $c1"'$dirs/$edf[i]'$nc -> $c2'$edirs[i]/$edf[i]'"$nc
+        [[ -d $dir/$edf[i] ]] && cp -rap $dir/$edf[i] $edirs[i]/$edf[i] && ((k=k+1)) && \
+        echo $c1"'$dir/$edf[i]'$nc -> $c2'$edirs[i]/$edf[i]'"$nc
     done
     for ((i=1;i<=${#files};i++)) do
         [ -d $fdirs[$i] ] && cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
