@@ -56,20 +56,12 @@ chmod +x install.sh
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9727c34b076e3894e12a0ab1bd37bc467ce3ef5a
 pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome \
 plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar \
 rslsync chrome-gnome-shell-git obsidian-icon-theme numix-folders-git \
-apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img \
+apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm \
 numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized
-<<<<<<< HEAD
-
-=======
  
->>>>>>> 9727c34b076e3894e12a0ab1bd37bc467ce3ef5a
 #discord
 #redshiftgui-bin \
 #sudo chmod 644 /usr/share/applications/* -v
