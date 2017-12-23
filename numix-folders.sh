@@ -148,13 +148,14 @@ if [ "$runmode" -ne 2 ]; then
                 cval="${@: -1}"
                 stval="${@: -2:1}"
                 
-                answer=$3 #"$stval"
-                #echo "answer=$answer"
+                answer=$2 #"$stval"
+                echo "Setting style to $answer"
                 if [ -z "$answer" ]; then
                     style="0"
                     elif [ -d "$scriptpath"/styles/"$answer" ]; then
                     style="$answer"
                 else
+                   
                     echo -e \
                     "Oops! You've chosen an invalid style number.\n" \
                     "\rRun 'numix-folders --styles' for an option list."
@@ -162,8 +163,8 @@ if [ "$runmode" -ne 2 ]; then
                 fi
                 
                 #read -r -p "Which folder colour do you want? " answer
-                answer= $3 #$("${@: -1}" | sed -e 's/ //g;')
-                echo "answer2=$answer"
+                answer=$3 #$("${@: -1}" | sed -e 's/ //g;')
+                echo "Setting colour to $answer"
                 answer="$(tr '[:upper:]' '[:lower:]' <<< "$answer")" #convert answer to lowercase
                 colour1="000000"
                 colour2="000000"

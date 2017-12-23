@@ -63,10 +63,10 @@ elif [ $1 = "install" ] ; then
     sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
     git clone git://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/plugins/zsh-autosuggestions
     
-    git clone https://github.com/numixproject/numix-folders.git
-    cp numix-folders.sh numix-folders/numix-folders
-    chmod +x numix-folders/numix-folders
-    ./numix-folders/numix-folders -t 6 green
+    git clone https://github.com/numixproject/numix-folders.git && \
+    cp numix-folders.sh numix-folders/numix-folders && \
+    chmod +x numix-folders/numix-folders && cd numix-folders && \
+    sudo ./numix-folders -t 6 blue && cd .. && \
     rm -rf numix-folders
     echo $c1"Installing vscode extensions$nc"
     #go get -u mvdan.cc/sh/cmd/shfmt
