@@ -89,5 +89,7 @@ elif [ $1 = "install" ] ; then
     git config --global user.email "manu@gk1000.me"
     echo 'git config --global user.name "$HOST-$USER"'
     echo 'git config --global user.email "manu@gk1000.me"'
+    cp _git/config .git/
+    git config  --global alias.pushall '!git remote | xargs -L1 git push'
     
 fi

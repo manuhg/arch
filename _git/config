@@ -13,5 +13,5 @@
 	url = https://gk1000@bitbucket.org/gk1000/arch.git
 	fetch = +refs/heads/*:refs/remotes/alt/*
 [remote "github"]
-	url = ssh://git@github.com/gk1000/arch.git
+	url = ssh://git@github.com/manuhg/arch.git
 	fetch = +refs/heads/*:refs/remotes/github/*
