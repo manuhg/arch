@@ -1,19 +1,14 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" open-window-count="0" score="3" last-seen="1513569962"/>
-    <application id="visual-studio-code.desktop" open-window-count="1" score="959" last-seen="1514022618"/>
-    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="11" last-seen="1513941718"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="2090" last-seen="1514021349"/>
-    <application id="vlc.desktop" open-window-count="1" score="2971" last-seen="1514019323"/>
-    <application id="synapse.desktop" open-window-count="0" score="10" last-seen="1513570062"/>
-    <application id="geany.desktop" open-window-count="0" score="11" last-seen="1513690909"/>
-    <application id="qbittorrent.desktop" open-window-count="0" score="8" last-seen="1513999283"/>
-    <application id="google-chrome.desktop" open-window-count="1" score="18792" last-seen="1514022482"/>
-    <application id="Thunar.desktop" open-window-count="0" score="24" last-seen="1514008067"/>
-    <application id="org.gnome.gedit.desktop" open-window-count="0" score="80" last-seen="1513999251"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="11702" last-seen="1514022619"/>
-    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="16" last-seen="1513567281"/>
-    <application id="evince.desktop" open-window-count="0" score="1" last-seen="1514008410"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="4" last-seen="1514028732"/>
+    <application id="org.gnome.Epiphany.desktop" open-window-count="0" score="2" last-seen="1513952430"/>
+    <application id="firefox.desktop" open-window-count="0" score="0" last-seen="1514006569"/>
+    <application id="visual-studio-code.desktop" open-window-count="1" score="171" last-seen="1514028888"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="233" last-seen="1514028775"/>
+    <application id="gnome-background-panel.desktop" open-window-count="0" score="0" last-seen="0"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="98" last-seen="1514028027"/>
+    <application id="sublime_text.desktop" open-window-count="0" score="0" last-seen="1514024774"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="4059" last-seen="1514028748"/>
   </context>
 </application-state>

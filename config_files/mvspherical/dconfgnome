@@ -18,6 +18,31 @@ show-weekdate=false
 first-run=false
 check-timestamp=int64 1507890180
 
+[gedit/preferences/editor]
+wrap-last-split-mode='word'
+
+[gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[gedit/plugins/filebrowser]
+virtual-root='file:///home/gk1000/dev/manuhg.github.io'
+tree-view=true
+root='file:///'
+
+[gedit/plugins]
+active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
+
+[gedit/state/history-entry]
+search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
+replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
+
+[gedit/state/window]
+size=(1366, 698)
+state=43908
+bottom-panel-size=140
+side-panel-size=200
+side-panel-active-page='GeditWindowDocumentsPanel'
+
 [settings-daemon/plugins/power]
 sleep-inactive-battery-type='nothing'
 sleep-inactive-ac-timeout=3600
@@ -160,30 +185,8 @@ accuracy=9
 toolbar-visible=true
 remembered-plugins=''
 
-[gedit/preferences/editor]
-wrap-last-split-mode='word'
-
-[gedit/preferences/ui]
-show-tabs-mode='auto'
-
-[gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/dev/manuhg.github.io'
-tree-view=true
-root='file:///'
-
-[gedit/plugins]
-active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
-
-[gedit/state/history-entry]
-search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
-replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
-
-[gedit/state/window]
-size=(1366, 698)
-state=43908
-bottom-panel-size=140
-side-panel-size=200
-side-panel-active-page='GeditWindowDocumentsPanel'
+[Weather/Application]
+locations=[<(uint32 2, <('Bangalore', 'VOBG', true, [(0.22601989378717041, 1.3555659188172149)], [(0.22631101470640302, 1.3537937114947398)])>)>]
 
 [gnome-nettool]
 hostnames=['198.199.121.120']
@@ -195,26 +198,8 @@ pictures-directory=@ms 'file:///home/gk1000'
 [evince/default]
 window-ratio=(2.2957983193277309, 0.88004750593824232)
 
-[file-roller/listing]
-sort-method='name'
-name-column-width=492
-sort-type='descending'
-list-mode='as-folder'
-show-path=false
-
-[file-roller/dialogs/new]
-default-extension='.7z'
-volume-size=104857
-encrypt-header=true
-
-[file-roller/dialogs/extract]
-skip-newer=false
-recreate-folders=true
-
-[file-roller/ui]
-sidebar-width=200
-window-height=512
-window-width=1024
+[Disks]
+image-dir-uri='file:///home/gk1000/Documents'
 
 [calendar]
 active-view='month'
@@ -312,7 +297,7 @@ apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop',
 name='X-GNOME-Sundry.directory'
 
 [desktop/screensaver]
-picture-uri='file:///home/gk1000/Pictures/uJHiPpX.jpg'
+picture-uri='file:///home/gk1000/Pictures/geek-wallpaper-9.jpg'
 color-shading-type='solid'
 primary-color='#000000000000'
 lock-delay=uint32 0
@@ -377,19 +362,37 @@ close=['<Alt>F4']
 screen-reader-enabled=false
 
 [desktop/background]
-picture-uri='file:///home/gk1000/Wallpapers/archwp.jpg'
+picture-uri='file:///home/gk1000/Pictures/macOS-Sierra-wallpaper.jpg'
 color-shading-type='solid'
-primary-color='#000000'
+primary-color='#000000000000'
 picture-options='zoom'
-secondary-color='#000000'
+secondary-color='#000000000000'
 
 [desktop/input-sources]
 current=uint32 0
 sources=[('xkb', 'us')]
 xkb-options=@as []
 
-[orca]
-active-profile=['Default', 'default']
+[file-roller/listing]
+sort-method='name'
+name-column-width=492
+sort-type='descending'
+list-mode='as-folder'
+show-path=false
+
+[file-roller/dialogs/new]
+default-extension='.7z'
+volume-size=104857
+encrypt-header=true
+
+[file-roller/dialogs/extract]
+skip-newer=false
+recreate-folders=true
+
+[file-roller/ui]
+sidebar-width=200
+window-height=512
+window-width=1024
 
 [gnome-screenshot]
 include-pointer=false
@@ -407,8 +410,8 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='1203x642+26+87'
-maximized=true
+geometry='822x451+23+15'
+maximized=false
 
 [nautilus/compression]
 default-compression-format='tar.xz'
@@ -432,86 +435,17 @@ default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 
 save-directory='/home/gk1000/Desktop'
 document-type='photo'
 
+[epiphany/state]
+window-position=(0, 0)
+is-maximized=false
+window-size=(1366, 694)
+
 [eog/view]
 background-color='rgb(0,0,0)'
 use-background-color=true
 
 [eog/ui]
 sidebar=false
-
-[devhelp/state/main/contents]
-group-books-by-language=false
-
-[rhythmbox/library/source]
-show-browser=true
-
-[rhythmbox/plugins/audioscrobbler/Last.fm]
-scrobbling-enabled=true
-
-[rhythmbox/plugins/audioscrobbler/Libre.fm]
-scrobbling-enabled=true
-
-[rhythmbox/plugins/iradio]
-initial-stations-loaded=true
-
-[rhythmbox/plugins/iradio/source]
-show-browser=true
-
-[rhythmbox/plugins]
-active-plugins=['mmkeys', 'mtpdevice', 'generic-player', 'audiocd', 'artsearch', 'dbus-media-server', 'mpris', 'rb', 'ipod', 'notification', 'daap', 'android', 'audioscrobbler', 'power-manager', 'iradio']
-seen-plugins=['lyrics', 'fmradio', 'mtpdevice', 'soundcloud', 'im-status', 'artsearch', 'dbus-media-server', 'mpris', 'rb', 'rblirc', 'sendto', 'ipod', 'pythonconsole', 'notification', 'magnatune', 'daap', 'rbzeitgeist', 'replaygain', 'audioscrobbler', 'grilo']
-
-[rhythmbox/player]
-play-order='shuffle'
-volume=1.0
-
-[rhythmbox/podcast/source]
-show-browser=true
-
-[rhythmbox]
-position=(81, 27)
-size=(1188, 560)
-
-[rhythmbox/rhythmdb]
-locations=['file:///home/gk1000']
-
-[evolution/mail]
-search-gravatar-for-photo=false
-forward-style-name='attached'
-image-loading-policy='never'
-junk-check-incoming=true
-browser-close-on-reply-policy='ask'
-reply-style-name='quoted'
-
-[evolution/mail/composer-window]
-width=604
-maximized=false
-height=500
-
-[evolution/addressbook]
-completion-show-address=false
-completion-minimum-query-length=3
-
-[evolution/calendar]
-work-day-thursday=true
-work-day-sunday=false
-prefer-new-item=''
-work-day-saturday=false
-work-day-tuesday=true
-week-start-day-name='monday'
-work-day-wednesday=true
-work-day-monday=true
-work-day-friday=true
-
-[evolution/shell]
-attachment-view=0
-
-[evolution]
-version='3.26.1'
-
-[Totem]
-subtitle-encoding='UTF-8'
-active-plugins=['movie-properties', 'recent', 'media_player_keys', 'variable-rate', 'save-file', 'skipto', 'autoload-subtitles', 'vimeo', 'apple-trailers', 'screensaver', 'screenshot']
 
 [terminal/legacy]
 new-terminal-mode='tab'
@@ -567,6 +501,83 @@ background-color='rgb(39,36,36)'
 
 [terminal/legacy/profiles:]
 list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55a9c']
+
+[devhelp/state/main/contents]
+group-books-by-language=false
+
+[orca]
+active-profile=['Default', 'default']
+
+[evolution/mail]
+search-gravatar-for-photo=false
+forward-style-name='attached'
+image-loading-policy='never'
+junk-check-incoming=true
+browser-close-on-reply-policy='ask'
+reply-style-name='quoted'
+
+[evolution/mail/composer-window]
+width=604
+maximized=false
+height=500
+
+[evolution/addressbook]
+completion-show-address=false
+completion-minimum-query-length=3
+
+[evolution/calendar]
+work-day-thursday=true
+work-day-sunday=false
+prefer-new-item=''
+work-day-saturday=false
+work-day-tuesday=true
+week-start-day-name='monday'
+work-day-wednesday=true
+work-day-monday=true
+work-day-friday=true
+
+[evolution/shell]
+attachment-view=0
+
+[evolution]
+version='3.26.1'
+
+[Totem]
+subtitle-encoding='UTF-8'
+active-plugins=['movie-properties', 'recent', 'media_player_keys', 'variable-rate', 'save-file', 'skipto', 'autoload-subtitles', 'vimeo', 'apple-trailers', 'screensaver', 'screenshot']
+
+[rhythmbox/library/source]
+show-browser=true
+
+[rhythmbox/plugins/audioscrobbler/Last.fm]
+scrobbling-enabled=true
+
+[rhythmbox/plugins/audioscrobbler/Libre.fm]
+scrobbling-enabled=true
+
+[rhythmbox/plugins/iradio]
+initial-stations-loaded=true
+
+[rhythmbox/plugins/iradio/source]
+show-browser=true
+
+[rhythmbox/plugins]
+active-plugins=['mmkeys', 'mtpdevice', 'generic-player', 'audiocd', 'artsearch', 'dbus-media-server', 'mpris', 'rb', 'ipod', 'notification', 'daap', 'android', 'audioscrobbler', 'power-manager', 'iradio']
+seen-plugins=['lyrics', 'fmradio', 'mtpdevice', 'soundcloud', 'im-status', 'artsearch', 'dbus-media-server', 'mpris', 'rb', 'rblirc', 'sendto', 'ipod', 'pythonconsole', 'notification', 'magnatune', 'daap', 'rbzeitgeist', 'replaygain', 'audioscrobbler', 'grilo']
+
+[rhythmbox/player]
+play-order='shuffle'
+volume=1.0
+
+[rhythmbox/podcast/source]
+show-browser=true
+
+[rhythmbox]
+position=(81, 27)
+size=(1188, 560)
+
+[rhythmbox/rhythmdb]
+locations=['file:///home/gk1000']
 
 [nm-applet/eap/8d1f98a3-62af-494d-a13f-afc038032021]
 ignore-phase2-ca-cert=false
