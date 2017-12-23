@@ -9,16 +9,16 @@
 #rm -dR package-query yaourt
 #sudo pacman-key --refresh-keys && sudo pacman -Syyu
 #curl "https://pgp.mit.edu/pks/lookup?op=get&search=0x1EB2638FF56C0C53" -o - | gpg --import
-pacman -Syu haveged
-systemctl start haveged
-systemctl enable haveged
+sudo pacman -Syu haveged
+sudo systemctl start haveged
+sudo systemctl enable haveged
 
-rm -fr /etc/pacman.d/gnupg
-pacman-key --init
-pacman-key --populate archlinux
+sudo rm -fr /etc/pacman.d/gnupg
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
 
 sudo pacman -S --noconfirm --needed expac wget yajl 
-gpg --recv-keys --keyserver hkp://pgp.mit.edu 1EB2638FF56C0C53
+gpg --recv-keys --keyserver hkp://pgp.mit.edu 6689E64E3D3664BB 1EB2638FF56C0C53
 mkdir pacaur && cd pacaur
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
 makepkg -i PKGBUILD --noconfirm
@@ -57,13 +57,13 @@ systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
  
 
-pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome plymouth \
-urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex  rar \
-epson-inkjet-printer-201401w  rslsync  discord chrome-gnome-shell-git \
-obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git  \
-numix-icon-theme-git gtk-theme-numix-solarized apparmor apparmor-profiles \
- virtualbox-ext-oracle hfsprogs dmg2img
-
+pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome \
+plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar \
+rslsync chrome-gnome-shell-git obsidian-icon-theme numix-folders-git \
+apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img \
+numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized
+ 
+#discord
 #redshiftgui-bin \
 #sudo chmod 644 /usr/share/applications/* -v 
 
