@@ -4,15 +4,22 @@ dir="config_files/$HOST"
 cnfdir="config_files"
 c1="\033[0;32m"
 c2="\033[0;34m"
+rc="\033[0;31m"
 nc="\033[0m"
 bold="\033[1m"
-fdirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.local/share/konsole" "$HOME/.config" "$HOME" "$HOME"\
-    "$HOME" "$HOME/.config/nitrogen" "$HOME/.config/i3" "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-3.0"\
-"$HOME/.config")
+
 edirs=("$HOME/.local/share")
 edf=("gnome-shell")
-files=(".zshrc" "gk1000.zsh-theme" "gk1000.profile" "Solarized.colorscheme" "konsolerc" ".tmux.conf" ".Xresources" ".gitconfig"\
-"bg-saved.cfg" "config" "bookmarks" "settings.ini" "numix-folders"  )
+
+fdirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.local/share/konsole" \
+       "$HOME/.config" "$HOME" "$HOME" "$HOME" \
+       "$HOME/.config/nitrogen" "$HOME/.config/i3" "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-3.0" \
+       "$HOME/.config")
+
+files=(".zshrc" "gk1000.zsh-theme" "gk1000.profile" "Solarized.colorscheme" \
+       "konsolerc" ".tmux.conf" ".Xresources" ".gitconfig"  \
+       "bg-saved.cfg" "config" "bookmarks" "settings.ini" \
+       "numix-folders"  )
 k=0
 if [  $# -eq 0 ]; then
     echo "Please enter an argument. backup or restore"
@@ -23,7 +30,11 @@ elif [ $1 = "backup" ] ; then
     echo $c1"Backing up $c2 vscode $nc extensions to$c1 file vscode_extensions$nc"
     code --list-extensions > vscode_extensions
     for ((i=1;i<=${#files};i++)) do
-        [[ -f $fdirs[$i]/$files[$i] ]] && cp -v $fdirs[$i]/$files[$i] $dir/$files[$i] && ((k=k+1))
+        if [[ -f $fdirs[$i]/$files[$i] ]];then
+         cp -v $fdirs[$i]/$files[$i] $dir/$files[$i] && ((k=k+1))
+        else
+         echo $rc"$fdirs[$i]/$files[$i] does not exist"$nc 
+        fi 
     done
     for ((i=1;i<=${#edirs};i++)) do
         [[ -d $edirs[$i]/$edf[i] ]] && cp -rap $edirs[$i]/$edf[i] $dir/ && ((k=k+1)) && \
@@ -44,7 +55,11 @@ elif [ $1 = "restore" ] ; then
     cat vscode_extensions| xargs -L 1 code --install-extension
     [ -d ~/.config/xfce4 ] && cp -rapv $dir/xfce4 ~/.config/
     for ((i=1;i<=${#files};i++)) do
-        [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] && cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
+        if [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] ;then
+          cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
+        else
+         echo $rc"$files[$i] not copied since $fdirs[$i] does not exist"$nc 
+        fi
     done
     for ((i=1;i<=${#edirs};i++)) do
         [[ -d $dir/$edf[i] ]] && cp -rap $dir/$edf[i] $edirs[i]/ && ((k=k+1)) && \
@@ -78,7 +93,11 @@ elif [ $1 = "install" ] ; then
         echo $c1"'$dir/$edf[i]'$nc -> $c2'$edirs[i]/'"$nc
     done
     for ((i=1;i<=${#files};i++)) do
-        [ -d $fdirs[$i] ] && cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
+        if [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] ;then
+          cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
+        else
+         echo $rc"$files[$i] not copied since $fdirs[$i] does not exist"$nc 
+        fi
     done
     [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || dconf load /org/gnome/ < $cnfdir/dconfgnome
     ((k=k+1))

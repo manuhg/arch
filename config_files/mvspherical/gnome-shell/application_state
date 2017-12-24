@@ -1,14 +1,19 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" open-window-count="0" score="4" last-seen="1514028732"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="21" last-seen="1514093816"/>
     <application id="org.gnome.Epiphany.desktop" open-window-count="0" score="2" last-seen="1513952430"/>
     <application id="firefox.desktop" open-window-count="0" score="0" last-seen="1514006569"/>
-    <application id="visual-studio-code.desktop" open-window-count="1" score="171" last-seen="1514028888"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="233" last-seen="1514028775"/>
-    <application id="gnome-background-panel.desktop" open-window-count="0" score="0" last-seen="0"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="200" last-seen="1514031140"/>
+    <application id="filezilla.desktop" open-window-count="0" score="1120" last-seen="1514097515"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="308" last-seen="1514109623"/>
+    <application id="synapse.desktop" open-window-count="0" score="9" last-seen="1514029743"/>
+    <application id="gnome-tweak-tool.desktop" open-window-count="0" score="22" last-seen="1514100624"/>
+    <application id="eog.desktop" open-window-count="1" score="0" last-seen="1514110293"/>
+    <application id="google-chrome.desktop" open-window-count="2" score="213" last-seen="1514110293"/>
     <application id="org.gnome.gedit.desktop" open-window-count="0" score="98" last-seen="1514028027"/>
-    <application id="sublime_text.desktop" open-window-count="0" score="0" last-seen="1514024774"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="4059" last-seen="1514028748"/>
+    <application id="ca.desrt.dconf-editor.desktop" open-window-count="0" score="13" last-seen="1514029882"/>
+    <application id="sublime_text.desktop" open-window-count="0" score="3" last-seen="1514099763"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="4640" last-seen="1514110050"/>
   </context>
 </application-state>
