@@ -28,12 +28,12 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/dev/manuhg.github.io'
+virtual-root='file:///home/gk1000/dev/gk1000.github.io'
 tree-view=true
 root='file:///'
 
 [gedit/plugins]
-active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
+active-plugins=['modelines', 'spell', 'time', 'filebrowser', 'docinfo']
 
 [gedit/state/history-entry]
 search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
@@ -41,7 +41,7 @@ replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h
 
 [gedit/state/window]
 size=(1366, 698)
-state=43908
+state=132
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
@@ -199,7 +199,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(2.2957983193277309, 0.88004750593824232)
+window-ratio=(2.6522211352085052, 1.0085504611862923)
 
 [Disks]
 image-dir-uri='file:///home/gk1000/Documents'
