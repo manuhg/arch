@@ -46,10 +46,26 @@ git config  --global alias.pushall '!git remote | xargs -L1 git push'
 #push to all pull only from origin
 git remote add origin https://exampleuser@example.com/path/to/repo1
 git remote set-url --push --add origin https://exampleuser@example.com/path/to/repo1
-git clone --recursive -j8 git://github.com/foo/bar.git
-#Editor's note: simultaneously in this case means: in parallel; that is,  
-#-j8 is an optional performance optimization that fetches up to 8 submodules at a time in parallel - see man git-clone.
+####################################################################################
+##########recursive clone###########################################################
+####################################################################################
+#With version 1.9 of Git and later, you can even download the submodules simultaneously:
 
+git clone --recursive -j8 git://github.com/foo/bar.git
+cd bar
+#Editor's note: simultaneously in this case means: in parallel; that is,
+#-j8 is an optional performance optimization that fetches up to 8 submodules at a time in parallel - see man git-clone.
+#With version 1.6.5 of Git and later, you can use:
+
+git clone --recursive git://github.com/foo/bar.git
+cd bar
+#For already cloned repos, or older Git versions, just use:
+
+git clone git://github.com/foo/bar.git
+cd bar
+git submodule update --init --recursive
+####################################################################################
+####################################################################################
 #multiple push locs
 git remote set-url origin --push --add <a remote>
 git remote set-url origin --push --add <another remote>
