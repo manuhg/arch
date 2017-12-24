@@ -151,7 +151,7 @@ default-sort-order='type'
 [nautilus/window-state]
 sidebar-width=155
 geometry='964x506+23+15'
-maximized=true
+maximized=false
 
 [nautilus/compression]
 default-compression-format='tar.xz'
