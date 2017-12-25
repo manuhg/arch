@@ -9,4 +9,4 @@ hist=log --pretty=format:'%H %ad | %s%d [%an]' --graph --date=short
 	rmsub = !~/arch/_git/submodule_rm.sh
 [user]
 	email = gk1010100@gmail.com
-	name = spherical-gk1000
+	name =  mvspherical-gk1000

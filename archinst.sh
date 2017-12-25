@@ -47,7 +47,7 @@ visudo
 # alsamixer
 pacman -S alsa-utils  xorg-server xorg-xinit xorg-apps mesa
 #synaptics for laptop
-pacman -S xf86-video-intel xf86-input-synaptics xf86-video-vesa
+pacman -S xf86-video-intel xf86-input-synaptics xf86-input-mouse xf86-video-vesa 
 #xf86-video-vesa is generic & fallback driver
 # kde5 plasma -sddm , gnome GDM , lightgdm -universal
 # pacman -Rcs => recursive remove
