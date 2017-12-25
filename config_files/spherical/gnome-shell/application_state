@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" open-window-count="0" score="3" last-seen="1513569962"/>
-    <application id="visual-studio-code.desktop" open-window-count="0" score="1050" last-seen="1514035308"/>
-    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="11" last-seen="1513941718"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="2149" last-seen="1514038098"/>
-    <application id="vlc.desktop" open-window-count="0" score="3009" last-seen="1514031596"/>
-    <application id="synapse.desktop" open-window-count="0" score="14" last-seen="1514029094"/>
-    <application id="geany.desktop" open-window-count="0" score="15" last-seen="1514023586"/>
-    <application id="qbittorrent.desktop" open-window-count="0" score="48" last-seen="1514027572"/>
-    <application id="google-chrome.desktop" open-window-count="1" score="19756" last-seen="1514038062"/>
-    <application id="Thunar.desktop" open-window-count="0" score="24" last-seen="1514027135"/>
-    <application id="org.gnome.gedit.desktop" open-window-count="0" score="80" last-seen="1513999251"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="12626" last-seen="1514036216"/>
-    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="16" last-seen="1513567281"/>
-    <application id="evince.desktop" open-window-count="0" score="1" last-seen="1514008410"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="21" last-seen="1514093816"/>
+    <application id="org.gnome.Epiphany.desktop" open-window-count="0" score="2" last-seen="1513952430"/>
+    <application id="firefox.desktop" open-window-count="0" score="0" last-seen="1514006569"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="200" last-seen="1514031140"/>
+    <application id="filezilla.desktop" open-window-count="0" score="1120" last-seen="1514097515"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="308" last-seen="1514109623"/>
+    <application id="synapse.desktop" open-window-count="0" score="9" last-seen="1514029743"/>
+    <application id="gnome-tweak-tool.desktop" open-window-count="0" score="22" last-seen="1514100624"/>
+    <application id="eog.desktop" open-window-count="1" score="0" last-seen="1514110293"/>
+    <application id="google-chrome.desktop" open-window-count="2" score="213" last-seen="1514110293"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="98" last-seen="1514028027"/>
+    <application id="ca.desrt.dconf-editor.desktop" open-window-count="0" score="13" last-seen="1514029882"/>
+    <application id="sublime_text.desktop" open-window-count="0" score="3" last-seen="1514099763"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="4640" last-seen="1514110050"/>
   </context>
 </application-state>

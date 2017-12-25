@@ -150,7 +150,7 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='964x506+23+15'
+geometry='877x455+23+15'
 maximized=false
 
 [nautilus/compression]
@@ -276,7 +276,7 @@ apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop',
 name='X-GNOME-Sundry.directory'
 
 [desktop/screensaver]
-picture-uri='file:///home/gk1000/Pictures/uJHiPpX.jpg'
+picture-uri='file:///home/gk1000/Pictures/minimalistic_arch_linux_wallpaper_by_malkowitch-dahpghs.jpg'
 color-shading-type='solid'
 primary-color='#000000000000'
 lock-delay=uint32 0
@@ -333,11 +333,11 @@ close=['<Alt>F4']
 screen-reader-enabled=false
 
 [desktop/background]
-picture-uri='file:///home/gk1000/Pictures/Wallpapers/archwp.jpg'
+picture-uri='file:///home/gk1000/Pictures/macOS-Sierra-wallpaper.jpg'
 color-shading-type='solid'
-primary-color='#000000'
+primary-color='#000000000000'
 picture-options='zoom'
-secondary-color='#000000'
+secondary-color='#000000000000'
 
 [desktop/input-sources]
 current=uint32 0
@@ -379,7 +379,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gedit/plugins/filebrowser]
-virtual-root='file:///run/media/gk1000/Hegde/Manu_Hegde/.others'
+virtual-root='file:///home/gk1000/arch/config_files'
 tree-view=true
 root='file:///'
 
@@ -403,15 +403,18 @@ use-background-color=true
 
 [shell]
 app-picker-view=uint32 1
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'geany.desktop', 'firefox.desktop', 'vlc.desktop']
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop']
 
 [shell/extensions/user-theme]
 name=''
 
 [shell/extensions/dash-to-dock]
 shortcut=['<Super>q']
+
+[shell/extensions/simplenetspeed]
+mode=2
 
 [shell/calendar]
 show-weekdate=false
