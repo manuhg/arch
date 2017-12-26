@@ -40,7 +40,7 @@ tmux gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd gparted \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4  \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
 libreoffice-fresh jdk8-openjdk linux-headers rxvt-unicode-terminfo \
-virtualbox-guest-iso
+virtualbox-guest-iso flatpak-builder
 # teamspeak3
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
