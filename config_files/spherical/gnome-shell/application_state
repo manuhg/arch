@@ -5,15 +5,14 @@
     <application id="org.gnome.Epiphany.desktop" open-window-count="0" score="2" last-seen="1513952430"/>
     <application id="firefox.desktop" open-window-count="0" score="0" last-seen="1514006569"/>
     <application id="visual-studio-code.desktop" open-window-count="0" score="200" last-seen="1514031140"/>
-    <application id="filezilla.desktop" open-window-count="0" score="1120" last-seen="1514097515"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="308" last-seen="1514109623"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="308" last-seen="1514109623"/>
     <application id="synapse.desktop" open-window-count="0" score="9" last-seen="1514029743"/>
-    <application id="gnome-tweak-tool.desktop" open-window-count="0" score="22" last-seen="1514100624"/>
-    <application id="eog.desktop" open-window-count="1" score="0" last-seen="1514110293"/>
-    <application id="google-chrome.desktop" open-window-count="2" score="213" last-seen="1514110293"/>
+    <application id="gnome-tweak-tool.desktop" open-window-count="0" score="25" last-seen="1514165519"/>
+    <application id="eog.desktop" open-window-count="0" score="0" last-seen="1514110293"/>
+    <application id="google-chrome.desktop" open-window-count="0" score="213" last-seen="1514110293"/>
     <application id="org.gnome.gedit.desktop" open-window-count="0" score="98" last-seen="1514028027"/>
     <application id="ca.desrt.dconf-editor.desktop" open-window-count="0" score="13" last-seen="1514029882"/>
     <application id="sublime_text.desktop" open-window-count="0" score="3" last-seen="1514099763"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="4640" last-seen="1514110050"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="4640" last-seen="1514165521"/>
   </context>
 </application-state>
