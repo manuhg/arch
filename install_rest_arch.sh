@@ -60,8 +60,8 @@ pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome \
 plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar \
 rslsync chrome-gnome-shell-git obsidian-icon-theme numix-folders-git \
 apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm \
-numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized
- 
+numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized \
+leiningen cowsay toilet figlet cowthink sl banner fortune cmatrix rev
 #discord
 #redshiftgui-bin \
 #sudo chmod 644 /usr/share/applications/* -v
