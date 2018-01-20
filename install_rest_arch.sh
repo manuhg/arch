@@ -31,16 +31,16 @@ sudo pacman-key --add sublimehq-pub.gpg && \
 sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 
-sudo pacman -Syu --noconfirm hexedit python nitrogen arduino namcap testdisk \
-rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop \
+sudo pacman -Syu --noconfirm hexedit python nitrogen arduino namcap testdisk  \
+rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop   \
 nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake rsync \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim unzip \
-synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython lshw go \
-tmux gpg-crypter emacs curl powerline rxvt-unicode dmenu atom xxd gparted \
-powerline-fonts ttf-inconsolata awesome-terminal-fonts unrar cups qt4  \
-gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme sublime-text \
-libreoffice-fresh jdk8-openjdk linux-headers rxvt-unicode-terminfo \
-virtualbox-guest-iso flatpak-builder
+synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython lshw go   \
+tmux gpg-crypter emacs curl powerline rxvt-unicode atom xxd gparted unrar qt4 \
+powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
+gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
+libreoffice-fresh linux-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
+ flatpak-builder
 # teamspeak3
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
@@ -56,12 +56,12 @@ chmod +x install.sh
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
 
-pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome \
-plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar \
-rslsync chrome-gnome-shell-git obsidian-icon-theme numix-folders-git \
-apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm \
-numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized \
-leiningen cowsay toilet figlet cowthink sl banner fortune cmatrix rev
+pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome toilet figlet \
+plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar cowsay banner \
+apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm fortune rev\
+numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized cmatrix \
+rslsync numix-folders-git cowthink sl leiningen
+
 #discord
 #redshiftgui-bin \
 #sudo chmod 644 /usr/share/applications/* -v

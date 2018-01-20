@@ -130,11 +130,11 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(3.2253967742000511, 1.2507575219464591)
+window-ratio=(3.4178208491520463, 1.5245398773006136)
 
 [file-roller/listing]
 sort-method='name'
-name-column-width=492
+name-column-width=1029
 sort-type='descending'
 list-mode='as-folder'
 show-path=false
@@ -151,7 +151,7 @@ recreate-folders=true
 [file-roller/ui]
 sidebar-width=200
 window-height=512
-window-width=383
+window-width=1291
 
 [calendar]
 active-view='month'
@@ -325,12 +325,14 @@ xkb-options=@as []
 [orca]
 active-profile=['Default', 'default']
 
-[gnome-screenshot]
-include-pointer=false
-include-border=true
-border-effect='none'
-delay=0
-last-save-directory='file:///home/gk1000/Desktop'
+[bijiben]
+window-maximized=false
+default-location='local'
+window-position=[23, 15]
+use-system-font=true
+window-size=[810, 600]
+color='rgb(239,242,209)'
+font='Cantarell 14'
 
 [nautilus/preferences]
 search-view='list-view'
@@ -341,8 +343,8 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='1049x628+23+15'
-maximized=true
+geometry='908x472+23+15'
+maximized=false
 
 [nautilus/compression]
 default-compression-format='zip'
@@ -367,13 +369,15 @@ save-directory='/home/gk1000/Desktop'
 document-type='photo'
 
 [gedit/preferences/editor]
+use-default-font=true
+scheme='builder-dark'
 wrap-last-split-mode='word'
 
 [gedit/preferences/ui]
 show-tabs-mode='auto'
 
 [gedit/plugins/filebrowser]
-virtual-root='file:///run/media/gk1000/fl_linux/Torrent%20Downloads/War.Machine.2017.720p.HDRip.X264.AC3-EVO'
+virtual-root='file:///run/media/gk1000/Hegde/Manu_Hegde/.others'
 tree-view=true
 root='file:///'
 
@@ -398,6 +402,13 @@ use-background-color=true
 [eog/ui]
 sidebar=false
 
+[gnome-screenshot]
+include-pointer=false
+include-border=true
+border-effect='none'
+delay=0
+last-save-directory='file:///home/gk1000/Desktop'
+
 [settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
 
@@ -419,10 +430,10 @@ hinting='slight'
 numlock-state='on'
 
 [shell]
-app-picker-view=uint32 1
+app-picker-view=uint32 0
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop']
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop', 'evince.desktop']
 
 [shell/extensions/user-theme]
 name=''
@@ -474,12 +485,13 @@ size=(1188, 560)
 locations=['file:///home/gk1000']
 
 [evolution/mail]
-search-gravatar-for-photo=false
-forward-style-name='attached'
-image-loading-policy='never'
 junk-check-incoming=true
 browser-close-on-reply-policy='ask'
+headers=['<?xml version="1.0"?>\n<header name="From" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Reply-To" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="To" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Cc" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Bcc" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Subject" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Date" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Newsgroups" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Face" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="x-evolution-mailer"/>\n']
 reply-style-name='quoted'
+forward-style-name='attached'
+image-loading-policy='never'
+search-gravatar-for-photo=false
 
 [evolution/mail/composer-window]
 width=604
@@ -505,7 +517,7 @@ work-day-friday=true
 attachment-view=0
 
 [evolution]
-version='3.26.3'
+version='3.26.4'
 
 [Totem]
 subtitle-encoding='UTF-8'
