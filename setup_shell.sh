@@ -86,6 +86,8 @@ elif [ $1 = "install" ] ; then
     rm -rf numix-folders
     echo $c1"Installing vscode extensions$nc"
     #go get -u mvdan.cc/sh/cmd/shfmt
+    cp $cnfdir/.histfile ~/
+    echo $c1"$cnfdir/.histfile -> ~/"$nc
     cat vscode_extensions| xargs -L 1 code --install-extension
     [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
     for ((i=1;i<=${#edirs};i++)) do
