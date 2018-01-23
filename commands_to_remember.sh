@@ -13,6 +13,7 @@ dhcp wlp2s0f0
 #copy based on checksum, preserve perms
 rsync -rcpv dir1 dir2
 
+scp -r user@server:~/dir ~/dir
 #crontab
 0 1,12 * * * /usr/bin/certbot renew --quiet
 
@@ -93,6 +94,9 @@ encfs encrypted_dir unencrypted_dir
 fusermount -u /~/unencrypted_dir
 #find group of a user
 groups gk1000
+
+#xz
+xz -z9ef something.tar
 
 #gpg
 gpg --recv-keys --keyserver hkp://pgp.mit.edu 6689E64E3D3664BB
