@@ -13,7 +13,7 @@ dhcp wlp2s0f0
 #copy based on checksum, preserve perms
 rsync -rcpv dir1 dir2
 
-scp -r user@server:~/dir ~/dir
+scp -P 22 -r user@server:~/dir ~/dir
 #crontab
 0 1,12 * * * /usr/bin/certbot renew --quiet
 
