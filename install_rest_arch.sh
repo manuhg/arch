@@ -40,7 +40,7 @@ tmux gpg-crypter emacs curl powerline rxvt-unicode atom xxd gparted unrar qt4 \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
 libreoffice-fresh linux-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
- flatpak-builder
+ flatpak-builder pantheon-files
 # teamspeak3
 
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
@@ -60,7 +60,7 @@ pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome toilet figlet
 plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar cowsay banner \
 apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm fortune rev\
 numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized cmatrix \
-rslsync numix-folders-git cowthink sl leiningen
+rslsync numix-folders-git cowthink sl leiningen ccv openframeworks
 
 #discord
 #redshiftgui-bin \

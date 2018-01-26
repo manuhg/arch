@@ -130,7 +130,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [evince/default]
-window-ratio=(3.4178208491520463, 1.5245398773006136)
+window-ratio=(2.2320261437908497, 0.93560606060606055)
 
 [file-roller/listing]
 sort-method='name'
@@ -183,7 +183,7 @@ gtk-theme='Arc-Darker'
 clock-show-date=true
 
 [desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase']
 
 [desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -226,6 +226,9 @@ application-id='ca.desrt.dconf-editor.desktop'
 
 [desktop/notifications/application/rhythmbox]
 application-id='rhythmbox.desktop'
+
+[desktop/notifications/application/keybase]
+application-id='keybase.desktop'
 
 [desktop/media-handling]
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media', 'x-content/blank-dvd']
@@ -343,11 +346,11 @@ default-sort-order='type'
 
 [nautilus/window-state]
 sidebar-width=155
-geometry='908x472+23+15'
+geometry='918x545+23+15'
 maximized=false
 
 [nautilus/compression]
-default-compression-format='zip'
+default-compression-format='tar.xz'
 
 [nautilus/icon-view]
 captions=['none', 'none', 'none']
@@ -377,7 +380,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gedit/plugins/filebrowser]
-virtual-root='file:///run/media/gk1000/Hegde/Manu_Hegde/.others'
+virtual-root='file:///run/media/gk1000/Manu'
 tree-view=true
 root='file:///'
 
@@ -400,7 +403,7 @@ background-color='rgb(0,0,0)'
 use-background-color=true
 
 [eog/ui]
-sidebar=false
+sidebar=true
 
 [gnome-screenshot]
 include-pointer=false
@@ -408,6 +411,11 @@ include-border=true
 border-effect='none'
 delay=0
 last-save-directory='file:///home/gk1000/Desktop'
+
+[settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+night-light-schedule-from=22.5
+night-light-enabled=true
 
 [settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
@@ -433,7 +441,7 @@ numlock-state='on'
 app-picker-view=uint32 0
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop', 'evince.desktop']
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.pantheon.files.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop']
 
 [shell/extensions/user-theme]
 name=''
@@ -446,7 +454,7 @@ dock-position='LEFT'
 shortcut=['<Super>q']
 
 [shell/extensions/simplenetspeed]
-mode=4
+mode=1
 
 [shell/calendar]
 show-weekdate=false

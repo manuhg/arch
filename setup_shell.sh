@@ -105,10 +105,12 @@ elif [ $1 = "install" ] ; then
     echo $c1"Restoring gnome settings "$nc
     echo "$c1$bold$k "$c2"Config files copied $nc"
     echo "Setting git global configs"
+    # git config --global user.name "$HOST-$USER"
     git config --global user.name "$HOST-$USER"
-    git config --global user.email "manu@gk1000.me"
+    git config --global user.email "manuhegdev@gmail.com"
+    # echo 'git config --global user.name "$HOST-$USER"'
     echo 'git config --global user.name "$HOST-$USER"'
-    echo 'git config --global user.email "manu@gk1000.me"'
+    echo 'git config --global user.email "manuhegdev@gmail.com"'
     cp _git/config .git/
     git config  --global alias.pushall '!git remote | xargs -L1 git push'
     

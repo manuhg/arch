@@ -97,6 +97,9 @@ alias ga='git add -A'
 alias gc='git commit'
 alias gpom='git push origin master'
 alias gpl='git pull'
+alias gpu='git pushall'
+alias gco='git checkout'
+alias grs='git reset'
 alias ghist="git log --pretty=format:'%H %ad | %s%d [%an]' --graph --date=short"
 alias git-secret='/usr/local/bin/git-secret'
 
