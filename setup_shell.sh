@@ -10,8 +10,8 @@ bold="\033[1m"
 
 edirs=("$HOME/.local/share")
 edf=("gnome-shell")
-dconfs=("gnome/" "pantheon/")
-
+dconfs=("gnome/")
+# "pantheon/"
 fdirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.local/share/konsole" \
        "$HOME/.config" "$HOME" "$HOME" "$HOME" \
        "$HOME/.config/nitrogen" "$HOME/.config/i3" "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-3.0" \
@@ -43,7 +43,7 @@ elif [ $1 = "backup" ] ; then
     done
     [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
     
-    for ((j=1;j<${#dconfs};j++)) do
+    for ((j=1;j<=${#dconfs};j++)) do
         dconf dump /org/$dconfs[$i] > $cnfdir/dconf$dconfs[$i]
         dconf dump /org/$dconfs[$i] > $dir/dconf$dconfs[$i]
         ((k=k+1))
@@ -77,7 +77,7 @@ elif [ $1 = "restore" ] ; then
     done
     # [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || \
     # dconf load /org/gnome/ < $cnfdir/dconfgnome  && ((k=k+1))
-   for ((j=1;j<${#dconfs};j++)) do
+   for ((j=1;j<=${#dconfs};j++)) do
         dconf dump /org/$dconfs[$i] > $cnfdir/dconf$dconfs[$i]
         dconf dump /org/$dconfs[$i] > $dir/dconf$dconfs[$i]
         ((k=k+1))
