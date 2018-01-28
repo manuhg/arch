@@ -10,6 +10,7 @@ bold="\033[1m"
 
 edirs=("$HOME/.local/share")
 edf=("gnome-shell")
+dconfs=("gnome/" "pantheon/")
 
 fdirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.local/share/konsole" \
        "$HOME/.config" "$HOME" "$HOME" "$HOME" \
@@ -37,15 +38,24 @@ elif [ $1 = "backup" ] ; then
         fi 
     done
     for ((i=1;i<=${#edirs};i++)) do
-        [[ -d $edirs[$i]/$edf[i] ]] && cp -rap $edirs[$i]/$edf[i] $dir/ && ((k=k+1)) && \
-        echo "$c1'$edirs[$i]/$edf[i]'$nc -> $c2'$dir/$edf[i]'$nc"
+        [[ -d $edirs[$i]/$edf[$i] ]] && cp -rap $edirs[$i]/$edf[$i] $dir/ && ((k=k+1)) && \
+        echo "$c1'$edirs[$i]/$edf[$i]'$nc -> $c2'$dir/$edf[$i]'$nc"
     done
     [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
-    dconf dump /org/gnome/ > $cnfdir/dconfgnome
-    dconf dump /org/gnome/ > $dir/dconfgnome
-    ((k=k+1))
-    echo $c1"dconf dump /org/gnome/$nc >$c2 $cnfdir/dconfgnome$nc"
-    echo $c1"dconf dump /org/gnome/$nc >$c2 $dir/dconfgnome$nc"
+    
+    for ((j=1;j<${#dconfs};j++)) do
+        dconf dump /org/$dconfs[$i] > $cnfdir/dconf$dconfs[$i]
+        dconf dump /org/$dconfs[$i] > $dir/dconf$dconfs[$i]
+        ((k=k+1))
+        echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $cnfdir/dconf$dconfs[$i]$nc"
+        echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $dir/dconf$dconfs[$i]$nc"
+    done
+    
+    # dconf dump /org/gnome/ > $cnfdir/dconfgnome
+    # dconf dump /org/gnome/ > $dir/dconfgnome
+    # ((k=k+1))
+    # echo $c1"dconf dump /org/gnome/$nc >$c2 $cnfdir/dconfgnome$nc"
+    # echo $c1"dconf dump /org/gnome/$nc >$c2 $dir/dconfgnome$nc"
     
     echo "$c1$bold$k "$c2"Config files backed up $nc"
 
@@ -62,11 +72,18 @@ elif [ $1 = "restore" ] ; then
         fi
     done
     for ((i=1;i<=${#edirs};i++)) do
-        [[ -d $dir/$edf[i] ]] && cp -rap $dir/$edf[i] $edirs[i]/ && ((k=k+1)) && \
-        echo $c1"'$dir/$edf[i]'$nc -> $c2'$edirs[i]/'$nc"
+        [[ -d $dir/$edf[$i] ]] && cp -rap $dir/$edf[$i] $edirs[$i]/ && ((k=k+1)) && \
+        echo $c1"'$dir/$edf[$i]'$nc -> $c2'$edirs[$i]/'$nc"
     done
-    [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || \
-    dconf load /org/gnome/ < $cnfdir/dconfgnome  && ((k=k+1))
+    # [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || \
+    # dconf load /org/gnome/ < $cnfdir/dconfgnome  && ((k=k+1))
+   for ((j=1;j<${#dconfs};j++)) do
+        dconf dump /org/$dconfs[$i] > $cnfdir/dconf$dconfs[$i]
+        dconf dump /org/$dconfs[$i] > $dir/dconf$dconfs[$i]
+        ((k=k+1))
+        echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $cnfdir/dconf$dconfs[$i]$nc"
+        echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $dir/dconf$dconfs[$i]$nc"
+    done
     echo $c1"Restoring gnome settings"$nc
     echo "$c1$bold$k "$c2"Config files restored $nc"
 
@@ -90,8 +107,8 @@ elif [ $1 = "install" ] ; then
     cat vscode_extensions| xargs -L 1 code --install-extension
     [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
     for ((i=1;i<=${#edirs};i++)) do
-        [[ -d $dir/$edf[i] ]] && cp -rap $dir/$edf[i] $edirs[i]/ && ((k=k+1)) && \
-        echo $c1"'$dir/$edf[i]'$nc -> $c2'$edirs[i]/'"$nc
+        [[ -d $dir/$edf[$i] ]] && cp -rap $dir/$edf[$i] $edirs[$i]/ && ((k=k+1)) && \
+        echo $c1"'$dir/$edf[$i]'$nc -> $c2'$edirs[$i]/'"$nc
     done
     for ((i=1;i<=${#files};i++)) do
         if [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] ;then
@@ -105,10 +122,8 @@ elif [ $1 = "install" ] ; then
     echo $c1"Restoring gnome settings "$nc
     echo "$c1$bold$k "$c2"Config files copied $nc"
     echo "Setting git global configs"
-    # git config --global user.name "$HOST-$USER"
     git config --global user.name "$HOST-$USER"
     git config --global user.email "manuhegdev@gmail.com"
-    # echo 'git config --global user.name "$HOST-$USER"'
     echo 'git config --global user.name "$HOST-$USER"'
     echo 'git config --global user.email "manuhegdev@gmail.com"'
     cp _git/config .git/
