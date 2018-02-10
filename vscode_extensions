@@ -3,7 +3,6 @@ HookyQR.minify
 Shan.code-settings-sync
 Zignd.html-css-class-completion
 austin.code-gnu-global
-be5invis.vscode-custom-css
 dbaeumer.jshint
 dbaeumer.vscode-eslint
 donjayamanne.jquerysnippets
@@ -27,3 +26,4 @@ pranaygp.vscode-css-peek
 shakram02.bash-beautify
 taichi.react-beautify
 tht13.python
+xaver.clang-format
