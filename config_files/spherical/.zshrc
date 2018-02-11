@@ -102,7 +102,7 @@ alias gco='git checkout'
 alias grs='git reset'
 alias ghist="git log --pretty=format:'%H %ad | %s%d [%an]' --graph --date=short"
 alias git-secret='/usr/local/bin/git-secret'
-
+alias lsl='ls -lia --group-directories-first'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

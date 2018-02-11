@@ -8,19 +8,19 @@ rc="\033[0;31m"
 nc="\033[0m"
 bold="\033[1m"
 
-edirs=("$HOME/.local/share" "$HOME")
-edf=("gnome-shell" ".emacs.d/sample")
+edirs=("$HOME/.local/share" "$HOME" "$HOME" "$HOME" "$HOME" "$HOME")
+edf=("gnome-shell" ".emacs.d/core" ".emacs.d/modules" ".emacs.d/personal" ".emacs.d/sample" ".emacs.d/savefile")
 dconfs=("gnome/")
 # "pantheon/"
 fdirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.local/share/konsole" \
        "$HOME/.config" "$HOME" "$HOME" "$HOME" \
        "$HOME/.config/nitrogen" "$HOME/.config/i3" "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-3.0" \
-       "$HOME/.config" "/etc/clamav-unofficial-sigs" "$HOME" )
+       "$HOME/.config" "/etc/clamav-unofficial-sigs" "$HOME" "$HOME/.emacs.d" "$HOME/.emacs.d" )
 
 files=(".zshrc" "gk1000.zsh-theme" "gk1000.profile" "Solarized.colorscheme" \
        "konsolerc" ".tmux.conf" ".Xresources" ".gitconfig"  \
        "bg-saved.cfg" "config" "bookmarks" "settings.ini" \
-       "numix-folders" "user.conf" ".emacs" )
+       "numix-folders" "user.conf" ".emacs" ".emacs.desktop" "init.el" )
 if [  $# -eq 0 ]; then
     echo "Please enter an argument. backup or restore"
 
@@ -42,7 +42,7 @@ elif [ $1 = "backup" ] ; then
     for ((i=1;i<=${#edirs};i++)) do
         if [[ -d $edirs[$i]/$edf[$i] ]] ;then
             mkdir -pv $dir/$edf[$i]
-         cp -rap $edirs[$i]/$edf[$i] $dir && ((k=k+1)) && echo "$c1'$edirs[$i]/$edf[$i]'$nc -> $c2'$dir/$edf[$i]'$nc"
+         cp -rap $edirs[$i]/$edf[$i] $dir && ((ds=ds+1)) && echo "$c1'$edirs[$i]/$edf[$i]'$nc -> $c2'$dir/$edf[$i]'$nc"
         else
             echo $rc"$edirs[$i]/$edf[$i] does not exist"$nc
         fi
@@ -64,7 +64,9 @@ elif [ $1 = "backup" ] ; then
     # echo $c1"dconf dump /org/gnome/$nc >$c2 $cnfdir/dconfgnome$nc"
     # echo $c1"dconf dump /org/gnome/$nc >$c2 $dir/dconfgnome$nc"
     
-    echo "$c2$bold$k$c2 Config items backed up $nc"
+    echo $c2"Config items backed up $nc"
+    echo "$c2$bold$k$c2 Files$nc"
+    echo "$c2$bold$ds$c2 Directories$nc"
 
 
 elif [ $1 = "restore" ] ; then

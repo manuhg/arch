@@ -3,7 +3,7 @@
   <context id="">
     <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="43.5" last-seen="1517837480"/>
     <application id="gparted.desktop" open-window-count="0" score="65" last-seen="1517850678"/>
-    <application id="firefox.desktop" open-window-count="1" score="9181.75" last-seen="1518368457"/>
+    <application id="firefox.desktop" open-window-count="1" score="9233.75" last-seen="1518370203"/>
     <application id="visual-studio-code.desktop" open-window-count="0" score="4371.75" last-seen="1518021367"/>
     <application id="vlc.desktop" open-window-count="1" score="6049" last-seen="1518367488"/>
     <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="2956.75" last-seen="1518367543"/>
@@ -14,9 +14,9 @@
     <application id="Thunar.desktop" open-window-count="0" score="18" last-seen="1518233220"/>
     <application id="google-chrome.desktop" open-window-count="0" score="19233" last-seen="1518106218"/>
     <application id="org.gnome.gedit.desktop" open-window-count="0" score="154.5" last-seen="1518332222"/>
-    <application id="sublime_text.desktop" open-window-count="1" score="816.5" last-seen="1518368586"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="18011.25" last-seen="1518368617"/>
+    <application id="sublime_text.desktop" open-window-count="1" score="877.5" last-seen="1518370679"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="18155.25" last-seen="1518370717"/>
     <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="41" last-seen="1517850316"/>
-    <application id="emacs.desktop" open-window-count="1" score="385" last-seen="1518368313"/>
+    <application id="emacs.desktop" open-window-count="0" score="403" last-seen="1518370209"/>
   </context>
 </application-state>
