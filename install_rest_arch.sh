@@ -43,10 +43,13 @@ libreoffice-fresh linux-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
  flatpak-builder glfw-x11 strace dnstracer
 # teamspeak3
 
+curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+rm -rf ~/.emacs.d/.git
+
 #git clone https://github.com/madmaxms/theme-obsidian-2.git
 git clone https://github.com/KDE/breeze-gtk.git
 sudo cp -r breeze-gtk/Breeze-* /usr/share/themes
-rm -rf breeze-gtk
+rm -r fbreeze-gtk
 
 git clone https://github.com/spwhitton/git-remote-gcrypt.git
 cd git-remote-gcrypt

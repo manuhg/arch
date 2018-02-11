@@ -8,20 +8,19 @@ rc="\033[0;31m"
 nc="\033[0m"
 bold="\033[1m"
 
-edirs=("$HOME/.local/share")
-edf=("gnome-shell")
+edirs=("$HOME/.local/share" "$HOME")
+edf=("gnome-shell" ".emacs.d/sample")
 dconfs=("gnome/")
 # "pantheon/"
 fdirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.local/share/konsole" \
        "$HOME/.config" "$HOME" "$HOME" "$HOME" \
        "$HOME/.config/nitrogen" "$HOME/.config/i3" "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-3.0" \
-       "$HOME/.config" "/etc/clamav-unofficial-sigs")
+       "$HOME/.config" "/etc/clamav-unofficial-sigs" "$HOME" )
 
 files=(".zshrc" "gk1000.zsh-theme" "gk1000.profile" "Solarized.colorscheme" \
        "konsolerc" ".tmux.conf" ".Xresources" ".gitconfig"  \
        "bg-saved.cfg" "config" "bookmarks" "settings.ini" \
-       "numix-folders" "user.conf" )
-k=0
+       "numix-folders" "user.conf" ".emacs" )
 if [  $# -eq 0 ]; then
     echo "Please enter an argument. backup or restore"
 
@@ -30,6 +29,7 @@ elif [ $1 = "backup" ] ; then
     echo $c1"Dir:$c2 $dir $nc"
     echo $c1"Backing up $c2 vscode $nc extensions to$c1 file vscode_extensions$nc"
     code --list-extensions > vscode_extensions
+    echo "No of files to backup: "${#files}
     for ((i=1;i<=${#files};i++)) do
         if [[ -f $fdirs[$i]/$files[$i] ]];then
          cp -v $fdirs[$i]/$files[$i] $dir/$files[$i] && ((k=k+1))
@@ -38,8 +38,12 @@ elif [ $1 = "backup" ] ; then
         fi 
     done
     for ((i=1;i<=${#edirs};i++)) do
-        [[ -d $edirs[$i]/$edf[$i] ]] && cp -rap $edirs[$i]/$edf[$i] $dir/ && ((k=k+1)) && \
-        echo "$c1'$edirs[$i]/$edf[$i]'$nc -> $c2'$dir/$edf[$i]'$nc"
+        if [[ -d $edirs[$i]/$edf[$i] ]] ;then
+         cp -rap $edirs[$i]/$edf[$i] $dir && ((k=k+1)) && echo "$c1'$edirs[$i]/$edf[$i]'$nc -> $c2'$dir/$edf[$i]'$nc"
+        else
+            echo $rc"$edirs[$i]/$edf[$i] does not exist"$nc
+        fi
+
     done
     [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
     
@@ -78,11 +82,11 @@ elif [ $1 = "restore" ] ; then
     # [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || \
     # dconf load /org/gnome/ < $cnfdir/dconfgnome  && ((k=k+1))
    for ((j=1;j<=${#dconfs};j++)) do
-        dconf dump /org/$dconfs[$i] > $cnfdir/dconf$dconfs[$i]
-        dconf dump /org/$dconfs[$i] > $dir/dconf$dconfs[$i]
+        dconf load /org/$dconfs[$i] < $cnfdir/dconf$dconfs[$i]
+        dconf load /org/$dconfs[$i] < $dir/dconf$dconfs[$i]
         ((k=k+1))
-        echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $cnfdir/dconf$dconfs[$i]$nc"
-        echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $dir/dconf$dconfs[$i]$nc"
+        echo $c1"dconf load /org/$dconfs[$i]$nc < $c2 $cnfdir/dconf$dconfs[$i]$nc"
+        echo $c1"dconf load /org/$dconfs[$i]$nc < $c2 $dir/dconf$dconfs[$i]$nc"
     done
     echo $c1"Restoring gnome settings"$nc
     echo "$c1$bold$k "$c2"Config files restored $nc"

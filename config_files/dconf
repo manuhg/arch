@@ -384,7 +384,7 @@ show-tabs-mode='auto'
 
 [gnome/gedit/plugins/filebrowser]
 virtual-root='file:///run/media/gk1000/Hegde/Manu_Hegde/.others'
-tree-view=true
+tree-view=false
 root='file:///'
 
 [gnome/gedit/plugins]
@@ -413,7 +413,7 @@ include-pointer=false
 include-border=true
 border-effect='none'
 delay=0
-last-save-directory='file:///home/gk1000/Desktop'
+last-save-directory='file:///home/gk1000/Pictures'
 
 [gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
@@ -548,8 +548,8 @@ next-tab='<Shift>Right'
 move-tab-left='<Primary><Shift>Left'
 
 [gnome/terminal/legacy/profiles:/:98e1fe04-8e5a-49c5-a383-acd78823e520]
-foreground-color='rgb(131,148,150)'
-visible-name='gk1000'
+foreground-color='rgb(42,139,26)'
+visible-name='gk1000_2'
 palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(236,0,72)', 'rgb(42,161,152)', 'rgb(148,163,165)', 'rgb(88,110,117)', 'rgb(203,75,22)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(108,113,196)']
 cursor-shape='ibeam'
 use-system-font=false
@@ -559,7 +559,7 @@ use-theme-transparency=false
 use-theme-background=false
 bold-color-same-as-fg=true
 bold-color='#9494a3a3a5a5'
-background-color='rgb(0,43,54)'
+background-color='rgb(211,215,207)'
 
 [gnome/terminal/legacy/profiles:/:03552f37-3e02-41d3-8b0d-bd4a8ed55a9c]
 foreground-color='#838394949696'
@@ -606,7 +606,7 @@ ignore-ca-cert=false
 sort-column='name'
 clock-format='12h'
 sidebar-width=170
-window-position=(169, 151)
+window-position=(277, 185)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)
@@ -616,7 +616,7 @@ sort-order='ascending'
 location-mode='path-bar'
 
 [gtk/settings/color-chooser]
-selected-color=(true, 0.9882352941176471, 0.9137254901960784, 0.30980392156862746, 1.0)
+selected-color=(true, 0.16484733333333335, 0.54333333333333333, 0.1032333333333333, 1.0)
 custom-colors=[(0.1980073333333334, 0.47666666666666668, 0.10009999999999998, 1.0), (0.16484733333333335, 0.54333333333333333, 0.1032333333333333, 1.0), (0.52156862745098043, 0.59999999999999998, 0.0, 1.0), (0.0, 0.16862745098039217, 0.21176470588235294, 1.0), (0.34509803921568627, 0.43137254901960786, 0.45882352941176469, 1.0), (0.0, 0.41600000000000037, 0.80000000000000004, 1.0), (0.51372549019607838, 0.58039215686274515, 0.58823529411764708, 1.0), (0.54884444444444447, 0.77666666666666673, 0.75477627520759194, 1.0)]
 
 [compiz]
