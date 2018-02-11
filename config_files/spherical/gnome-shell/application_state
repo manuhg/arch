@@ -14,8 +14,8 @@
     <application id="Thunar.desktop" open-window-count="0" score="18" last-seen="1518233220"/>
     <application id="google-chrome.desktop" open-window-count="0" score="19233" last-seen="1518106218"/>
     <application id="org.gnome.gedit.desktop" open-window-count="0" score="154.5" last-seen="1518332222"/>
-    <application id="sublime_text.desktop" open-window-count="1" score="877.5" last-seen="1518370679"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="18155.25" last-seen="1518370717"/>
+    <application id="sublime_text.desktop" open-window-count="1" score="900.5" last-seen="1518370905"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="18158.25" last-seen="1518370898"/>
     <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="41" last-seen="1517850316"/>
     <application id="emacs.desktop" open-window-count="0" score="403" last-seen="1518370209"/>
   </context>
