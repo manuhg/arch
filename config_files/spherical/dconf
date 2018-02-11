@@ -349,7 +349,7 @@ default-sort-order='type'
 
 [gnome/nautilus/window-state]
 sidebar-width=179
-geometry='1192x768+23+15'
+geometry='1326x663+20+20'
 maximized=false
 
 [gnome/nautilus/compression]
@@ -606,7 +606,7 @@ ignore-ca-cert=false
 sort-column='name'
 clock-format='12h'
 sidebar-width=170
-window-position=(277, 185)
+window-position=(1920, 328)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)

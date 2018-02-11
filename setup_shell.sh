@@ -29,7 +29,7 @@ elif [ $1 = "backup" ] ; then
     echo $c1"Dir:$c2 $dir $nc"
     echo $c1"Backing up $c2 vscode $nc extensions to$c1 file vscode_extensions$nc"
     code --list-extensions > vscode_extensions
-    echo "No of files to backup: "${#files}
+    echo $c2"No of files to backup: "${#files}$nc
     for ((i=1;i<=${#files};i++)) do
         if [[ -f $fdirs[$i]/$files[$i] ]];then
          cp -v $fdirs[$i]/$files[$i] $dir/$files[$i] && ((k=k+1))
@@ -37,8 +37,11 @@ elif [ $1 = "backup" ] ; then
          echo $rc"$fdirs[$i]/$files[$i] does not exist"$nc 
         fi 
     done
+
+    echo $c2"No of directories to backup: "${#edirs}$nc
     for ((i=1;i<=${#edirs};i++)) do
         if [[ -d $edirs[$i]/$edf[$i] ]] ;then
+            mkdir -pv $dir/$edf[$i]
          cp -rap $edirs[$i]/$edf[$i] $dir && ((k=k+1)) && echo "$c1'$edirs[$i]/$edf[$i]'$nc -> $c2'$dir/$edf[$i]'$nc"
         else
             echo $rc"$edirs[$i]/$edf[$i] does not exist"$nc
@@ -61,7 +64,7 @@ elif [ $1 = "backup" ] ; then
     # echo $c1"dconf dump /org/gnome/$nc >$c2 $cnfdir/dconfgnome$nc"
     # echo $c1"dconf dump /org/gnome/$nc >$c2 $dir/dconfgnome$nc"
     
-    echo "$c1$bold$k "$c2"Config files backed up $nc"
+    echo "$c2$bold$k$c2 Config items backed up $nc"
 
 
 elif [ $1 = "restore" ] ; then
@@ -89,7 +92,7 @@ elif [ $1 = "restore" ] ; then
         echo $c1"dconf load /org/$dconfs[$i]$nc < $c2 $dir/dconf$dconfs[$i]$nc"
     done
     echo $c1"Restoring gnome settings"$nc
-    echo "$c1$bold$k "$c2"Config files restored $nc"
+    echo "$c2$bold$k "$c2"Config items restored $nc"
 
 
 elif [ $1 = "install" ] ; then
@@ -124,7 +127,7 @@ elif [ $1 = "install" ] ; then
     [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || dconf load /org/gnome/ < $cnfdir/dconfgnome
     ((k=k+1))
     echo $c1"Restoring gnome settings "$nc
-    echo "$c1$bold$k "$c2"Config files copied $nc"
+    echo "$c2$bold$k "$c2"Config items copied $nc"
     echo "Setting git global configs"
     git config --global user.name "$HOST-$USER"
     git config --global user.email "manuhegdev@gmail.com"

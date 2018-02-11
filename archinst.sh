@@ -52,7 +52,7 @@ pacman -S xf86-video-intel xf86-input-synaptics xf86-input-mouse xf86-video-vesa
 # kde5 plasma -sddm , gnome GDM , lightgdm -universal
 # pacman -Rcs => recursive remove
 #pacman -S sddm plasma kde-applications
-pacman -S gdm gnome gnome-extra i3-gaps i3lock i3status perl-json-xs perl-anyevent-i3 i3blocks
+pacman -S gdm gnome gnome-extra i3-gaps i3lock i3status perl-json-xs perl-anyevent-i3 i3blocks display-visor
 pacman -S network-manager-applet networkmanager dhclient
 #lightgdm i3
 systemctl enable gdm

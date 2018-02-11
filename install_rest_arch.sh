@@ -40,7 +40,7 @@ tmux gpg-crypter emacs curl powerline rxvt-unicode atom xxd gparted unrar qt4 \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
 libreoffice-fresh linux-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
- flatpak-builder glfw-x11 strace dnstracer
+flatpak-builder glfw-x11 strace dnstracer
 # teamspeak3
 
 curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
