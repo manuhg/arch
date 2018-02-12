@@ -349,7 +349,7 @@ default-sort-order='type'
 
 [gnome/nautilus/window-state]
 sidebar-width=179
-geometry='1326x663+20+20'
+geometry='1183x642+23+15'
 maximized=false
 
 [gnome/nautilus/compression]
@@ -603,7 +603,7 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 
 [gtk/settings/file-chooser]
-sort-column='name'
+sort-column='modified'
 clock-format='12h'
 sidebar-width=170
 window-position=(1920, 328)
@@ -612,7 +612,7 @@ show-hidden=false
 window-size=(1366, 693)
 sort-directories-first=true
 date-format='regular'
-sort-order='ascending'
+sort-order='descending'
 location-mode='path-bar'
 
 [gtk/settings/color-chooser]
