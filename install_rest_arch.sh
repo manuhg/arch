@@ -36,7 +36,7 @@ rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop   \
 nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake rsync \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim unzip \
 synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython lshw go   \
-tmux gpg-crypter emacs curl powerline rxvt-unicode atom xxd gparted unrar qt4 \
+tmux gpg-crypter emacs curl powerline rxvt-unicode atom xxd gparted unrar     \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
 libreoffice-fresh linux-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
