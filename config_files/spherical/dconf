@@ -350,7 +350,7 @@ default-sort-order='type'
 [gnome/nautilus/window-state]
 sidebar-width=179
 geometry='1183x642+23+15'
-maximized=false
+maximized=true
 
 [gnome/nautilus/compression]
 default-compression-format='tar.xz'
@@ -608,7 +608,7 @@ clock-format='12h'
 sidebar-width=170
 window-position=(1920, 328)
 show-size-column=true
-show-hidden=false
+show-hidden=true
 window-size=(1366, 693)
 sort-directories-first=true
 date-format='regular'

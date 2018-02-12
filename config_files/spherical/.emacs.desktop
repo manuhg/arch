@@ -1,0 +1,175 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Feb 11 22:40:43 2018
+;; Desktop file format version 208
+;; Emacs version 25.3.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23168 30995 614146 670000) (desktop . "208") "gk1000@spherical" nil nil ((((font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "Monospace 11") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#DCDCCC") (background-color . "#3F3F3F") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 0) (alpha) (fullscreen . maximized) (display-type . color) (background-mode . dark) (cursor-color . "#FFFFEF") (sticky) (environment) (frameset--id . "641B-640E-7F7D-8464") (frameset--mini t . t) (height . 56) (width . 209) (modeline . t) (minibuffer . t) (unsplittable) (left + -1) (top . 26) (icon-name) (visibility . t) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 30) (min-height-ignore . 4) (min-width-ignore . 18) (min-height-safe . 2) (min-width-safe . 6) (min-pixel-height . 144) (min-pixel-width . 270) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 162) (min-pixel-height-safe . 36) (min-pixel-width-safe . 54)) hc (pixel-width . 1920) (pixel-height . 1007) (total-width . 213) (total-height . 56) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 480) (pixel-height . 1007) (total-width . 53) (total-height . 56) (normal-height . 1.0) (normal-width . 0.25) (buffer "fsort.cpp" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 1096) (start . 25))) (leaf (pixel-width . 477) (pixel-height . 1007) (total-width . 53) (total-height . 56) (normal-height . 1.0) (normal-width . 0.25) (buffer "tsne.cpp" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 3242) (start . 2018))) (vc (last . t) (pixel-width . 963) (pixel-height . 1007) (total-width . 107) (total-height . 56) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 963) (pixel-height . 503) (total-width . 107) (total-height . 28) (normal-height . 0.5) (normal-width . 1.0) (buffer "ofApp.cpp" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 941) (start . 270))) (leaf (last . t) (pixel-width . 963) (pixel-height . 504) (total-width . 107) (total-height . 28) (normal-height . 0.5) (normal-width . 1.0) (buffer "ofxTSNE.cpp" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 449) (start . 310))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/" "~/dev/resources/ofxTSNE/src/bhtsne/tsne.cpp" "~/dev/resources/ofxTSNE/" "~/dev/resources/" "~/dev" "~/.emacs.d/sample/prelude-modules.el" "~/dev/fsort/src/fsort.cpp" "~/.emacs.d/sample/prelude-modules.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/gk1000/dev/resources/ofxTSNE/src/bhtsne/tsne.cpp"
+  "tsne.cpp"
+  'c++-mode
+  '(abbrev-mode beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode undo-tree-mode diff-hl-mode editorconfig-mode)
+  3242
+  '(3242 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/gk1000/dev/fsort/src/fsort.cpp"
+  "fsort.cpp"
+  'c++-mode
+  '(abbrev-mode beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode undo-tree-mode diff-hl-mode editorconfig-mode)
+  1096
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (688 1136 1057 1126 1158 1057 761 1257 870 1096 1025 949 949 949))))
+
+(desktop-create-buffer 208
+  "/home/gk1000/dev/resources/ofxTSNE/src/ofxTSNE.cpp"
+  "ofxTSNE.cpp"
+  'c++-mode
+  '(abbrev-mode beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode undo-tree-mode diff-hl-mode editorconfig-mode)
+  449
+  '(2408 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2320 151 193 216 216 309 351 386 412 391 386 351 346 193 169 391))))
+
+(desktop-create-buffer 208
+  "/home/gk1000/dev/resources/ofxTSNE/example-images/src/ofApp.cpp"
+  "ofApp.cpp"
+  'c++-mode
+  '(abbrev-mode beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode undo-tree-mode diff-hl-mode editorconfig-mode)
+  941
+  '(942 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (773 858 1101 1138 1387 1415 1325 1383 1411 1413 1357 1291 1291 1274))))
+
+(desktop-create-buffer 208
+  nil
+  "src"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode diff-hl-dired-mode)
+  312
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/resources/ofxTSNE/src/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "ofxTSNE"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode diff-hl-dired-mode)
+  1172
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/resources/ofxTSNE/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "src"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode diff-hl-dired-mode)
+  320
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/resources/ofxTSNE/example-images/src/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "example-images"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode diff-hl-dired-mode)
+  712
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/resources/ofxTSNE/example-images/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "resources"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode diff-hl-dired-mode)
+  1603
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/resources/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "src"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode diff-hl-dired-mode)
+  629
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/fsort/src/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/gk1000/.emacs.d/sample/prelude-modules.el"
+  "prelude-modules.el"
+  'emacs-lisp-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode undo-tree-mode diff-hl-mode editorconfig-mode)
+  877
+  '(980 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (1322 1349 1322 1271 1241 1214 1058 957 828 855 877 877))))
+
+(desktop-create-buffer 208
+  nil
+  "fsort"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode diff-hl-dired-mode)
+  527
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/fsort/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "dev"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode diff-hl-dired-mode)
+  414
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/")
+  nil
+  '((mark-ring nil)))
+
