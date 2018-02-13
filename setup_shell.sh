@@ -28,7 +28,7 @@ elif [ $1 = "backup" ] ; then
     [[ ! -d $dir ]] && mkdir -pv $dir
     echo $c1"Dir:$c2 $dir $nc"
     echo $c1"Backing up $c2 vscode $nc extensions to$c1 file vscode_extensions$nc"
-    code --list-extensions > vscode_extensions
+    code --list-extensions > $cnfdir/vscode_extensions
     echo $c2"No of files to backup: "${#files}$nc
     for ((i=1;i<=${#files};i++)) do
         if [[ -f $fdirs[$i]/$files[$i] ]];then
@@ -71,7 +71,7 @@ elif [ $1 = "backup" ] ; then
 
 elif [ $1 = "restore" ] ; then
     echo $c1"Installing vscode extensions"$nc
-    cat vscode_extensions| xargs -L 1 code --install-extension
+    cat $cnfdir/vscode_extensions| xargs -L 1 code --install-extension
     [ -d ~/.config/xfce4 ] && cp -rapv $dir/xfce4 ~/.config/
     for ((i=1;i<=${#files};i++)) do
         if [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] ;then
@@ -113,7 +113,7 @@ elif [ $1 = "install" ] ; then
     #go get -u mvdan.cc/sh/cmd/shfmt
     cp $cnfdir/.histfile ~/
     echo $c1"$cnfdir/.histfile -> ~/"$nc
-    cat vscode_extensions| xargs -L 1 code --install-extension
+    cat $cnfdir/vscode_extensions| xargs -L 1 code --install-extension
     [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
     for ((i=1;i<=${#edirs};i++)) do
         [[ -d $dir/$edf[$i] ]] && cp -rap $dir/$edf[$i] $edirs[$i]/ && ((k=k+1)) && \
