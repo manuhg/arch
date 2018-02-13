@@ -41,7 +41,7 @@ powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
 libreoffice-fresh linux-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
 flatpak-builder glfw-x11 strace dnstracer figlet cowsay banner cmatrix        \
-cowfortune
+cowfortune pavucontrol
 # teamspeak3
 
 curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
