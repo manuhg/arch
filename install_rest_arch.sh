@@ -64,7 +64,7 @@ pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome toilet  \
 plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar  \
 apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm   \
 numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized \
-rslsync numix-folders-git  leiningen ccv 
+rslsync numix-folders-git  leiningen ccv touchegg touchegg-gce-git
 
 pacaur -S clamav clamtk clamtk-gnome brave-git thunar-sendto-clamtk clamav-unofficial-sigs && \
  sudo freshclam && clamav-unofficial-sigs.sh --install-all && clamav-unofficial-sigs.sh
