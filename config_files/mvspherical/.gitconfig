@@ -6,7 +6,7 @@ br = branch
 
 hist=log --pretty=format:'%H %ad | %s%d [%an]' --graph --date=short
 	pushall = !git remote | xargs -L1 git push
-	rmsub = !~/scripts/git/submodule_rm.sh
+	rmsub = !~/arch/_git/submodule_rm.sh
 [user]
-	email = gk1010100@gmail.com
-	name =  mvspherical-gk1000
+	email = manuhegdev@gmail.com
+	name =  manuhg
