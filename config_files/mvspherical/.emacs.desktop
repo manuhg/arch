@@ -1,0 +1,55 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sat Feb 17 11:54:31 2018
+;; Desktop file format version 208
+;; Emacs version 25.3.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23175 51871 613521 545000) (desktop . "208") "gk1000@mvspherical" nil nil ((((font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "Monospace 11") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#DCDCCC") (background-color . "#3F3F3F") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "#FFFFEF") (environment) (frameset--id . "E46C-DB09-E6D8-F29A") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (visibility . t) (display . ":0") (explicit-name) (height . 40) (width . 147) (left . 0) (top . 18)) ((min-height . 4) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 72) (min-pixel-width . 180) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 108) (min-pixel-height-safe . 18) (min-pixel-width-safe . 36)) hc (pixel-width . 1362) (pixel-height . 711) (total-width . 151) (total-height . 39) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 812) (pixel-height . 711) (total-width . 90) (total-height . 39) (normal-height . 1.0) (normal-width . 0.5988200589970502) (buffer "cron.py" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 1506) (start . 1041))) (leaf (last . t) (pixel-width . 550) (pixel-height . 711) (total-width . 61) (total-height . 39) (normal-height . 1.0) (normal-width . 0.4011799410029495) (buffer "*Python*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 9959) (start . 9632)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/home/gk1000/.emacs.d/" "/home/gk1000/dev/rorolite/rorolite/cron.py" "/home/gk1000/" "/home/gk1000/dev/rorolite/rorolite/" "~/.emacs.d/sample/prelude-modules.el" "~/dev/resources/ofxTSNE/example-images/src/ofApp.cpp" "~/dev/resources/ofxTSNE/src/ofxTSNE.cpp" "~/dev/fsort/src/fsort.cpp" "~/dev/resources/ofxTSNE/src/bhtsne/tsne.cpp"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/gk1000/dev/rorolite/rorolite/cron.py"
+  "cron.py"
+  'python-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode smartparens-mode volatile-highlights-mode projectile-mode anzu-mode whitespace-mode undo-tree-mode diff-hl-mode editorconfig-mode ivy-mode company-mode flycheck-mode guru-mode)
+  1506
+  '(1675 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2046 1 1971 1 2031 1448 1522 1448 1522 1577 1521 1115 1577 1522 1330 1330))))
+
+(desktop-create-buffer 208
+  nil
+  "arch"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode ivy-mode company-mode diff-hl-dired-mode)
+  123
+  '(nil nil)
+  t
+  '("/home/gk1000/arch/")
+  nil
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "gk1000"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode ivy-mode company-mode diff-hl-dired-mode)
+  314
+  '(nil nil)
+  t
+  '("/home/gk1000/")
+  nil
+  '((mark-ring nil)))
+
