@@ -48,7 +48,7 @@ show-thousands=false
 button-mode='basic'
 target-units='radian'
 word-size=64
-window-position=(23, 15)
+window-position=(427, 96)
 number-format='automatic'
 angle-units='degrees'
 base=16
@@ -452,7 +452,7 @@ default-compression-format='tar.xz'
 
 [gnome/nautilus/icon-view]
 captions=['none', 'none', 'none']
-default-zoom-level='small'
+default-zoom-level='standard'
 
 [gnome/nautilus/desktop]
 home-icon-visible=false
