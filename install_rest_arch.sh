@@ -33,15 +33,15 @@ echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable
 
 sudo pacman -Syu --noconfirm hexedit python nitrogen arduino namcap testdisk  \
 rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop   \
-nasm gcc php qemu geany vlc python-pip python2-pip aircrack-ng automake rsync \
+nasm gcc php qemu geany vlc python-pip aircrack-ng automake rsync \
 ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim unzip \
 synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython lshw go   \
 tmux gpg-crypter emacs curl powerline rxvt-unicode atom xxd gparted unrar sl  \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
-libreoffice-fresh linux-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
-flatpak-builder glfw-x11 strace dnstracer figlet cowsay banner cmatrix        \
-cowfortune pavucontrol
+libreoffice-fresh linux-hardened-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
+flatpak-builder glfw-x11 strace dnstracer figlet cowsay banner cmatrix bazel  \
+cowfortune pavucontrol linux-hardened
 # teamspeak3
 
 curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
@@ -64,7 +64,9 @@ pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome toilet  \
 plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar  \
 apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm   \
 numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized \
-rslsync numix-folders-git  leiningen ccv touchegg touchegg-gce-git
+rslsync numix-folders-git  leiningen ccv touchegg touchegg-gce-git \
+multibootusb woeusb-git
+#unetbootin
 
 pacaur -S clamav clamtk clamtk-gnome brave-git thunar-sendto-clamtk clamav-unofficial-sigs && \
  sudo freshclam && clamav-unofficial-sigs.sh --install-all && clamav-unofficial-sigs.sh

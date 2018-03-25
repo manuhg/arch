@@ -10,6 +10,33 @@ iwlist scan
 wpa_supplicant -i wlp2s0f0 -c <(wpa_passphrase [SSID] [PASSPHRASE])
 dhcp wlp2s0f0
 
+##########################################################################################################################
+#grub
+rw init=/bin/bash
+
+#Using a LiveCD
+#With a LiveCD a couple methods are available: change root and use the passwd command, or erase the password field entry directly editing the password file. Any Linux capable LiveCD can be used, albeit to change root it must match your installed architecture type. Here we only describe how to reset your password with chroot, since manual editing the password file is significantly more risky.
+
+#Change root
+#Boot the LiveCD and mount the root partition of your main system.
+#Use the 
+
+passwd --root MOUNT_POINT USER_NAME command #to set the new password (you won't be prompted for an old one).
+
+#Unmount the root partition.
+#Reboot, and enter your new password. If you can't remember it, go to step 1.
+#Using GRUB to invoke bash
+#Select the appropriate boot entry in the GRUB menu and press e to edit the line.
+#Select the kernel line and press e again to edit it.
+#Append 
+init=/bin/bash # at the end of line.
+#Press Ctrl-X to boot (this change is only temporary and will not be saved to your menu.lst). After booting you will be at the bash prompt.
+#Your root file system is mounted as readonly now, so remount it as read/write mount -n -o remount,rw /.
+#Use the passwd command to create a new root password.
+#Reboot by typing 
+reboot -f #and do not lose your password again!
+##########################################################################################################################
+
 #copy based on checksum, preserve perms
 rsync -rcpv dir1 dir2
 
