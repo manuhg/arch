@@ -1,106 +1,31 @@
-[gnome/software]
-first-run=false
-check-timestamp=int64 1507890180
-
-[gnome/GWeather]
-temperature-unit='centigrade'
-
-[gnome/builder]
-window-position=(0, 0)
+[gnome/polari]
+window-size=[800, 500]
+saved-channel-list=[{'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#gcc'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#linux'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#haskell'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#git'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#javascript'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#gentoo'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#bitcoin'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#security'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#crypto'>}, {'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#openbsd'>}]
+last-selected-channel={'account': <'/org/freedesktop/Telepathy/Account/idle/irc/gk10000'>, 'channel': <'#gcc'>}
+run-in-background=false
 window-maximized=true
-window-size=(1366, 698)
 
-[gnome/builder/workbench]
-bottom-position=200
-right-visible=false
-bottom-visible=false
-left-position=250
-left-visible=true
-right-position=250
+[gnome/Totem]
+subtitle-encoding='UTF-8'
+active-plugins=['movie-properties', 'recent', 'media_player_keys', 'variable-rate', 'save-file', 'skipto', 'autoload-subtitles', 'vimeo', 'apple-trailers', 'screensaver', 'screenshot']
 
-[gnome/builder/build]
-parallel=-1
+[gnome/Weather/Application]
+locations=[<(uint32 2, <('Bangalore', 'VOBG', true, [(0.22601989378717041, 1.3555659188172149)], [(0.22631101470640302, 1.3537937114947398)])>)>]
 
-[gnome/builder/project-tree]
-show-ignored-files=false
-show-icons=true
-
-[gnome/builder/editor]
-auto-save-timeout=60
-minimum-word-size=2
-overscroll=10
-
-[gnome/brasero/plugins/dvd-rw-format]
-priority=0
-
-[gnome/brasero/plugins/dvdauthor]
-priority=0
-
-[gnome/brasero/plugins/image-checksum]
-priority=0
-
-[gnome/brasero/plugins/audio2cue]
-priority=0
-
-[gnome/brasero/plugins/file-checksum]
-priority=0
-
-[gnome/brasero/plugins/libisofs]
-priority=0
-
-[gnome/brasero/plugins/file-downloader]
-priority=0
-
-[gnome/brasero/plugins/cdrdao]
-priority=0
-
-[gnome/brasero/plugins/burn-uri]
-priority=0
-
-[gnome/brasero/plugins/wodim]
-priority=0
-
-[gnome/brasero/plugins/genisoimage]
-priority=0
-
-[gnome/brasero/plugins/growisofs]
-priority=0
-
-[gnome/brasero/plugins/readom]
-priority=0
-
-[gnome/brasero/plugins/normalize]
-priority=0
-
-[gnome/brasero/plugins/transcode]
-priority=0
-
-[gnome/brasero/plugins/transcode2vob]
-priority=0
-
-[gnome/brasero/plugins/libburn]
-priority=0
-
-[gnome/brasero/plugins/dvdcss]
-priority=0
-
-[gnome/brasero/plugins/vcdimager]
-priority=0
-
-[gnome/brasero/drives/drive-4182444884/disc-4]
-speed=22160
-flags=64
-
-[gnome/brasero/drives/drive-4182444884/image-4]
-speed=22160
-flags=64
-
-[gnome/baobab/ui]
-window-state=87168
-window-size=(960, 600)
+[gnome/gnome-nettool]
+hostnames=['198.199.121.120']
 
 [gnome/Disks]
 image-dir-uri='file:///home/gk1000/Documents'
+
+[gnome/bijiben]
+window-maximized=false
+default-location='local'
+window-position=[23, 15]
+use-system-font=true
+window-size=[810, 600]
+color='rgb(239,242,209)'
+font='Cantarell 14'
 
 [gnome/calculator]
 target-currency=''
@@ -117,56 +42,208 @@ base=16
 source-units='degree'
 accuracy=9
 
-[gnome/Weather/Application]
-locations=[<(uint32 2, <('Bangalore', 'VOBG', true, [(0.22601989378717041, 1.3555659188172149)], [(0.22631101470640302, 1.3537937114947398)])>)>]
+[gnome/evolution/mail]
+junk-check-incoming=true
+browser-close-on-reply-policy='ask'
+headers=['<?xml version="1.0"?>\n<header name="From" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Reply-To" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="To" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Cc" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Bcc" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Subject" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Date" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Newsgroups" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Face" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="x-evolution-mailer"/>\n']
+reply-style-name='quoted'
+forward-style-name='attached'
+image-loading-policy='never'
+search-gravatar-for-photo=false
+show-headers=[('From', true), ('Reply-To', true), ('To', true), ('Cc', true), ('Bcc', true), ('Subject', true), ('Date', true), ('Newsgroups', true), ('Face', true), ('x-evolution-mailer', false)]
+
+[gnome/evolution/mail/composer-window]
+width=604
+maximized=false
+height=500
+
+[gnome/evolution/addressbook]
+completion-show-address=false
+completion-minimum-query-length=3
+
+[gnome/evolution/calendar]
+work-day-thursday=true
+work-day-sunday=false
+prefer-new-item=''
+work-day-saturday=false
+work-day-tuesday=true
+week-start-day-name='monday'
+work-day-wednesday=true
+work-day-monday=true
+work-day-friday=true
+
+[gnome/evolution/shell]
+attachment-view=0
+
+[gnome/evolution]
+version='3.26.4'
+
+[gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='nothing'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout=1800
+
+[gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+night-light-schedule-from=22.5
+night-light-enabled=true
+night-light-last-coordinates=(12.9833, 77.583299999999994)
+
+[gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>space'
+command='synapse'
+name='synapse'
+
+[gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Primary><Alt>t'
+command='gnome-terminal'
+name='open terminal'
+
+[gnome/settings-daemon/plugins/xsettings]
+antialiasing='grayscale'
+hinting='slight'
+
+[gnome/settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[gnome/simple-scan]
+save-directory='/home/gk1000/Desktop'
+document-type='photo'
 
 [gnome/clocks/state/window]
 size=(870, 690)
 state=87168
 panel-id='world'
 
-[gnome/evince]
-document-directory=@ms 'file:///home/gk1000/ceokar'
-pictures-directory=@ms 'file:///home/gk1000'
+[gnome/rhythmbox/library/source]
+show-browser=true
 
-[gnome/evince/default]
-window-ratio=(2.3071896112432673, 1.0479798292074798)
+[gnome/rhythmbox/plugins/audioscrobbler/Last.fm]
+scrobbling-enabled=true
 
-[gnome/file-roller/listing]
-sort-method='name'
-name-column-width=1029
-sort-type='descending'
-list-mode='as-folder'
-show-path=false
+[gnome/rhythmbox/plugins/audioscrobbler/Libre.fm]
+scrobbling-enabled=true
 
-[gnome/file-roller/dialogs/new]
-default-extension='.7z'
-volume-size=104857
-encrypt-header=true
+[gnome/rhythmbox/plugins/iradio]
+initial-stations-loaded=true
 
-[gnome/file-roller/dialogs/extract]
-skip-newer=false
-recreate-folders=true
+[gnome/rhythmbox/plugins/iradio/source]
+show-browser=true
 
-[gnome/file-roller/ui]
-sidebar-width=200
-window-height=512
-window-width=1291
+[gnome/rhythmbox/plugins]
+active-plugins=['mmkeys', 'mtpdevice', 'generic-player', 'audiocd', 'artsearch', 'dbus-media-server', 'mpris', 'rb', 'ipod', 'notification', 'daap', 'android', 'audioscrobbler', 'power-manager', 'iradio']
+seen-plugins=['lyrics', 'fmradio', 'mtpdevice', 'soundcloud', 'im-status', 'artsearch', 'dbus-media-server', 'mpris', 'rb', 'rblirc', 'sendto', 'ipod', 'pythonconsole', 'notification', 'magnatune', 'daap', 'rbzeitgeist', 'replaygain', 'audioscrobbler', 'grilo']
+
+[gnome/rhythmbox/player]
+play-order='shuffle'
+volume=1.0
+
+[gnome/rhythmbox/podcast/source]
+show-browser=true
+
+[gnome/rhythmbox]
+position=(81, 27)
+size=(1188, 560)
+
+[gnome/rhythmbox/rhythmdb]
+locations=['file:///home/gk1000']
 
 [gnome/calendar]
 active-view='month'
 window-maximized=true
 
-[gnome/evolution-data-server]
-network-monitor-gio-name=''
-migrated=true
+[gnome/gedit/preferences/editor]
+use-default-font=true
+scheme='builder-dark'
+wrap-last-split-mode='word'
 
-[gnome/deja-dup]
-backend='file'
-prompt-check='disabled'
+[gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
 
-[gnome/deja-dup/file]
-path='/home/gk1000/deja-dup'
+[gnome/gedit/plugins/filebrowser]
+virtual-root='file:///run/media/gk1000/Hegde/Manu_Hegde/.others'
+tree-view=true
+root='file:///'
+
+[gnome/gedit/plugins]
+active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
+
+[gnome/gedit/state/history-entry]
+search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
+replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
+
+[gnome/gedit/state/window]
+size=(821, 568)
+state=87040
+bottom-panel-size=140
+side-panel-size=200
+side-panel-active-page='GeditWindowDocumentsPanel'
+
+[gnome/baobab/ui]
+window-state=87168
+window-size=(960, 600)
+
+[gnome/terminal/legacy]
+new-terminal-mode='tab'
+schema-version=uint32 3
+
+[gnome/terminal/legacy/keybindings]
+copy-html='<Primary><Shift>h'
+select-all='<Primary><Shift>a'
+move-tab-right='<Primary><Shift>Right'
+prev-tab='<Shift>Left'
+next-tab='<Shift>Right'
+move-tab-left='<Primary><Shift>Left'
+
+[gnome/terminal/legacy/profiles:/:98e1fe04-8e5a-49c5-a383-acd78823e520]
+foreground-color='rgb(211,215,207)'
+visible-name='gk1000_3'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(111,125,130)', 'rgb(203,75,22)', 'rgb(71,153,0)', 'rgb(115,131,101)', 'rgb(110,148,170)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+cursor-shape='ibeam'
+use-system-font=false
+use-theme-colors=false
+font='Monospace 11'
+use-theme-transparency=false
+use-theme-background=false
+bold-color-same-as-fg=true
+bold-color='#9494a3a3a5a5'
+background-color='rgb(37,36,36)'
+
+[gnome/terminal/legacy/profiles:/:03552f37-3e02-41d3-8b0d-bd4a8ed55a9c]
+foreground-color='#838394949696'
+visible-name='Solarized-dark'
+palette=['#070736364242', '#DCDC32322F2F', '#858599990000', '#CFCF9A9A6B6B', '#26268B8BD2D2', '#D3D336368282', '#2A2AA1A19898', '#EEEEE8E8D5D5', '#65657B7B8383', '#D8D879797979', '#8888CFCF7676', '#65657B7B8383', '#26269999FFFF', '#D3D336368282', '#4343B8B8C3C3', '#FDFDF6F6E3E3']
+cursor-shape='ibeam'
+use-system-font=false
+use-theme-colors=false
+font='Monospace 11'
+use-theme-transparency=false
+use-theme-background=false
+bold-color-same-as-fg=false
+bold-color='#93A1A1'
+background-color='#00002B2B3636'
+
+[gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(74,140,11)'
+visible-name='gk1000'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(255,255,255)']
+cursor-shape='ibeam'
+use-system-font=false
+use-theme-colors=false
+font='Monospace 11'
+use-theme-transparency=false
+bold-color-same-as-fg=true
+background-color='rgb(39,36,36)'
+
+[gnome/terminal/legacy/profiles:]
+list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55a9c']
+
+[gnome/documents]
+window-maximized=true
 
 [gnome/desktop/interface]
 text-scaling-factor=1.0
@@ -183,10 +260,13 @@ gtk-theme='Arc-Darker'
 clock-show-date=true
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari']
 
 [gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
 
 [gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -205,6 +285,9 @@ application-id='file-roller.desktop'
 
 [gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
+
+[gnome/desktop/notifications/application/org-gnome-polari]
+application-id='org.gnome.Polari.desktop'
 
 [gnome/desktop/notifications/application/transmission-gtk]
 application-id='transmission-gtk.desktop'
@@ -235,6 +318,7 @@ application-id='keybase.desktop'
 
 [gnome/desktop/media-handling]
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media', 'x-content/blank-dvd']
+autorun-never=true
 autorun-x-content-ignore=['x-content/bootable-media', 'x-content/blank-dvd']
 autorun-x-content-open-folder=@as []
 
@@ -261,11 +345,19 @@ lock-delay=uint32 0
 picture-options='zoom'
 secondary-color='#000000000000'
 
-[gnome/desktop/search-providers]
-sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+[gnome/desktop/peripherals/touchpad]
+tap-to-click=true
 
 [gnome/desktop/calendar]
 show-weekdate=false
+
+[gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[gnome/desktop/privacy]
+remove-old-temp-files=true
+old-files-age=uint32 3
+remove-old-trash-files=true
 
 [gnome/desktop/wm/preferences]
 button-layout='close,minimize,maximize:appmenu'
@@ -317,7 +409,7 @@ theme-name='__custom'
 event-sounds=true
 
 [gnome/desktop/background]
-picture-uri='file:///home/gk1000/Pictures/Wallpapers/macOS-Sierra-wallpaper.jpg'
+picture-uri='file:///home/gk1000/Pictures/Wallpapers/macOS-x-10.11-wallpaper.jpg'
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -328,17 +420,66 @@ current=uint32 0
 sources=[('xkb', 'us')]
 xkb-options=@as []
 
-[gnome/orca]
-active-profile=['Default', 'default']
+[gnome/devhelp/state/main/contents]
+group-books-by-language=false
 
-[gnome/bijiben]
-window-maximized=false
-default-location='local'
-window-position=[23, 15]
-use-system-font=true
-window-size=[810, 600]
-color='rgb(239,242,209)'
-font='Cantarell 14'
+[gnome/anjuta]
+toolbar-visible=true
+remembered-plugins=''
+
+[gnome/file-roller/listing]
+sort-method='name'
+name-column-width=1029
+sort-type='descending'
+list-mode='as-folder'
+show-path=false
+
+[gnome/file-roller/dialogs/new]
+default-extension='.7z'
+volume-size=104857
+encrypt-header=true
+
+[gnome/file-roller/dialogs/extract]
+skip-newer=false
+recreate-folders=true
+
+[gnome/file-roller/ui]
+sidebar-width=200
+window-height=512
+window-width=1291
+
+[gnome/evolution-data-server]
+network-monitor-gio-name=''
+migrated=true
+
+[gnome/builder]
+window-position=(0, 0)
+window-maximized=true
+window-size=(1366, 698)
+
+[gnome/builder/workbench]
+bottom-position=200
+right-visible=false
+bottom-visible=false
+left-position=250
+left-visible=true
+right-position=250
+
+[gnome/builder/build]
+parallel=-1
+
+[gnome/builder/project-tree]
+show-ignored-files=false
+show-icons=true
+
+[gnome/builder/editor]
+auto-save-timeout=60
+minimum-word-size=2
+overscroll=10
+
+[gnome/software]
+first-run=false
+check-timestamp=int64 1507890180
 
 [gnome/nautilus/preferences]
 search-view='list-view'
@@ -348,9 +489,9 @@ sort-directories-first=true
 default-sort-order='type'
 
 [gnome/nautilus/window-state]
-sidebar-width=179
-geometry='1183x642+23+15'
-maximized=true
+sidebar-width=159
+geometry='1061x643+23+15'
+maximized=false
 
 [gnome/nautilus/compression]
 default-compression-format='tar.xz'
@@ -370,76 +511,6 @@ default-zoom-level='small'
 use-tree-view=true
 default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where']
 
-[gnome/simple-scan]
-save-directory='/home/gk1000/Desktop'
-document-type='photo'
-
-[gnome/gedit/preferences/editor]
-use-default-font=true
-scheme='builder-dark'
-wrap-last-split-mode='word'
-
-[gnome/gedit/preferences/ui]
-show-tabs-mode='auto'
-
-[gnome/gedit/plugins/filebrowser]
-virtual-root='file:///run/media/gk1000/Hegde/Manu_Hegde/.others'
-tree-view=false
-root='file:///'
-
-[gnome/gedit/plugins]
-active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
-
-[gnome/gedit/state/history-entry]
-search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
-replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
-
-[gnome/gedit/state/window]
-size=(869, 568)
-state=87168
-bottom-panel-size=140
-side-panel-size=200
-side-panel-active-page='GeditWindowDocumentsPanel'
-
-[gnome/eog/view]
-background-color='rgb(0,0,0)'
-use-background-color=true
-
-[gnome/eog/ui]
-sidebar=true
-
-[gnome/gnome-screenshot]
-include-pointer=false
-include-border=true
-border-effect='none'
-delay=0
-last-save-directory='file:///home/gk1000/Pictures'
-
-[gnome/settings-daemon/plugins/color]
-night-light-schedule-automatic=false
-night-light-schedule-from=22.5
-night-light-enabled=true
-
-[gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
-
-[gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-binding='<Super>space'
-command='synapse'
-name='synapse'
-
-[gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Primary><Alt>t'
-command='gnome-terminal'
-name='open terminal'
-
-[gnome/settings-daemon/plugins/xsettings]
-antialiasing='grayscale'
-hinting='slight'
-
-[gnome/settings-daemon/peripherals/keyboard]
-numlock-state='on'
-
 [gnome/shell]
 app-picker-view=uint32 0
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
@@ -450,6 +521,7 @@ favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Nautilus.d
 name=''
 
 [gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=false
 force-straight-corner=false
 dock-fixed=false
 unity-backlit-items=false
@@ -462,133 +534,16 @@ mode=1
 [gnome/shell/calendar]
 show-weekdate=false
 
-[gnome/rhythmbox/library/source]
-show-browser=true
+[gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
 
-[gnome/rhythmbox/plugins/audioscrobbler/Last.fm]
-scrobbling-enabled=true
+[gnome/eog/ui]
+sidebar=true
 
-[gnome/rhythmbox/plugins/audioscrobbler/Libre.fm]
-scrobbling-enabled=true
-
-[gnome/rhythmbox/plugins/iradio]
-initial-stations-loaded=true
-
-[gnome/rhythmbox/plugins/iradio/source]
-show-browser=true
-
-[gnome/rhythmbox/plugins]
-active-plugins=['mmkeys', 'mtpdevice', 'generic-player', 'audiocd', 'artsearch', 'dbus-media-server', 'mpris', 'rb', 'ipod', 'notification', 'daap', 'android', 'audioscrobbler', 'power-manager', 'iradio']
-seen-plugins=['lyrics', 'fmradio', 'mtpdevice', 'soundcloud', 'im-status', 'artsearch', 'dbus-media-server', 'mpris', 'rb', 'rblirc', 'sendto', 'ipod', 'pythonconsole', 'notification', 'magnatune', 'daap', 'rbzeitgeist', 'replaygain', 'audioscrobbler', 'grilo']
-
-[gnome/rhythmbox/player]
-play-order='shuffle'
-volume=1.0
-
-[gnome/rhythmbox/podcast/source]
-show-browser=true
-
-[gnome/rhythmbox]
-position=(81, 27)
-size=(1188, 560)
-
-[gnome/rhythmbox/rhythmdb]
-locations=['file:///home/gk1000']
-
-[gnome/evolution/mail]
-junk-check-incoming=true
-browser-close-on-reply-policy='ask'
-headers=['<?xml version="1.0"?>\n<header name="From" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Reply-To" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="To" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Cc" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Bcc" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Subject" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Date" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Newsgroups" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="Face" enabled=""/>\n', '<?xml version="1.0"?>\n<header name="x-evolution-mailer"/>\n']
-reply-style-name='quoted'
-forward-style-name='attached'
-image-loading-policy='never'
-search-gravatar-for-photo=false
-show-headers=[('From', true), ('Reply-To', true), ('To', true), ('Cc', true), ('Bcc', true), ('Subject', true), ('Date', true), ('Newsgroups', true), ('Face', true), ('x-evolution-mailer', false)]
-
-[gnome/evolution/mail/composer-window]
-width=604
-maximized=false
-height=500
-
-[gnome/evolution/addressbook]
-completion-show-address=false
-completion-minimum-query-length=3
-
-[gnome/evolution/calendar]
-work-day-thursday=true
-work-day-sunday=false
-prefer-new-item=''
-work-day-saturday=false
-work-day-tuesday=true
-week-start-day-name='monday'
-work-day-wednesday=true
-work-day-monday=true
-work-day-friday=true
-
-[gnome/evolution/shell]
-attachment-view=0
-
-[gnome/evolution]
-version='3.26.4'
-
-[gnome/Totem]
-subtitle-encoding='UTF-8'
-active-plugins=['movie-properties', 'recent', 'media_player_keys', 'variable-rate', 'save-file', 'skipto', 'autoload-subtitles', 'vimeo', 'apple-trailers', 'screensaver', 'screenshot']
-
-[gnome/terminal/legacy]
-new-terminal-mode='tab'
-schema-version=uint32 3
-
-[gnome/terminal/legacy/keybindings]
-copy-html='<Primary><Shift>h'
-select-all='<Primary><Shift>a'
-move-tab-right='<Primary><Shift>Right'
-prev-tab='<Shift>Left'
-next-tab='<Shift>Right'
-move-tab-left='<Primary><Shift>Left'
-
-[gnome/terminal/legacy/profiles:/:98e1fe04-8e5a-49c5-a383-acd78823e520]
-foreground-color='rgb(42,139,26)'
-visible-name='gk1000_2'
-palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(236,0,72)', 'rgb(42,161,152)', 'rgb(148,163,165)', 'rgb(88,110,117)', 'rgb(203,75,22)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(108,113,196)']
-cursor-shape='ibeam'
-use-system-font=false
-use-theme-colors=false
-font='Monospace 11'
-use-theme-transparency=false
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#9494a3a3a5a5'
-background-color='rgb(211,215,207)'
-
-[gnome/terminal/legacy/profiles:/:03552f37-3e02-41d3-8b0d-bd4a8ed55a9c]
-foreground-color='#838394949696'
-visible-name='Solarized-dark'
-palette=['#070736364242', '#DCDC32322F2F', '#858599990000', '#CFCF9A9A6B6B', '#26268B8BD2D2', '#D3D336368282', '#2A2AA1A19898', '#EEEEE8E8D5D5', '#65657B7B8383', '#D8D879797979', '#8888CFCF7676', '#65657B7B8383', '#26269999FFFF', '#D3D336368282', '#4343B8B8C3C3', '#FDFDF6F6E3E3']
-cursor-shape='ibeam'
-use-system-font=false
-use-theme-colors=false
-font='Monospace 11'
-use-theme-transparency=false
-use-theme-background=false
-bold-color-same-as-fg=false
-bold-color='#93A1A1'
-background-color='#00002B2B3636'
-
-[gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-foreground-color='rgb(74,140,11)'
-visible-name='gk1000'
-palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(255,255,255)']
-cursor-shape='ibeam'
-use-system-font=false
-use-theme-colors=false
-font='Monospace 11'
-use-theme-transparency=false
-bold-color-same-as-fg=true
-background-color='rgb(39,36,36)'
-
-[gnome/terminal/legacy/profiles:]
-list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55a9c']
+[gnome/nm-applet/eap/8d1f98a3-62af-494d-a13f-afc038032021]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
 
 [gnome/nm-applet/eap/6b4644c2-b570-4ed1-a976-9de7da7425d6]
 ignore-phase2-ca-cert=false
@@ -602,13 +557,133 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 
+[gnome/brasero/plugins/dvd-rw-format]
+priority=0
+
+[gnome/brasero/plugins/dvdauthor]
+priority=0
+
+[gnome/brasero/plugins/image-checksum]
+priority=0
+
+[gnome/brasero/plugins/audio2cue]
+priority=0
+
+[gnome/brasero/plugins/file-checksum]
+priority=0
+
+[gnome/brasero/plugins/libisofs]
+priority=0
+
+[gnome/brasero/plugins/cdrdao]
+priority=0
+
+[gnome/brasero/plugins/burn-uri]
+priority=0
+
+[gnome/brasero/plugins/normalize]
+priority=0
+
+[gnome/brasero/plugins/file-downloader]
+priority=0
+
+[gnome/brasero/plugins/genisoimage]
+priority=0
+
+[gnome/brasero/plugins/growisofs]
+priority=0
+
+[gnome/brasero/plugins/readcd]
+priority=0
+
+[gnome/brasero/plugins/readom]
+priority=0
+
+[gnome/brasero/plugins/cdrecord]
+priority=0
+
+[gnome/brasero/plugins/transcode]
+priority=0
+
+[gnome/brasero/plugins/transcode2vob]
+priority=0
+
+[gnome/brasero/plugins/cdda2wav]
+priority=0
+
+[gnome/brasero/plugins/wodim]
+priority=0
+
+[gnome/brasero/plugins/libburn]
+priority=0
+
+[gnome/brasero/plugins/dvdcss]
+priority=0
+
+[gnome/brasero/plugins/mkisofs]
+priority=0
+
+[gnome/brasero/plugins/vcdimager]
+priority=0
+
+[gnome/brasero/drives/drive-4182444884/disc-4]
+speed=22160
+flags=64
+
+[gnome/brasero/drives/drive-4182444884/image-4]
+speed=22160
+flags=64
+
+[gnome/evince]
+document-directory=@ms 'file:///home/gk1000/ceokar'
+pictures-directory=@ms 'file:///home/gk1000'
+
+[gnome/evince/default]
+window-ratio=(3.225806451612903, 1.2507126567844926)
+
+[gnome/deja-dup]
+backend='file'
+prompt-check='disabled'
+
+[gnome/deja-dup/file]
+path='/home/gk1000/deja-dup'
+
+[gnome/gnome-system-monitor]
+show-dependencies=false
+current-tab='resources'
+maximized=false
+show-whose-processes='user'
+window-state=(1056, 500, 23, 15)
+
+[gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
+[gnome/orca]
+active-profile=['Default', 'default']
+
+[gnome/epiphany/state]
+window-position=(0, 0)
+is-maximized=false
+window-size=(1366, 694)
+
+[gnome/gnome-screenshot]
+include-pointer=false
+include-border=true
+border-effect='none'
+delay=0
+last-save-directory='file:///home/gk1000'
+
+[gnome/GWeather]
+temperature-unit='centigrade'
+
 [gtk/settings/file-chooser]
 sort-column='modified'
 clock-format='12h'
 sidebar-width=170
-window-position=(1920, 328)
+window-position=(277, 185)
 show-size-column=true
-show-hidden=true
+show-hidden=false
 window-size=(1366, 693)
 sort-directories-first=true
 date-format='regular'
@@ -616,8 +691,8 @@ sort-order='descending'
 location-mode='path-bar'
 
 [gtk/settings/color-chooser]
-selected-color=(true, 0.16484733333333335, 0.54333333333333333, 0.1032333333333333, 1.0)
-custom-colors=[(0.1980073333333334, 0.47666666666666668, 0.10009999999999998, 1.0), (0.16484733333333335, 0.54333333333333333, 0.1032333333333333, 1.0), (0.52156862745098043, 0.59999999999999998, 0.0, 1.0), (0.0, 0.16862745098039217, 0.21176470588235294, 1.0), (0.34509803921568627, 0.43137254901960786, 0.45882352941176469, 1.0), (0.0, 0.41600000000000037, 0.80000000000000004, 1.0), (0.51372549019607838, 0.58039215686274515, 0.58823529411764708, 1.0), (0.54884444444444447, 0.77666666666666673, 0.75477627520759194, 1.0)]
+selected-color=(true, 0.27758007117437727, 0.59999999999999998, 0.0, 1.0)
+custom-colors=[(0.27758007117437727, 0.59999999999999998, 0.0, 1.0), (0.31606148675365764, 0.46333333333333337, 0.10347777777777781, 1.0), (0.24264531435349948, 0.41666666666666669, 0.11666666666666668, 1.0), (0.17429379201265321, 0.39333333333333337, 0.1245555555555556, 1.0), (0.17429379201265319, 0.39333333333333337, 0.12455555555555556, 1.0), (0.52156862745098043, 0.59999999999999998, 0.0, 1.0), (0.14666666666666667, 0.14031111111111114, 0.14031111111111114, 1.0), (0.38231111111111121, 0.56414994068801905, 0.62333333333333341, 1.0)]
 
 [compiz]
 existing-profiles=['Default', 'unity']
