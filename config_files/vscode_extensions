@@ -1,3 +1,4 @@
+BattleBas.kivy-vscode
 HookyQR.beautify
 HookyQR.minify
 Shan.code-settings-sync
@@ -9,11 +10,7 @@ dbaeumer.vscode-eslint
 donjayamanne.jquerysnippets
 dzannotti.vscode-babel-coloring
 ecmel.vscode-html-css
-eg2.tslint
-felixfbecker.php-debug
-gogocrow.jsx-beautify
 Hridoy.jquery-snippets
-ikappas.phpcs
 joshpeng.sublime-babel-vscode
 lolkush.quickstart
 magicstack.MagicPython
@@ -21,9 +18,6 @@ mgmcdermott.vscode-language-babel
 michelemelluso.code-beautifier
 ms-python.python
 ms-vscode.cpptools
-msjsdiag.debugger-for-chrome
 pranaygp.vscode-css-peek
 shakram02.bash-beautify
-taichi.react-beautify
 tht13.python
-xaver.clang-format
