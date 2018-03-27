@@ -1,22 +1,20 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="firefox.desktop" open-window-count="1" score="17244.875" last-seen="1521988937"/>
+    <application id="gparted.desktop" open-window-count="0" score="5" last-seen="1521999695"/>
+    <application id="firefox.desktop" open-window-count="0" score="17838.875" last-seen="1521997215"/>
     <application id="visual-studio-code.desktop" open-window-count="0" score="389" last-seen="1521980296"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="5644.875" last-seen="1521988942"/>
     <application id="org.gnome.Calculator.desktop" open-window-count="0" score="48" last-seen="1521984996"/>
-    <application id="vlc.desktop" open-window-count="1" score="14173.5" last-seen="1521988802"/>
-    <application id="eog.desktop" open-window-count="0" score="112" last-seen="1521988654"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="5716.875" last-seen="1522001443"/>
+    <application id="vlc.desktop" open-window-count="0" score="14177.5" last-seen="1521997885"/>
+    <application id="eog.desktop" open-window-count="0" score="112" last-seen="1522000864"/>
     <application id="qbittorrent.desktop" open-window-count="0" score="4" last-seen="1521731513"/>
-    <application id="google-chrome.desktop" open-window-count="1" score="21628.5" last-seen="1521988853"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="22192.5" last-seen="1522155788"/>
     <application id="Thunar.desktop" open-window-count="0" score="18.5" last-seen="1521891930"/>
     <application id="org.gnome.gedit.desktop" open-window-count="0" score="22" last-seen="1521985954"/>
     <application id="sublime_text.desktop" open-window-count="0" score="152" last-seen="1521984829"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="21140.125" last-seen="1521988636"/>
-    <application id="woeusbgui.desktop" open-window-count="0" score="86" last-seen="1521385169"/>
-    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="95" last-seen="1521979966"/>
-    <application id="emacs.desktop" open-window-count="0" score="98" last-seen="1521728228"/>
-    <application id="virtualbox.desktop" open-window-count="0" score="477" last-seen="1521380446"/>
-    <application id="clamtk.desktop" open-window-count="0" score="28" last-seen="1521442403"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="21610.125" last-seen="1522155767"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="96" last-seen="1521999298"/>
+    <application id="emacs.desktop" open-window-count="0" score="108" last-seen="1521990811"/>
   </context>
 </application-state>

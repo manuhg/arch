@@ -489,9 +489,10 @@ sort-directories-first=true
 default-sort-order='type'
 
 [gnome/nautilus/window-state]
-sidebar-width=159
+sidebar-width=179
 geometry='1061x643+23+15'
 maximized=false
+initial-size=(1297, 703)
 
 [gnome/nautilus/compression]
 default-compression-format='tar.xz'
