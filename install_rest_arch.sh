@@ -33,13 +33,13 @@ echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable
 
 sudo pacman -Syu --noconfirm hexedit python nitrogen arduino namcap testdisk  \
 rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop   \
-nasm gcc php qemu geany vlc python-pip aircrack-ng automake rsync \
-ruby nodejs npm ruby-native-package-installer screenfetch powerline-vim unzip \
+nasm gcc php qemu geany vlc python-pip aircrack-ng automake rsync 			  \
+ruby nodejs nvm ruby-native-package-installer screenfetch powerline-vim unzip \
 synapse encfs docker dmenu firefox thunar qbittorrent scrot ipython lshw go   \
 tmux gpg-crypter emacs curl powerline rxvt-unicode atom xxd gparted unrar sl  \
 powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
-libreoffice-fresh linux-hardened-headers rxvt-unicode-terminfo virtualbox-guest-iso    \
+libreoffice-fresh linux-hardened-headers rxvt-unicode-terminfo virtualbox-guest-iso  \
 flatpak-builder glfw-x11 strace dnstracer figlet cowsay banner cmatrix bazel  \
 cowfortune pavucontrol linux-hardened
 # teamspeak3

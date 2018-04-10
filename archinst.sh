@@ -47,12 +47,13 @@ visudo
 # alsamixer
 pacman -S alsa-utils  xorg-server xorg-xinit xorg-apps mesa
 #synaptics for laptop
-pacman -S xf86-video-intel xf86-input-synaptics xf86-input-mouse xf86-video-vesa 
-#xf86-video-vesa is generic & fallback driver
+pacman -S xf86-video-intel xf86-input-mouse xf86-video-vesa xf86-libinput-synaptics 
+#xf86-video-vesa is generic & fallback driver xf86-input-synaptics 
 # kde5 plasma -sddm , gnome GDM , lightgdm -universal
 # pacman -Rcs => recursive remove
 #pacman -S sddm plasma kde-applications
-pacman -S gdm gnome gnome-extra i3-gaps i3lock i3status perl-json-xs perl-anyevent-i3 i3blocks display-visor
+pacman -S gdm gnome gnome-extra i3-gaps i3lock i3status perl-json-xs perl-anyevent-i3 i3blocks 
+#display-visor
 pacman -S network-manager-applet networkmanager dhclient
 #lightgdm i3
 systemctl enable gdm
