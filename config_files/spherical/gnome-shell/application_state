@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gparted.desktop" open-window-count="0" score="5" last-seen="1521999695"/>
-    <application id="firefox.desktop" open-window-count="0" score="17838.875" last-seen="1521997215"/>
-    <application id="visual-studio-code.desktop" open-window-count="0" score="389" last-seen="1521980296"/>
-    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="48" last-seen="1521984996"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="5716.875" last-seen="1522001443"/>
-    <application id="vlc.desktop" open-window-count="0" score="14177.5" last-seen="1521997885"/>
-    <application id="eog.desktop" open-window-count="0" score="112" last-seen="1522000864"/>
-    <application id="qbittorrent.desktop" open-window-count="0" score="4" last-seen="1521731513"/>
-    <application id="google-chrome.desktop" open-window-count="1" score="22192.5" last-seen="1522155788"/>
-    <application id="Thunar.desktop" open-window-count="0" score="18.5" last-seen="1521891930"/>
-    <application id="org.gnome.gedit.desktop" open-window-count="0" score="22" last-seen="1521985954"/>
-    <application id="sublime_text.desktop" open-window-count="0" score="152" last-seen="1521984829"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="21610.125" last-seen="1522155767"/>
-    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="96" last-seen="1521999298"/>
-    <application id="emacs.desktop" open-window-count="0" score="108" last-seen="1521990811"/>
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="5" last-seen="1523209207"/>
+    <application id="firefox.desktop" open-window-count="0" score="11285.4375" last-seen="1523496340"/>
+    <application id="visual-studio-code.desktop" open-window-count="1" score="6852" last-seen="1523528351"/>
+    <application id="vlc.desktop" open-window-count="1" score="10453.25" last-seen="1523527895"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="5550.4375" last-seen="1523528206"/>
+    <application id="eog.desktop" open-window-count="0" score="252.5" last-seen="1523290508"/>
+    <application id="qbittorrent.desktop" open-window-count="1" score="161" last-seen="1523528136"/>
+    <application id="DigiaQt-qtcreator-community.desktop" open-window-count="0" score="540" last-seen="1523498687"/>
+    <application id="Thunar.desktop" open-window-count="0" score="12.25" last-seen="1523096720"/>
+    <application id="google-chrome.desktop" open-window-count="0" score="18932.75" last-seen="1523528016"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="151" last-seen="1523463209"/>
+    <application id="sublime_text.desktop" open-window-count="0" score="883" last-seen="1523202032"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="21679.5625" last-seen="1523528387"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="6" last-seen="1523096425"/>
+    <application id="evince.desktop" open-window-count="0" score="366" last-seen="1523215347"/>
+    <application id="emacs.desktop" open-window-count="0" score="758" last-seen="1523381755"/>
   </context>
 </application-state>

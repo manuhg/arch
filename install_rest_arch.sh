@@ -25,6 +25,7 @@ makepkg -i PKGBUILD --noconfirm
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
 makepkg -i PKGBUILD --noconfirm
 
+
 #sublime text
 curl -O https://download.sublimetext.com/sublimehq-pub.gpg && \
 sudo pacman-key --add sublimehq-pub.gpg && \
@@ -41,7 +42,7 @@ powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
 libreoffice-fresh linux-hardened-headers rxvt-unicode-terminfo virtualbox-guest-iso  \
 flatpak-builder glfw-x11 strace dnstracer figlet cowsay banner cmatrix bazel  \
-cowfortune pavucontrol linux-hardened
+cowfortune pavucontrol linux-hardened aic94xx wd719x
 # teamspeak3
 
 curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh

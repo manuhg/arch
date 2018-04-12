@@ -7,7 +7,7 @@ yaourt -Syu --aur --noconfirm
 #connect to wifi
 iwconfig
 iwlist scan
-wpa_supplicant -i wlp2s0f0 -c <(wpa_passphrase [SSID] [PASSPHRASE])
+wpa_supplicant -i wlp2s0f0 -c <$(wpa_passphrase [SSID] [PASSPHRASE])
 dhcp wlp2s0f0
 
 ##########################################################################################################################
@@ -19,7 +19,7 @@ rw init=/bin/bash
 
 #Change root
 #Boot the LiveCD and mount the root partition of your main system.
-#Use the 
+#Use the
 
 passwd --root MOUNT_POINT USER_NAME command #to set the new password (you won't be prompted for an old one).
 
@@ -28,12 +28,12 @@ passwd --root MOUNT_POINT USER_NAME command #to set the new password (you won't 
 #Using GRUB to invoke bash
 #Select the appropriate boot entry in the GRUB menu and press e to edit the line.
 #Select the kernel line and press e again to edit it.
-#Append 
+#Append
 init=/bin/bash # at the end of line.
 #Press Ctrl-X to boot (this change is only temporary and will not be saved to your menu.lst). After booting you will be at the bash prompt.
 #Your root file system is mounted as readonly now, so remount it as read/write mount -n -o remount,rw /.
 #Use the passwd command to create a new root password.
-#Reboot by typing 
+#Reboot by typing
 reboot -f #and do not lose your password again!
 ##########################################################################################################################
 

@@ -14,6 +14,8 @@ mount /dev/sda1 /mnt/boot
 nano /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
 genfstab -U /mnt >> /mnt/etc/fstab
+echo "tmpfs	/tmp		tmpfs	rw,nodev,nosuid,size=8G		
+00">>/mnt/etc/fstab
 arch-chroot /mnt
 #ln -sf /etc/localtime /usr/share/zoneinfo/Asia/Kolkata
 timedatectl set-timezone Asia/Kolkata
