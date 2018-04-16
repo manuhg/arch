@@ -596,17 +596,9 @@ sidebar=true
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 
-<<<<<<< HEAD
-[gnome/recipes]
-user='gk1000'
-
-[gnome/Weather/Application]
-locations=[<(uint32 2, <('Bangalore', 'VOBG', true, [(0.22601989378717041, 1.3555659188172149)], [(0.22631101470640302, 1.3537937114947398)])>)>]
-=======
 [gnome/gnome/nm-applet/eap/6b4644c2-b570-4ed1-a976-9de7da7425d6]
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 
 [gnome/gnome/nm-applet/eap/2eddec1a-6f19-4ae7-bf97-af6a3d77932f]
 ignore-phase2-ca-cert=false
@@ -801,7 +793,7 @@ sleep-inactive-battery-timeout=1800
 [gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 night-light-schedule-from=22.5
-night-light-enabled=false
+night-light-enabled=true
 night-light-last-coordinates=(12.9833, 77.583299999999994)
 
 [gnome/settings-daemon/plugins/media-keys]
@@ -829,8 +821,6 @@ size=(870, 690)
 state=87168
 panel-id='world'
 
-<<<<<<< HEAD
-=======
 [gnome/gtk/settings/file-chooser]
 sort-column='modified'
 clock-format='12h'
@@ -848,7 +838,6 @@ location-mode='path-bar'
 selected-color=(true, 0.27758007117437727, 0.59999999999999998, 0.0, 1.0)
 custom-colors=[(0.27758007117437727, 0.59999999999999998, 0.0, 1.0), (0.31606148675365764, 0.46333333333333337, 0.10347777777777781, 1.0), (0.24264531435349948, 0.41666666666666669, 0.11666666666666668, 1.0), (0.17429379201265321, 0.39333333333333337, 0.1245555555555556, 1.0), (0.17429379201265319, 0.39333333333333337, 0.12455555555555556, 1.0), (0.52156862745098043, 0.59999999999999998, 0.0, 1.0), (0.14666666666666667, 0.14031111111111114, 0.14031111111111114, 1.0), (0.38231111111111121, 0.56414994068801905, 0.62333333333333341, 1.0)]
 
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 [gnome/calendar]
 active-view='month'
 window-maximized=true
@@ -895,11 +884,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gnome/gedit/plugins/filebrowser]
-<<<<<<< HEAD
-virtual-root='file:///home/gk1000/dev/fsort/src/ui/fsort'
-=======
 virtual-root='file:///run/media/gk1000/Manu'
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 tree-view=true
 root='file:///'
 
@@ -911,11 +896,7 @@ search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'f
 replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
 
 [gnome/gedit/state/window]
-<<<<<<< HEAD
-size=(1366, 725)
-=======
 size=(869, 568)
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 state=87168
 bottom-panel-size=140
 side-panel-size=200
@@ -998,23 +979,13 @@ gtk-theme='Arc-Darker'
 clock-show-date=true
 
 [gnome/desktop/notifications]
-<<<<<<< HEAD
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community']
-
-[gnome/desktop/notifications/application/qbittorrent]
-application-id='qbittorrent.desktop'
-=======
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase']
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'digiaqt-qtcreator-community']
 
 [gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
 
 [gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
-
-[gnome/desktop/notifications/application/google-chrome]
-application-id='google-chrome.desktop'
 
 [gnome/desktop/notifications/application/thunar]
 application-id='Thunar.desktop'
@@ -1037,42 +1008,27 @@ application-id='vlc.desktop'
 [gnome/desktop/notifications/application/transmission-gtk]
 application-id='transmission-gtk.desktop'
 
-[gnome/desktop/notifications/application/sublime-text]
-application-id='sublime_text.desktop'
-
 [gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
-
-[gnome/desktop/notifications/application/emacs]
-application-id='emacs.desktop'
-
-[gnome/desktop/notifications/application/org-gnome-gedit]
-application-id='org.gnome.gedit.desktop'
-
-[gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
-application-id='org.gnome.ChromeGnomeShell.desktop'
 
 [gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
+[gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
+application-id='org.gnome.ChromeGnomeShell.desktop'
+
+[gnome/desktop/notifications/application/qbittorrent]
+application-id='qbittorrent.desktop'
+
 [gnome/desktop/notifications/application/ca-desrt-dconf-editor]
 application-id='ca.desrt.dconf-editor.desktop'
-
-[gnome/desktop/notifications/application/org-gnome-terminal]
-application-id='org.gnome.Terminal.desktop'
 
 [gnome/desktop/notifications/application/rhythmbox]
 application-id='rhythmbox.desktop'
 
-<<<<<<< HEAD
 [gnome/desktop/notifications/application/digiaqt-qtcreator-community]
 application-id='DigiaQt-qtcreator-community.desktop'
 
-[gnome/desktop/notifications/application/org-pantheon-files]
-application-id='org.pantheon.files.desktop'
-
-=======
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 [gnome/desktop/notifications/application/keybase]
 application-id='keybase.desktop'
 
@@ -1122,7 +1078,6 @@ remove-old-trash-files=true
 [gnome/desktop/wm/preferences]
 button-layout='close,minimize,maximize:appmenu'
 theme='Ambiance'
-action-double-click-titlebar='toggle-maximize'
 
 [gnome/desktop/wm/keybindings]
 switch-to-workspace-left=['<Control><Alt>Left']
@@ -1170,11 +1125,7 @@ theme-name='__custom'
 event-sounds=true
 
 [gnome/desktop/background]
-<<<<<<< HEAD
-picture-uri='file:///home/gk1000/Pictures/Wallpapers/digitalocean-1523118689126-3439.jpg'
-=======
 picture-uri='file:///home/gk1000/Pictures/Wallpapers/macOS-Sierra-wallpaper.jpg'
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -1246,9 +1197,110 @@ auto-save-timeout=60
 minimum-word-size=2
 overscroll=10
 
+[gnome/builder/editor/language/markdown]
+insert-spaces-instead-of-tabs=true
+trim-trailing-whitespace=false
+tab-width=4
+
+[gnome/builder/editor/language/python]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=4
+
+[gnome/builder/editor/language/automake]
+insert-spaces-instead-of-tabs=false
+tab-width=8
+
+[gnome/builder/editor/language/makefile]
+insert-spaces-instead-of-tabs=false
+tab-width=8
+
+[gnome/builder/editor/language/rust]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=4
+
+[gnome/builder/editor/language/c-sharp]
+overwrite-braces=true
+spaces-style=['before-left-paren']
+insert-spaces-instead-of-tabs=false
+insert-matching-brace=true
+tab-width=8
+
+[gnome/builder/editor/language/c]
+overwrite-braces=true
+spaces-style=['before-left-paren']
+auto-indent=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+insert-trailing-newline=true
+tab-width=2
+
+[gnome/builder/editor/language/js]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/ruby]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/python3]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=4
+
+[gnome/builder/editor/language/html]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/css]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/xml]
+overwrite-braces=true
+auto-indent=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/cpp]
+overwrite-braces=true
+auto-indent=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+insert-trailing-newline=true
+tab-width=4
+
+[gnome/builder/editor/language/vala]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=4
+
+[gnome/builder/editor/language/chdr]
+overwrite-braces=true
+spaces-style=['before-left-paren']
+auto-indent=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+insert-trailing-newline=true
+tab-width=2
+
 [gnome/software]
 first-run=false
-check-timestamp=int64 1523494144
+check-timestamp=int64 1507890180
 
 [gnome/nautilus/preferences]
 search-view='list-view'
@@ -1258,16 +1310,10 @@ sort-directories-first=true
 default-sort-order='type'
 
 [gnome/nautilus/window-state]
-<<<<<<< HEAD
-sidebar-width=181
-geometry='1061x643+23+15'
-maximized=true
-initial-size=(1366, 725)
-=======
 sidebar-width=155
 geometry='918x545+23+15'
 maximized=false
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
+initial-size=(890, 550)
 
 [gnome/nautilus/compression]
 default-compression-format='tar.xz'
@@ -1291,11 +1337,7 @@ default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 
 app-picker-view=uint32 0
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
 remember-mount-password=false
-<<<<<<< HEAD
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop', 'DigiaQt-qtcreator-community.desktop']
-=======
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.pantheon.files.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop']
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop', 'DigiaQt-qtcreator-community.desktop']
 
 [gnome/shell/extensions/user-theme]
 name=''
@@ -1309,13 +1351,10 @@ dock-position='LEFT'
 shortcut=['<Super>q']
 
 [gnome/shell/extensions/simplenetspeed]
-mode=1
+mode=2
 
 [gnome/shell/calendar]
 show-weekdate=false
-
-[gnome/shell/overrides]
-workspaces-only-on-primary=false
 
 [gnome/eog/view]
 background-color='rgb(0,0,0)'
@@ -1417,28 +1456,19 @@ flags=64
 speed=22160
 flags=64
 
-<<<<<<< HEAD
-[gnome/control-center]
-last-panel='display'
-=======
 [gnome/brasero/drives/drive-3459103536/image-4]
 speed=11080
 flags=464
 
 [gnome/brasero/display]
 iso-folder='/home/gk1000'
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 
 [gnome/evince]
 document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [gnome/evince/default]
-<<<<<<< HEAD
-window-ratio=(3.2268907563025211, 1.1995249406175772)
-=======
 window-ratio=(2.2320261437908497, 0.93560606060606055)
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 
 [gnome/deja-dup]
 backend='file'
@@ -1460,31 +1490,7 @@ include-pointer=false
 include-border=true
 border-effect='none'
 delay=0
-<<<<<<< HEAD
-last-save-directory='file:///home/gk1000'
-
-[gnome/GWeather]
-temperature-unit='centigrade'
-
-[gtk/settings/file-chooser]
-sort-column='modified'
-clock-format='12h'
-sidebar-width=170
-window-position=(23, 15)
-show-size-column=true
-show-hidden=false
-window-size=(1366, 693)
-sort-directories-first=true
-date-format='regular'
-sort-order='descending'
-location-mode='path-bar'
-
-[gtk/settings/color-chooser]
-selected-color=(true, 0.99215686274509807, 0.96470588235294119, 0.8901960784313725, 1.0)
-custom-colors=[(0.99215686274509807, 0.96470588235294119, 0.8901960784313725, 1.0), (0.93333333333333335, 0.90980392156862744, 0.83529411764705885, 1.0), (0.57647058823529407, 0.63137254901960782, 0.63137254901960782, 1.0), (0.42352941176470588, 0.44313725490196076, 0.7686274509803922, 1.0), (0.43137254901960786, 0.58039215686274515, 0.66666666666666663, 1.0), (0.45098039215686275, 0.51372549019607838, 0.396078431372549, 1.0), (0.27843137254901962, 0.59999999999999998, 0.0, 1.0), (0.14509803921568629, 0.14117647058823529, 0.14117647058823529, 1.0)]
-=======
 last-save-directory='file:///home/gk1000/Desktop'
->>>>>>> 6b8023ec60068096f94f89edacf0ff431a39ef5b
 
 [gnome/compiz]
 existing-profiles=['Default', 'unity']
