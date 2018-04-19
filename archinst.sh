@@ -14,8 +14,7 @@ mount /dev/sda1 /mnt/boot
 nano /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
 genfstab -U /mnt >> /mnt/etc/fstab
-echo "tmpfs	/tmp		tmpfs	rw,nodev,nosuid,size=8G		
-00">>/mnt/etc/fstab
+echo "tmpfs	/tmp		tmpfs	rw,nodev,nosuid,size=8G		0 0">>/mnt/etc/fstab
 arch-chroot /mnt
 #ln -sf /etc/localtime /usr/share/zoneinfo/Asia/Kolkata
 timedatectl set-timezone Asia/Kolkata
@@ -67,8 +66,8 @@ systemctl disable httpd
 ##/dev/sda5
 #echo "UUID=1e66f218-a208-4f70-aa0b-f952633b7575 /home ext4 rw,relatime,data=ordered 0 2" >> /etc/fstab
 #git clone ssh://gk1000@198.199.121.120:17/home/gk1000/arch.git
-git clone ssh://gk1000@198.199.121.120:17/home/gk1000/scripts.git ~/
-git clone ssh://gk1000@198.199.121.120:17/home/gk1000/dev.git ~/
+# git clone ssh://gk1000@198.199.121.120:17/home/gk1000/scripts.git ~/
+# git clone ssh://gk1000@198.199.121.120:17/home/gk1000/dev.git ~/
 
-./install_rest_arch.sh
+# ./install_rest_arch.sh
 
