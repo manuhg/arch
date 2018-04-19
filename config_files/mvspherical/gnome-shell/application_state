@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" open-window-count="0" score="2" last-seen="1521953215"/>
-    <application id="vlc.desktop" open-window-count="0" score="5617" last-seen="1521952191"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="4772" last-seen="1521953705"/>
-    <application id="google-chrome.desktop" open-window-count="0" score="1943" last-seen="1522157067"/>
-    <application id="ca.desrt.dconf-editor.desktop" open-window-count="0" score="11" last-seen="1521886913"/>
-    <application id="org.gnome.gedit.desktop" open-window-count="0" score="15" last-seen="1521887244"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="6989" last-seen="1522158592"/>
+    <application id="firefox.desktop" open-window-count="0" score="0" last-seen="1523105005"/>
+    <application id="visual-studio-code.desktop" open-window-count="1" score="25" last-seen="1523597092"/>
+    <application id="vlc.desktop" open-window-count="0" score="5617" last-seen="1522317834"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="4909" last-seen="1523596942"/>
+    <application id="DigiaQt-qtcreator-community.desktop" open-window-count="1" score="61" last-seen="1523599099"/>
+    <application id="google-chrome.desktop" open-window-count="0" score="4096" last-seen="1523580945"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="17179" last-seen="1523598855"/>
     <application id="evince.desktop" open-window-count="0" score="8667" last-seen="1514419361"/>
-    <application id="emacs.desktop" open-window-count="0" score="1" last-seen="1521887353"/>
   </context>
 </application-state>

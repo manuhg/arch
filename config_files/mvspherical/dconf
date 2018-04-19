@@ -979,7 +979,7 @@ gtk-theme='Arc-Darker'
 clock-show-date=true
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'digiaqt-qtcreator-community']
 
 [gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -1025,6 +1025,9 @@ application-id='ca.desrt.dconf-editor.desktop'
 
 [gnome/desktop/notifications/application/rhythmbox]
 application-id='rhythmbox.desktop'
+
+[gnome/desktop/notifications/application/digiaqt-qtcreator-community]
+application-id='DigiaQt-qtcreator-community.desktop'
 
 [gnome/desktop/notifications/application/keybase]
 application-id='keybase.desktop'
@@ -1194,6 +1197,107 @@ auto-save-timeout=60
 minimum-word-size=2
 overscroll=10
 
+[gnome/builder/editor/language/markdown]
+insert-spaces-instead-of-tabs=true
+trim-trailing-whitespace=false
+tab-width=4
+
+[gnome/builder/editor/language/python]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=4
+
+[gnome/builder/editor/language/automake]
+insert-spaces-instead-of-tabs=false
+tab-width=8
+
+[gnome/builder/editor/language/makefile]
+insert-spaces-instead-of-tabs=false
+tab-width=8
+
+[gnome/builder/editor/language/rust]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=4
+
+[gnome/builder/editor/language/c-sharp]
+overwrite-braces=true
+spaces-style=['before-left-paren']
+insert-spaces-instead-of-tabs=false
+insert-matching-brace=true
+tab-width=8
+
+[gnome/builder/editor/language/c]
+overwrite-braces=true
+spaces-style=['before-left-paren']
+auto-indent=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+insert-trailing-newline=true
+tab-width=2
+
+[gnome/builder/editor/language/js]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/ruby]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/python3]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=4
+
+[gnome/builder/editor/language/html]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/css]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/xml]
+overwrite-braces=true
+auto-indent=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/cpp]
+overwrite-braces=true
+auto-indent=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+insert-trailing-newline=true
+tab-width=4
+
+[gnome/builder/editor/language/vala]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+tab-width=4
+
+[gnome/builder/editor/language/chdr]
+overwrite-braces=true
+spaces-style=['before-left-paren']
+auto-indent=true
+insert-spaces-instead-of-tabs=true
+insert-matching-brace=true
+insert-trailing-newline=true
+tab-width=2
+
 [gnome/software]
 first-run=false
 check-timestamp=int64 1507890180
@@ -1209,6 +1313,7 @@ default-sort-order='type'
 sidebar-width=155
 geometry='918x545+23+15'
 maximized=false
+initial-size=(890, 550)
 
 [gnome/nautilus/compression]
 default-compression-format='tar.xz'
@@ -1232,7 +1337,7 @@ default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 
 app-picker-view=uint32 0
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.pantheon.files.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop']
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop', 'DigiaQt-qtcreator-community.desktop']
 
 [gnome/shell/extensions/user-theme]
 name=''
@@ -1246,7 +1351,7 @@ dock-position='LEFT'
 shortcut=['<Super>q']
 
 [gnome/shell/extensions/simplenetspeed]
-mode=1
+mode=2
 
 [gnome/shell/calendar]
 show-weekdate=false
