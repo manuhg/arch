@@ -102,6 +102,6 @@ pacaur -S clamav clamtk clamtk-gnome brave-git thunar-sendto-clamtk clamav-unoff
 #synaptic tasksel openjdk-7-* vlc-plugin-libde265 w3af p7zip-full
 #->atom  xampp #smartmontools
 
-npm -g install react react-dom webpack babel create-react-app serve preact preact-cli
-# pip install tensorflow sklearn auto-sklearn cPickle numpy pylab matplotlib
-./shell_setup.sh install
+# npm -g install react react-dom webpack babel create-react-app serve preact preact-cli
+# # pip install tensorflow sklearn auto-sklearn cPickle numpy pylab matplotlib
+# ./shell_setup.sh install
