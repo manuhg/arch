@@ -67,7 +67,7 @@ plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar  \
 apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm   \
 numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized \
 rslsync numix-folders-git  leiningen ccv touchegg touchegg-gce-git \
-multibootusb woeusb-git aic94xx-firmware wd719x-firmware
+multibootusb woeusb-git aic94xx-firmware wd719x-firmware cmake gtkglext
 #unetbootin
 
 pacaur -S clamav clamtk clamtk-gnome brave-git thunar-sendto-clamtk clamav-unofficial-sigs && \
