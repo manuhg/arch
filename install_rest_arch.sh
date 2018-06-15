@@ -42,7 +42,19 @@ powerline-fonts ttf-inconsolata awesome-terminal-fonts cups sublime-text      \
 gnome gnome-tweak-tool gnome-shell-extensions arc-gtk-theme jdk8-openjdk      \
 libreoffice-fresh linux-hardened-headers rxvt-unicode-terminfo virtualbox-guest-iso  \
 flatpak-builder glfw-x11 strace dnstracer figlet cowsay banner cmatrix bazel  \
-cowfortune pavucontrol linux-hardened  gdb strace
+cowfortune pavucontrol linux-hardened  gdb strace rkhunter moreutils bind
+
+
+sudo iptables -P INPUT DROP
+sudo iptables -P OUTPUT ACCEPT
+sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A INPUT -i lo -j ACCEPT
+sudo iptables -A OUTPUT -o lo -j ACCEPT
+
+
+sudo systemctl enable named
+
+<<<"nameserver 127.0.0.1" < /etc/resolv.conf  | sudo sponge /etc/resolv.conf
 
 # teamspeak3
 
@@ -66,9 +78,9 @@ pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome toilet  \
 plymouth urxvt-fullscreen urxvt-resize-font-git urxvt-tabbedex rar  \
 apparmor apparmor-profiles virtualbox-ext-oracle hfsprogs dmg2img nvm   \
 numix-circle-icon-theme-git numix-icon-theme-git gtk-theme-numix-solarized \
-rslsync numix-folders-git  leiningen ccv touchegg touchegg-gce-git \
+numix-folders-git  leiningen skdet usbguard downgrade\
 multibootusb woeusb-git aic94xx-firmware wd719x-firmware cmake gtkglext
-#unetbootin
+#unetbootin touchegg touchegg-gce-git rslsync
 
 pacaur -S clamav clamtk clamtk-gnome brave-git thunar-sendto-clamtk clamav-unofficial-sigs && \
  sudo freshclam && clamav-unofficial-sigs.sh --install-all && clamav-unofficial-sigs.sh

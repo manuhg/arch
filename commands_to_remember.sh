@@ -1,3 +1,8 @@
+#remove ignroing dependecny breaks
+pacman -Rdd <pkg>
+
+#DOWNGRADE GCC
+downgrade gcc
 #backup gnome settings
 dconf dump /org/gnome/ > dconfgnome
 #to load
