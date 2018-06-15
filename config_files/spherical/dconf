@@ -36,7 +36,7 @@ show-zeroes=false
 source-currency=''
 show-thousands=false
 button-mode='basic'
-target-units='radian'
+target-units='degree'
 word-size=64
 window-position=(23, 15)
 number-format='automatic'
@@ -44,6 +44,10 @@ angle-units='degrees'
 base=16
 source-units='degree'
 accuracy=9
+
+[gnome/evolution]
+version='3.26.4'
+default-task-list='system-task-list'
 
 [gnome/evolution/mail]
 junk-check-incoming=true
@@ -78,9 +82,6 @@ work-day-friday=true
 [gnome/evolution/shell]
 attachment-view=0
 
-[gnome/evolution]
-version='3.26.4'
-
 [gnome/settings-daemon/plugins/power]
 sleep-inactive-battery-type='nothing'
 sleep-inactive-ac-timeout=3600
@@ -90,7 +91,7 @@ sleep-inactive-battery-timeout=1800
 [gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 night-light-schedule-from=22.5
-night-light-enabled=false
+night-light-enabled=true
 night-light-last-coordinates=(12.9833, 77.583299999999994)
 
 [gnome/settings-daemon/plugins/media-keys]
@@ -168,7 +169,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gnome/gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/dev/fsort/src/ui/fsort'
+virtual-root='file:///home/gk1000/dev/dishq'
 tree-view=true
 root='file:///'
 
@@ -177,18 +178,19 @@ active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
 
 [gnome/gedit/state/history-entry]
 search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
-replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
+replace-with-entry=['{:name "', 'sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
 
 [gnome/gedit/state/window]
-size=(1366, 725)
+size=(1066, 725)
 state=87168
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
 
 [gnome/baobab/ui]
-window-state=87168
-window-size=(960, 600)
+active-chart='treemap'
+window-state=43908
+window-size=(1377, 883)
 
 [gnome/terminal/legacy]
 new-terminal-mode='tab'
@@ -263,7 +265,7 @@ gtk-theme='Arc-Darker'
 clock-show-date=true
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code']
 
 [gnome/desktop/notifications/application/qbittorrent]
 application-id='qbittorrent.desktop'
@@ -288,6 +290,9 @@ application-id='filezilla.desktop'
 
 [gnome/desktop/notifications/application/file-roller]
 application-id='file-roller.desktop'
+
+[gnome/desktop/notifications/application/visual-studio-code]
+application-id='visual-studio-code.desktop'
 
 [gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
@@ -327,6 +332,9 @@ application-id='rhythmbox.desktop'
 
 [gnome/desktop/notifications/application/digiaqt-qtcreator-community]
 application-id='DigiaQt-qtcreator-community.desktop'
+
+[gnome/desktop/notifications/application/libreoffice-startcenter]
+application-id='libreoffice-startcenter.desktop'
 
 [gnome/desktop/notifications/application/org-pantheon-files]
 application-id='org.pantheon.files.desktop'
@@ -428,7 +436,7 @@ theme-name='__custom'
 event-sounds=true
 
 [gnome/desktop/background]
-picture-uri='file:///home/gk1000/Pictures/Wallpapers/digitalocean-1523118689126-3439.jpg'
+picture-uri='file:///home/gk1000/Pictures/Wallpapers/ny456536.jpg'
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -464,8 +472,13 @@ recreate-folders=true
 
 [gnome/file-roller/ui]
 sidebar-width=200
-window-height=512
-window-width=1291
+window-height=711
+window-width=1453
+
+[gnome/todo]
+view='grid'
+default-provider='local'
+window-maximized=true
 
 [gnome/evolution-data-server]
 network-monitor-gio-name=''
@@ -498,23 +511,23 @@ overscroll=10
 
 [gnome/software]
 first-run=false
-check-timestamp=int64 1523494144
+check-timestamp=int64 1529032488
 
 [gnome/nautilus/preferences]
-search-view='list-view'
+search-view='icon-view'
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
 sort-directories-first=true
 default-sort-order='type'
 
 [gnome/nautilus/window-state]
-sidebar-width=181
+sidebar-width=183
 geometry='1061x643+23+15'
-maximized=true
-initial-size=(1366, 725)
+maximized=false
+initial-size=(1366, 698)
 
 [gnome/nautilus/compression]
-default-compression-format='tar.xz'
+default-compression-format='zip'
 
 [gnome/nautilus/icon-view]
 captions=['none', 'none', 'none']
@@ -535,7 +548,7 @@ default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 
 app-picker-view=uint32 0
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop', 'DigiaQt-qtcreator-community.desktop']
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop', 'vlc.desktop', 'evince.desktop']
 
 [gnome/shell/extensions/user-theme]
 name=''
@@ -549,7 +562,7 @@ dock-position='LEFT'
 shortcut=['<Super>q']
 
 [gnome/shell/extensions/simplenetspeed]
-mode=1
+mode=4
 
 [gnome/shell/calendar]
 show-weekdate=false
@@ -665,7 +678,16 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [gnome/evince/default]
-window-ratio=(3.2268907563025211, 1.1995249406175772)
+window-ratio=(2.486529780107761, 1.0077384524514017)
+continuous=true
+fullscreen=false
+show-sidebar=true
+dual-page-odd-left=false
+inverted-colors=false
+sidebar-page='links'
+sidebar-size=373
+dual-page=false
+sizing-mode='fit-width'
 
 [gnome/deja-dup]
 backend='file'
@@ -704,16 +726,16 @@ last-save-directory='file:///home/gk1000'
 temperature-unit='centigrade'
 
 [gtk/settings/file-chooser]
-sort-column='modified'
+sort-column='name'
 clock-format='12h'
-sidebar-width=170
-window-position=(23, 15)
+sidebar-width=414
+window-position=(1920, 274)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)
 sort-directories-first=true
 date-format='regular'
-sort-order='descending'
+sort-order='ascending'
 location-mode='path-bar'
 
 [gtk/settings/color-chooser]

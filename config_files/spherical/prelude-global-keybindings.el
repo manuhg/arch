@@ -111,14 +111,12 @@
 (global-set-key (kbd "s-.") 'avy-goto-word-or-subword-1)
 (global-set-key (kbd "s-w") 'ace-window)
 
+(global-set-key (kbd "C-." ) 'desktop-save-in-desktop-dir)
+(global-set-key (kbd "C-," ) 'desktop-read)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-S-d") 'mc/mark-all-dwim)
 (provide 'prelude-global-keybindings)
-;; (require 'multiple-cursors)
-
-;; (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-;; (global-set-key (kbd "C->") 'mc/mark-next-like-this)
-;; (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-;; (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
-;; (require 'multiple-cursors)
-
-
 ;;; prelude-global-keybindings.el ends here
