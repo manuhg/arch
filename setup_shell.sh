@@ -141,3 +141,4 @@ elif [ $1 = "install" ] ; then
     git config  --global alias.pushall '!git remote | xargs -L1 git push'
     
 fi
+[ ! -d ~/dev ] && mkdir ~/dev && cd ~/dev && ~/arch/cloneall.py
