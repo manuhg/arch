@@ -5,14 +5,14 @@
     <application id="firefox.desktop" open-window-count="0" score="3530.375" last-seen="1529138479"/>
     <application id="visual-studio-code.desktop" open-window-count="0" score="9007.25" last-seen="1529159047"/>
     <application id="org.gnome.Calculator.desktop" open-window-count="0" score="28" last-seen="1529119325"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="1338.169921875" last-seen="1529163289"/>
-    <application id="vlc.desktop" open-window-count="1" score="4272.0078125" last-seen="1529155747"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="1342.169921875" last-seen="1529171130"/>
+    <application id="vlc.desktop" open-window-count="0" score="4272.0078125" last-seen="1529155747"/>
     <application id="qbittorrent.desktop" open-window-count="0" score="42" last-seen="1529076686"/>
-    <application id="google-chrome.desktop" open-window-count="1" score="17922.2109375" last-seen="1529163089"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="18099.2109375" last-seen="1529172894"/>
     <application id="Thunar.desktop" open-window-count="0" score="1.5" last-seen="1529075885"/>
-    <application id="sublime_text.desktop" open-window-count="1" score="836.5" last-seen="1529163187"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="12252.673828125" last-seen="1529163273"/>
-    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="22" last-seen="1528868453"/>
+    <application id="sublime_text.desktop" open-window-count="1" score="1067.5" last-seen="1529173443"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="12911.673828125" last-seen="1529173440"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="22" last-seen="1529168325"/>
     <application id="org.gnome.baobab.desktop" open-window-count="0" score="3.5" last-seen="1528860505"/>
     <application id="org.gnome.Shell.PortalHelper.desktop" open-window-count="0" score="2" last-seen="1529142545"/>
   </context>
