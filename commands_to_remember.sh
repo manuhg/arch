@@ -1,3 +1,6 @@
+#nitrogen multi monitor support
+nitrogen --force-setter=xinerama
+
 #remove ignroing dependecny breaks
 pacman -Rdd <pkg>
 

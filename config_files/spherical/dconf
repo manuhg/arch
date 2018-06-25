@@ -169,7 +169,7 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gnome/gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/dev/dishq'
+virtual-root='file:///home/gk1000/dev/agdial/src/resources'
 tree-view=true
 root='file:///'
 
@@ -195,6 +195,7 @@ window-size=(1377, 883)
 [gnome/terminal/legacy]
 new-terminal-mode='tab'
 schema-version=uint32 3
+default-show-menubar=false
 
 [gnome/terminal/legacy/keybindings]
 copy-html='<Primary><Shift>h'
@@ -265,7 +266,7 @@ gtk-theme='Arc-Darker'
 clock-show-date=true
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany']
 
 [gnome/desktop/notifications/application/qbittorrent]
 application-id='qbittorrent.desktop'
@@ -290,6 +291,9 @@ application-id='filezilla.desktop'
 
 [gnome/desktop/notifications/application/file-roller]
 application-id='file-roller.desktop'
+
+[gnome/desktop/notifications/application/geany]
+application-id='geany.desktop'
 
 [gnome/desktop/notifications/application/visual-studio-code]
 application-id='visual-studio-code.desktop'
@@ -436,7 +440,7 @@ theme-name='__custom'
 event-sounds=true
 
 [gnome/desktop/background]
-picture-uri='file:///home/gk1000/Pictures/Wallpapers/ny456536.jpg'
+picture-uri='file:///home/gk1000/Pictures/Wallpapers/new_york_usa_night_city_shore_skyscrapers_118407_3840x2160.jpg'
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -511,7 +515,7 @@ overscroll=10
 
 [gnome/software]
 first-run=false
-check-timestamp=int64 1529118797
+check-timestamp=int64 1529896557
 
 [gnome/nautilus/preferences]
 search-view='icon-view'
@@ -521,10 +525,10 @@ sort-directories-first=true
 default-sort-order='type'
 
 [gnome/nautilus/window-state]
-sidebar-width=183
+sidebar-width=164
 geometry='1061x643+23+15'
 maximized=true
-initial-size=(1366, 698)
+initial-size=(1900, 995)
 
 [gnome/nautilus/compression]
 default-compression-format='zip'
@@ -542,7 +546,7 @@ volumes-visible=true
 default-visible-columns=['name', 'size', 'type', 'date_modified']
 default-zoom-level='small'
 use-tree-view=true
-default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where']
+default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified_with_time', 'recency', 'starred']
 
 [gnome/shell]
 app-picker-view=uint32 0
@@ -678,7 +682,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [gnome/evince/default]
-window-ratio=(2.486529780107761, 1.0077384524514017)
+window-ratio=(2.4861111111111112, 1.0083144368858654)
 continuous=true
 fullscreen=false
 show-sidebar=true
