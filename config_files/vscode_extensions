@@ -12,7 +12,7 @@ ecmel.vscode-html-css
 eg2.tslint
 esbenp.prettier-vscode
 felixfbecker.php-debug
-HookyQR.beautify
+hiro-sun.vscode-emacs
 Hridoy.jquery-snippets
 ikappas.phpcs
 joshpeng.sublime-babel-vscode
@@ -22,7 +22,6 @@ mgmcdermott.vscode-language-babel
 mitaki28.vscode-clang
 ms-python.python
 ms-vscode.cpptools
-msjsdiag.debugger-for-chrome
 pranaygp.vscode-css-peek
 shakram02.bash-beautify
 tht13.python

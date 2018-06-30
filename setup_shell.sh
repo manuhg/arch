@@ -17,12 +17,13 @@ fdirs=("$HOME" "$HOME/.oh-my-zsh/themes" "$HOME/.local/share/konsole" "$HOME/.lo
        "$HOME/.config" "$HOME" "$HOME" "$HOME" \
        "$HOME/.config/nitrogen" "$HOME/.config/i3" "$HOME/.config/gtk-3.0" "$HOME/.config/gtk-3.0" \
        "$HOME/.config" "/etc/clamav-unofficial-sigs" "$HOME" "$HOME/.emacs.d" "$HOME/.emacs.d" "$HOME/.emacs.d/personal"\
-       "$HOME/.emacs.d/personal" "$HOME/.emacs.d/core/" )
+       "$HOME/.emacs.d/personal" "$HOME/.emacs.d/core" "$HOME/.config/hotkeys" )
 
 files=(".zshrc" "gk1000.zsh-theme" "gk1000.profile" "Solarized.colorscheme" \
        "konsolerc" ".tmux.conf" ".Xresources" ".gitconfig"  \
        "bg-saved.cfg" "config" "bookmarks" "settings.ini" \
-       "numix-folders" "user.conf" ".emacs" ".emacs.desktop" "prelude-modules.el" "custom.el" "emacs_config.el" "prelude-global-keybindings.el")
+       "numix-folders" "user.conf" ".emacs" ".emacs.desktop" "prelude-modules.el" \
+       "custom.el" "emacs_config.el" "prelude-global-keybindings.el" "synapse.hotkeys")
 if [  $# -eq 0 ]; then
     echo "Please enter an argument. backup or restore"
 
@@ -36,8 +37,8 @@ elif [ $1 = "backup" ] ; then
         if [[ -f $fdirs[$i]/$files[$i] ]];then
          cp -v $fdirs[$i]/$files[$i] $dir/$files[$i] && ((k=k+1))
         else
-         echo $rc"$fdirs[$i]/$files[$i] does not exist"$nc 
-        fi 
+         echo $rc"$fdirs[$i]/$files[$i] does not exist"$nc
+        fi
     done
 
     echo $c2"No of directories to backup: "${#edirs}$nc
@@ -51,7 +52,7 @@ elif [ $1 = "backup" ] ; then
 
     done
     [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
-    
+
     for ((j=1;j<=${#dconfs};j++)) do
         dconf dump /org/$dconfs[$i] > $cnfdir/dconf$dconfs[$i]
         dconf dump /org/$dconfs[$i] > $dir/dconf$dconfs[$i]
@@ -59,13 +60,13 @@ elif [ $1 = "backup" ] ; then
         echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $cnfdir/dconf$dconfs[$i]$nc"
         echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $dir/dconf$dconfs[$i]$nc"
     done
-    
+
     # dconf dump /org/gnome/ > $cnfdir/dconfgnome
     # dconf dump /org/gnome/ > $dir/dconfgnome
     # ((k=k+1))
     # echo $c1"dconf dump /org/gnome/$nc >$c2 $cnfdir/dconfgnome$nc"
     # echo $c1"dconf dump /org/gnome/$nc >$c2 $dir/dconfgnome$nc"
-    
+
     echo $c2"Config items backed up $nc"
     echo "$c2$bold$k$c2 Files$nc"
     echo "$c2$bold$ds$c2 Directories$nc"
@@ -79,7 +80,7 @@ elif [ $1 = "restore" ] ; then
         if [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] ;then
           cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
         else
-         echo $rc"$files[$i] not copied since $fdirs[$i] does not exist"$nc 
+         echo $rc"$files[$i] not copied since $fdirs[$i] does not exist"$nc
         fi
     done
     for ((i=1;i<=${#edirs};i++)) do
@@ -103,7 +104,7 @@ elif [ $1 = "install" ] ; then
     cp *.jpg ~/Pictures/
     yaourt -Syu obsidian-icon-theme numix-folders-git numix-circle-icon-theme-git  \
     numix-icon-theme-git gtk-theme-numix-solarized
-    
+
     sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
     git clone git://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/plugins/zsh-autosuggestions
     git clone https://github.com/numixproject/numix-folders.git && \
@@ -125,7 +126,7 @@ elif [ $1 = "install" ] ; then
         if [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] ;then
           cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
         else
-         echo $rc"$files[$i] not copied since $fdirs[$i] does not exist"$nc 
+         echo $rc"$files[$i] not copied since $fdirs[$i] does not exist"$nc
         fi
     done
     [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || dconf load /org/gnome/ < $cnfdir/dconfgnome
@@ -139,6 +140,6 @@ elif [ $1 = "install" ] ; then
     echo 'git config --global user.email "manuhegdev@gmail.com"'
     cp _git/config .git/
     git config  --global alias.pushall '!git remote | xargs -L1 git push'
-    
+
 fi
 [ ! -d ~/dev ] && mkdir ~/dev && cd ~/dev && ~/arch/cloneall.py

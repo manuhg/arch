@@ -109,7 +109,7 @@ alias et='emacsclient -t'
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
 alias nano='et'
-
+alias pfm='prettier --single-quote --write "src/**/*.{js,jsx,json,css}"'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

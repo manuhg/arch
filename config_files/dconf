@@ -38,7 +38,7 @@ show-thousands=false
 button-mode='basic'
 target-units='degree'
 word-size=64
-window-position=(23, 15)
+window-position=(20, 92)
 number-format='automatic'
 angle-units='degrees'
 base=16
@@ -515,7 +515,7 @@ overscroll=10
 
 [gnome/software]
 first-run=false
-check-timestamp=int64 1529896557
+check-timestamp=int64 1530327882
 
 [gnome/nautilus/preferences]
 search-view='icon-view'
@@ -675,7 +675,7 @@ speed=22160
 flags=64
 
 [gnome/control-center]
-last-panel='display'
+last-panel='keyboard'
 
 [gnome/evince]
 document-directory=@ms 'file:///home/gk1000/ceokar'
@@ -733,7 +733,7 @@ temperature-unit='centigrade'
 sort-column='name'
 clock-format='12h'
 sidebar-width=414
-window-position=(1920, 274)
+window-position=(277, 174)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)

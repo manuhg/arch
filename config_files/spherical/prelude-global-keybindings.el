@@ -34,6 +34,7 @@
 
 ;; Align your code in a pretty way.
 (global-set-key (kbd "C-x \\") 'align-regexp)
+(global-set-key [f8] 'neotree-toggle)
 
 ;; Font size
 (global-set-key (kbd "C-+") 'text-scale-increase)
