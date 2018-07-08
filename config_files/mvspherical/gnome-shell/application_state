@@ -1,13 +1,18 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="firefox.desktop" open-window-count="0" score="0" last-seen="1523105005"/>
-    <application id="visual-studio-code.desktop" open-window-count="1" score="25" last-seen="1523597092"/>
-    <application id="vlc.desktop" open-window-count="0" score="5617" last-seen="1522317834"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="4909" last-seen="1523596942"/>
-    <application id="DigiaQt-qtcreator-community.desktop" open-window-count="1" score="61" last-seen="1523599099"/>
-    <application id="google-chrome.desktop" open-window-count="0" score="4096" last-seen="1523580945"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="17179" last-seen="1523598855"/>
-    <application id="evince.desktop" open-window-count="0" score="8667" last-seen="1514419361"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="4" last-seen="1531049218"/>
+    <application id="firefox.desktop" open-window-count="0" score="291" last-seen="1531056625"/>
+    <application id="visual-studio-code.desktop" open-window-count="1" score="229" last-seen="1531059312"/>
+    <application id="vlc.desktop" open-window-count="0" score="1" last-seen="1531052134"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="60" last-seen="1531056599"/>
+    <application id="synapse.desktop" open-window-count="0" score="1" last-seen="1531048445"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="1" last-seen="1531056243"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="0" score="1128" last-seen="1531059289"/>
+    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="1" last-seen="1531049219"/>
+    <application id="org.gnome.Builder.desktop" open-window-count="0" score="0" last-seen="1531048682"/>
+    <application id="emacs.desktop" open-window-count="0" score="216" last-seen="1531056572"/>
+    <application id="org.gnome.Software.desktop" open-window-count="0" score="0" last-seen="1531048748"/>
+    <application id="org.gnome.Weather.Application.desktop" open-window-count="0" score="2" last-seen="1531054664"/>
   </context>
 </application-state>
