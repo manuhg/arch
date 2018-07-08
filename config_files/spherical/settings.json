@@ -1,0 +1,18 @@
+OB{
+    "sync.gist": "c8d41aea25f5aa08201e5cd963e1f8e2",
+    "sync.lastUpload": "2017-12-23T09:19:02.906Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "editor.formatOnSave": false,
+    "[javascript]": {
+    "editor.formatOnSave": true,
+    },
+    //"javascript.format.enable": false,
+    "prettier.eslintIntegration": true
+}

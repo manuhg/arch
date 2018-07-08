@@ -181,8 +181,8 @@ search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'f
 replace-with-entry=['{:name "', 'sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
 
 [gnome/gedit/state/window]
-size=(1066, 725)
-state=87168
+size=(1880, 885)
+state=128
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
@@ -515,7 +515,7 @@ overscroll=10
 
 [gnome/software]
 first-run=false
-check-timestamp=int64 1530327882
+check-timestamp=int64 1531023290
 
 [gnome/nautilus/preferences]
 search-view='icon-view'
@@ -528,7 +528,7 @@ default-sort-order='type'
 sidebar-width=164
 geometry='1061x643+23+15'
 maximized=true
-initial-size=(1900, 995)
+initial-size=(1100, 597)
 
 [gnome/nautilus/compression]
 default-compression-format='zip'
@@ -733,7 +733,7 @@ temperature-unit='centigrade'
 sort-column='name'
 clock-format='12h'
 sidebar-width=414
-window-position=(277, 174)
+window-position=(277, 185)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)
