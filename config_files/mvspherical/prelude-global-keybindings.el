@@ -34,6 +34,7 @@
 
 ;; Align your code in a pretty way.
 (global-set-key (kbd "C-x \\") 'align-regexp)
+(global-set-key [f8] 'neotree-toggle)
 
 ;; Font size
 (global-set-key (kbd "C-+") 'text-scale-increase)
@@ -117,7 +118,6 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
-
+(global-set-key (kbd "C-S-d") 'mc/mark-all-dwim)
 (provide 'prelude-global-keybindings)
-
 ;;; prelude-global-keybindings.el ends here

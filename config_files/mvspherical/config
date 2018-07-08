@@ -8,6 +8,19 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+exec --no-startup-id /usr/bin/xrandr --output DP1 --auto --output HDMI2 --primary --auto --left-of DP1
+exec --no-startup-id /usr/bin/emacs --daemon
+exec --no-startup-id /usr/bin/synapse
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/gnome-terminal'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/vlc'
+for_window [class="^.*"] border pixel 0
+gaps inner 10
+gaps outer 5
+
+exec --no-startup-id display-visor -f -l
+
+workspace 1 gaps inner 0
 
 set $mod Mod4
 
@@ -105,8 +118,9 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
+#bindsym $mod+space focus mode_toggle
+#bindsym lt+space focus mode_toggle
+bindsym $mod+space exec synapse
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -175,3 +189,4 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
