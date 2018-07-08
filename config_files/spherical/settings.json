@@ -9,10 +9,16 @@
     "sync.pathPrefix": "",
     "sync.quietSync": false,
     "sync.askGistName": false,
+    "files.autoSave": "onFocusChange",
     "editor.formatOnSave": false,
-    "[javascript]": {
-    "editor.formatOnSave": true,
-    },
+    // "[javascript]": {
+    // "editor.formatOnSave": true,
+    // },
     //"javascript.format.enable": false,
-    "prettier.eslintIntegration": true
+    "eslint.alwaysShowStatus": true,
+    "eslint.autoFixOnSave": true,
+    "prettier.eslintIntegration": true,
+    "[python]":{
+        "editor.formatOnSave": true
+    }
 }
