@@ -8,5 +8,5 @@ hist=log --pretty=format:'%H %ad | %s%d [%an]' --graph --date=short
 	pushall = !git remote | xargs -L1 git push
 	rmsub = !~/scripts/git/submodule_rm.sh
 [user]
-	email = mohansuryanarayana@gmail.com
-	name = MohanKrishnaS
+	email = manuhegdev@gmail.com
+	name = manu-spherical

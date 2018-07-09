@@ -1,3 +1,7 @@
+# to fix unrecognised option pacman --color=never
+nano /etc/pacman.conf => uncomment "#color"
+#i3 tap to click
+synclient TapButton1=1
 #nitrogen multi monitor support
 nitrogen --force-setter=xinerama
 
@@ -198,111 +202,6 @@ pacman -Rns $(pacman -Qtdq)
 #If it is ever necessary to remove all packages except the base group, try this one liner:#
 pacman -R $(comm -23 <(pacman -Qq | sort) <((for i in $(pacman -Qqg base); do pactree -ul "$i"; done) | sort -u))
 ##
-
-
-
-
-#WebGUI can be accessed via following URL: http://localhost:8888
-
-#   * Running rslsync system instance (using dedicated rslsync:rslsync account)
-
-#   System instance of rslsync is preconfigured (configuration file located
-#   at /etc/rslsync.conf) and can be used directly after installation.
-
-#   Execute:
-
-#     to reload system systemd modules:
-systemctl daemon-reload
-#     to start rslsync manually:
-systemctl start rslsync
-#     to autostart rslsync on system start:
-systemctl enable rslsync
-
-# * Running rslsync user instance (using current user account)
-
-#   User instance MUST be configured before use. To perform configuration,
-#   install rslsync-autoconfig package or follow manual configuration steps:
-
-#     1. Copy /etc/rslsync/rslsync.conf to ~/.config/rslsync/rslsync.conf for
-#     the user you wish to configure rslsync:
-
-mkdir -p ~/.config/rslsync
-cp /etc/rslsync.conf ~/.config/rslsync/rslsync.conf
-
-#     2. Replace user-specific references with the appropriate information,
-#     including the following settings:
-
-#       - storage_path
-#       - pid_file
-#       - webui.listen
-#       - webui.login
-#       - webui.password
-
-#     3. Make sure folder you specified as storage_path and folder where pid_file will
-#     be located both exist in the filesystem, since rslsync will not create it for you.
-
-#   Execute:
-
-#     to reload user systemd modules:
-systemctl --user daemon-reload
-#     to start rslsync manually:
-systemctl --user start rslsync
-#     to autostart rslsync on user login:
-systemctl --user enable rslsync
-#+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
-#+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 ufw allow from 106.51.0.0/16 to any port 17
 iptables -A INPUT -p tcp -m tcp --dport 17 --src 106.51.0.0/16 -j ACCEPT
 iptables -A INPUT -m string --algo bm  --string "ZmEu" -j DROP
-
-
-#Tab
-#Auto complete
-^a
-#Beginning of line
-^e
-#End of line
-^f
-#Forward one character
-^b
-#Back one character
-^h
-#Delete one character (backw­ards)
-%f
-#Forward one word
-%b
-#Back one word
-^w
-#Delete one word (backw­ards)
-^u
-#Clear to beginning of line
-^k
-#Clear to end of line
-^y
-#Paste from Kill Ring
-^t
-#Swap cursor with previous character
-%t
-#Swap cursor with previous word
-^p
-#Previous line in history
-^n
-#Next line in history
-^r
-#Search backwards in history
-^l
-#Clear screen
-^o
-#Execute command but keep line
-^z
-#Suspend process
-#fg
-#restore process
-#bg
-#continue process in background
-^c
-#Kill current process
-^d
-#Exit shell
-^ - Hold Control while pressing key
-% - Hold meta (alt, or command on mac)
