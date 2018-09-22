@@ -8,12 +8,12 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-exec --no-startup-id /usr/bin/xrandr --output DP1 --auto --output HDMI2 --primary --auto --left-of DP1
+#exec --no-startup-id /usr/bin/xrandr --output DP1 --auto --output HDMI2 --primary --auto --left-of DP1
 exec --no-startup-id /usr/bin/emacs --daemon
 exec --no-startup-id /usr/bin/synapse
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/gnome-terminal'
-exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/google-chrome-stable'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/vlc'
+#exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/google-chrome-stable'
+#exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/vlc'
 for_window [class="^.*"] border pixel 0
 gaps inner 10
 gaps outer 5

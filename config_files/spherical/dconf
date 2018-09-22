@@ -31,14 +31,14 @@ color='rgb(239,242,209)'
 font='Cantarell 14'
 
 [gnome/calculator]
-target-currency=''
+target-currency='DZD'
 show-zeroes=false
-source-currency=''
+source-currency='DZD'
 show-thousands=false
-button-mode='basic'
+button-mode='advanced'
 target-units='degree'
 word-size=64
-window-position=(20, 92)
+window-position=(23, 15)
 number-format='automatic'
 angle-units='degrees'
 base=16
@@ -91,7 +91,7 @@ sleep-inactive-battery-timeout=1800
 [gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 night-light-schedule-from=22.5
-night-light-enabled=true
+night-light-enabled=false
 night-light-last-coordinates=(12.9833, 77.583299999999994)
 
 [gnome/settings-daemon/plugins/media-keys]
@@ -177,12 +177,12 @@ root='file:///'
 active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
 
 [gnome/gedit/state/history-entry]
-search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
+search-for-entry=['https://www.pornhub.com/view_video.php?', 'sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>']
 replace-with-entry=['{:name "', 'sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
 
 [gnome/gedit/state/window]
-size=(1880, 885)
-state=128
+size=(1366, 698)
+state=43908
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
@@ -266,10 +266,13 @@ gtk-theme='Arc-Darker'
 clock-show-date=true
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany', 'gimp', 'org-octave-octave']
 
 [gnome/desktop/notifications/application/qbittorrent]
 application-id='qbittorrent.desktop'
+
+[gnome/desktop/notifications/application/sublime-text]
+application-id='sublime_text.desktop'
 
 [gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -283,6 +286,9 @@ application-id='google-chrome.desktop'
 [gnome/desktop/notifications/application/thunar]
 application-id='Thunar.desktop'
 
+[gnome/desktop/notifications/application/visual-studio-code]
+application-id='visual-studio-code.desktop'
+
 [gnome/desktop/notifications/application/nautilus]
 application-id='nautilus.desktop'
 
@@ -295,8 +301,8 @@ application-id='file-roller.desktop'
 [gnome/desktop/notifications/application/geany]
 application-id='geany.desktop'
 
-[gnome/desktop/notifications/application/visual-studio-code]
-application-id='visual-studio-code.desktop'
+[gnome/desktop/notifications/application/gimp]
+application-id='gimp.desktop'
 
 [gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
@@ -307,8 +313,8 @@ application-id='org.gnome.Polari.desktop'
 [gnome/desktop/notifications/application/transmission-gtk]
 application-id='transmission-gtk.desktop'
 
-[gnome/desktop/notifications/application/sublime-text]
-application-id='sublime_text.desktop'
+[gnome/desktop/notifications/application/org-octave-octave]
+application-id='org.octave.Octave.desktop'
 
 [gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
@@ -424,7 +430,7 @@ move-to-workspace-down=['<Shift><Control><Alt>Down']
 toggle-shaded=['<Control><Alt>s']
 minimize=['<Control><Alt>KP_0']
 lower=['disabled']
-activate-window-menu=['<Alt>space']
+activate-window-menu=['<Primary><Alt>space']
 maximize-vertically=['disabled']
 move-to-workspace-up=['<Shift><Control><Alt>Up']
 move-to-workspace-right=['<Shift><Control><Alt>Right']
@@ -476,8 +482,8 @@ recreate-folders=true
 
 [gnome/file-roller/ui]
 sidebar-width=200
-window-height=711
-window-width=1453
+window-height=663
+window-width=773
 
 [gnome/todo]
 view='grid'
@@ -513,9 +519,11 @@ auto-save-timeout=60
 minimum-word-size=2
 overscroll=10
 
-[gnome/software]
-first-run=false
-check-timestamp=int64 1531023290
+[gnome/mutter]
+dynamic-workspaces=true
+focus-change-on-pointer-rest=true
+attach-modal-dialogs=true
+edge-tiling=true
 
 [gnome/nautilus/preferences]
 search-view='icon-view'
@@ -527,8 +535,8 @@ default-sort-order='type'
 [gnome/nautilus/window-state]
 sidebar-width=164
 geometry='1061x643+23+15'
-maximized=true
-initial-size=(1100, 597)
+maximized=false
+initial-size=(1105, 551)
 
 [gnome/nautilus/compression]
 default-compression-format='zip'
@@ -549,10 +557,17 @@ use-tree-view=true
 default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified_with_time', 'recency', 'starred']
 
 [gnome/shell]
-app-picker-view=uint32 0
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop', 'vlc.desktop', 'evince.desktop']
+disable-user-extensions=false
+app-picker-view=uint32 0
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'opera.desktop', 'brave-git.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop']
+
+[gnome/shell/overrides]
+workspaces-only-on-primary=false
+
+[gnome/shell/calendar]
+show-weekdate=false
 
 [gnome/shell/extensions/user-theme]
 name=''
@@ -566,13 +581,7 @@ dock-position='LEFT'
 shortcut=['<Super>q']
 
 [gnome/shell/extensions/simplenetspeed]
-mode=4
-
-[gnome/shell/calendar]
-show-weekdate=false
-
-[gnome/shell/overrides]
-workspaces-only-on-primary=false
+mode=0
 
 [gnome/eog/view]
 background-color='rgb(0,0,0)'
@@ -682,7 +691,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [gnome/evince/default]
-window-ratio=(2.4861111111111112, 1.0083144368858654)
+window-ratio=(2.2325628275769382, 0.8813502951692026)
 continuous=true
 fullscreen=false
 show-sidebar=true
@@ -729,11 +738,15 @@ last-save-directory='file:///home/gk1000'
 [gnome/GWeather]
 temperature-unit='centigrade'
 
+[gnome/software]
+first-run=false
+check-timestamp=int64 1537586377
+
 [gtk/settings/file-chooser]
 sort-column='name'
 clock-format='12h'
-sidebar-width=414
-window-position=(277, 185)
+sidebar-width=159
+window-position=(0, 29)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)

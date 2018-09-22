@@ -13,9 +13,9 @@ nc="\033[0m"
 #rm -dR package-query yaourt
 #sudo pacman-key --refresh-keys && sudo pacman -Syyu
 #curl "https://pgp.mit.edu/pks/lookup?op=get&search=0x1EB2638FF56C0C53" -o - | gpg --import
-
-pacman_packages=("hexedit" "python" "nitrogen" "arduino" "namcap" "testdisk" "rng-tools" "steghide" "foremost" "exiv2" "whois" "geoip" "virtualbox" "xsel" "ipython2" "htop" "nasm" "gcc" "php" "qemu" "geany" "vlc" "python-pip " "aircrack-ng " "automake" "rsync" "cmake" "ruby" "nodejs" "ruby-native-package-installer " "screenfetch" "powerline-vim " "unzip" "synapse" "encfs" "docker" "dmenu" "firefox" "thunar" "qbittorrent" "scrot" "ipython" "lshw" "go" "tmux" "gpg-crypter " "emacs" "curl" "powerline" "rxvt-unicode " "atom" "xxd" "gparted" "unrar" "sl" "powerline-fonts " "ttf-inconsolata " "awesome-terminal-fonts " "cups" "sublime-text " "gnome-tweak-tool " "gnome-shell-extensions " "arc-gtk-theme " "jdk8-openjdk " "libreoffice-fresh " "linux-hardened-headers " "rxvt-unicode-terminfo " "virtualbox-guest-iso " "flatpak-builder " "glfw-x11 " "strace" "dnstracer" "figlet" "cowsay" "banner" "cmatrix" "bazel" "cowfortune" "pavucontrol" "linux-hardened " "gdb" "strace" "rkhunter" "moreutils" "bind")
-pacaur_packages=("visual-studio-code-bin" "google-chrome" "plymouth" "urxvt-fullscreen" "urxvt-tabbedex" "rar" "multibootusb" "woeusb" "virtualbox-ext-oracle" "dmg2img" "nvm" "numix-circle-icon-theme-git" "numix-icon-theme-git" "gtk-theme-numix-solarized" "numix-folders-git" "toilet" "downgrade" "leiningen" "aic94xx-firmware" "wd719x-firmware")
+#nanobox pcmciautils qimageblitz
+pacman_packages=("hexedit" "python" "nitrogen" "opera" "" "arduino" "namcap" "testdisk" "rng-tools" "steghide" "foremost" "exiv2" "whois" "geoip" "virtualbox" "xsel" "ipython2" "htop" "nasm" "gcc" "php" "qemu" "geany" "vlc" "python-pip " "aircrack-ng " "automake" "rsync" "cmake" "ruby" "nodejs" "ruby-native-package-installer " "screenfetch" "powerline-vim " "unzip" "synapse" "encfs" "docker" "dmenu" "firefox" "thunar" "qbittorrent" "scrot" "ipython" "lshw" "go" "tmux" "gpg-crypter " "emacs" "curl" "powerline" "rxvt-unicode " "atom" "xxd" "gparted" "unrar" "sl" "powerline-fonts " "ttf-inconsolata " "awesome-terminal-fonts " "cups" "sublime-text " "gnome-tweak-tool " "gnome-shell-extensions " "arc-gtk-theme " "jdk8-openjdk " "libreoffice-fresh " "linux-hardened-headers " "rxvt-unicode-terminfo " "virtualbox-guest-iso " "flatpak-builder " "glfw-x11 " "strace" "dnstracer" "figlet" "cowsay" "banner" "cmatrix" "bazel" "cowfortune" "pavucontrol" "linux-hardened " "gdb" "strace" "rkhunter" "moreutils" "bind")
+pacaur_packages=("visual-studio-code-bin" "brave-git" "google-chrome" "plymouth" "urxvt-fullscreen"  "urxvt-tabbedex" "rar" "multibootusb" "woeusb" "virtualbox-ext-oracle" "dmg2img" "nvm" "numix-circle-icon-theme-git" "numix-icon-theme-git" "gtk-theme-numix-solarized" "numix-folders-git" "toilet" "downgrade" "leiningen" "aic94xx-firmware" "wd719x-firmware")
 sudo pacman -Syu haveged
 sudo systemctl start haveged
 sudo systemctl enable haveged
@@ -89,12 +89,15 @@ pacaur -Syu --aur
 for ((i=1;i<=${#pacaur_packages};i++)) do
   echo $c1"pacaur -S --aur --noconfirm $pacaur_packages[$i]"$nc && pacaur -S --needed --aur --noconfirm $pacaur_packages[$i]
 done
+sudo pip install shodan
+sudo easy_install shodan
 # pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome \
 #  plymouth urxvt-fullscreen urxvt-tabbedex rar multibootusb woeusb \
 #  virtualbox-ext-oracle dmg2img nvm numix-circle-icon-theme-git \
 #  numix-icon-theme-git gtk-theme-numix-solarized numix-folders-git \
 #  toilet downgrade leiningen aic94xx-firmware wd719x-firmware
 #unetbootin touchegg touchegg-gce-git rslsync gtkglext hfsprogs usbguard
+
 
 pacaur -Syu --aur --noconfirm apparmor apparmor-profiles
 

@@ -20,5 +20,6 @@
     "prettier.eslintIntegration": true,
     "[python]":{
         "editor.formatOnSave": true
-    }
+    },
+    "window.zoomLevel": 1
 }

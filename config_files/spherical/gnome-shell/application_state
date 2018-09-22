@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gparted.desktop" open-window-count="0" score="9" last-seen="1530986608"/>
-    <application id="firefox.desktop" open-window-count="0" score="686.5" last-seen="1530958769"/>
-    <application id="visual-studio-code.desktop" open-window-count="0" score="7481.8125" last-seen="1530809693"/>
-    <application id="vlc.desktop" open-window-count="0" score="2495.001953125" last-seen="1530964258"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="1100.54248046875" last-seen="1530964261"/>
-    <application id="libreoffice-startcenter.desktop" open-window-count="0" score="100" last-seen="1530683516"/>
-    <application id="synapse.desktop" open-window-count="0" score="0.5" last-seen="1530681683"/>
-    <application id="eog.desktop" open-window-count="0" score="4" last-seen="1530961802"/>
-    <application id="google-chrome.desktop" open-window-count="1" score="16892.802734375" last-seen="1530987705"/>
-    <application id="gimp.desktop" open-window-count="0" score="0" last-seen="1530724005"/>
-    <application id="sublime_text.desktop" open-window-count="0" score="29" last-seen="1530698704"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="8533.66845703125" last-seen="1530987712"/>
-    <application id="org.gnome.DiskUtility.desktop" open-window-count="0" score="18" last-seen="1530986528"/>
+    <application id="opera.desktop" open-window-count="0" score="1102" last-seen="1537592343"/>
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="2" last-seen="1537116069"/>
+    <application id="firefox.desktop" open-window-count="0" score="200" last-seen="1537509211"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="4614.806640625" last-seen="1536494066"/>
+    <application id="vlc.desktop" open-window-count="0" score="5265.3438110351562" last-seen="1537588727"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="1950.9544525146484" last-seen="1537592592"/>
+    <application id="eog.desktop" open-window-count="0" score="46" last-seen="1537454035"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="22246.118835449219" last-seen="1537592447"/>
+    <application id="org.octave.Octave.desktop" open-window-count="0" score="343" last-seen="1537296681"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="1" last-seen="1537524615"/>
+    <application id="brave-git.desktop" open-window-count="0" score="1319" last-seen="1537592594"/>
+    <application id="org.gnome.tweaks.desktop" open-window-count="1" score="11" last-seen="1537592595"/>
+    <application id="sublime_text.desktop" open-window-count="0" score="415.90625" last-seen="1537118273"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="0" score="6682.7708892822266" last-seen="1537592325"/>
   </context>
 </application-state>

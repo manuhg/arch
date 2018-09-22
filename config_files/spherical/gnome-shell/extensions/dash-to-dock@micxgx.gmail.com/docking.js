@@ -29,10 +29,11 @@ const Utils = Me.imports.utils;
 const Intellihide = Me.imports.intellihide;
 const Theming = Me.imports.theming;
 const MyDash = Me.imports.dash;
+const LauncherAPI = Me.imports.launcherAPI;
 
 const DOCK_DWELL_CHECK_INTERVAL = 100;
 
-const State = {
+var State = {
     HIDDEN:  0,
     SHOWING: 1,
     SHOWN:   2,
@@ -191,11 +192,12 @@ const DashSlideContainer = new Lang.Class({
 const DockedDash = new Lang.Class({
     Name: 'DashToDock.DockedDash',
 
-    _init: function(settings, monitorIndex) {
+    _init: function(settings, remoteModel, monitorIndex) {
         this._rtl = (Clutter.get_default_text_direction() == Clutter.TextDirection.RTL);
 
         // Load settings
         this._settings = settings;
+        this._remoteModel = remoteModel;
         this._monitorIndex = monitorIndex;
         // Connect global signals
         this._signalsHandler = new Utils.GlobalSignalsHandler();
@@ -240,7 +242,7 @@ const DockedDash = new Lang.Class({
         this._dockDwellTimeoutId = 0
 
         // Create a new dash object
-        this.dash = new MyDash.MyDash(this._settings, this._monitorIndex);
+        this.dash = new MyDash.MyDash(this._settings, this._remoteModel, this._monitorIndex);
 
         if (!this._settings.get_boolean('show-show-apps-button'))
             this.dash.hideShowAppsButton();
@@ -295,7 +297,7 @@ const DockedDash = new Lang.Class({
         ], [
             // update when workarea changes, for instance if  other extensions modify the struts
             //(like moving th panel at the bottom)
-            global.screen,
+            Utils.DisplayWrapper.getScreen(),
             'workareas-changed',
             Lang.bind(this, this._resetPosition)
         ], [
@@ -321,7 +323,7 @@ const DockedDash = new Lang.Class({
             'notify::checked',
             Lang.bind(this, this._syncShowAppsButtonToggled)
         ], [
-            global.screen,
+            Utils.DisplayWrapper.getScreen(),
             'in-fullscreen-changed',
             Lang.bind(this, this._updateBarrier)
         ], [
@@ -350,7 +352,7 @@ const DockedDash = new Lang.Class({
         ]);
 
         this._injectionsHandler = new Utils.InjectionsHandler();
-        this._themeManager = new Theming.ThemeManager(this._settings, this.actor, this.dash);
+        this._themeManager = new Theming.ThemeManager(this._settings, this);
 
         // Since the actor is not a topLevel child and its parent is now not added to the Chrome,
         // the allocation change of the parent container (slide in and slideout) doesn't trigger
@@ -419,8 +421,6 @@ const DockedDash = new Lang.Class({
             this.actor.disconnect(this._paintId);
             this._paintId=0;
         }
-
-        this.dash.setIconSize(this._settings.get_int('dash-max-icon-size'), true);
 
         // Apply custome css class according to the settings
         this._themeManager.updateCustomTheme();
@@ -696,6 +696,10 @@ const DockedDash = new Lang.Class({
         }
     },
 
+    getDockState: function() {
+        return this._dockState;
+    },
+
     _show: function() {
         if ((this._dockState == State.HIDDEN) || (this._dockState == State.HIDING)) {
             if (this._dockState == State.HIDING)
@@ -755,6 +759,9 @@ const DockedDash = new Lang.Class({
             transition: 'easeOutQuad',
             onComplete: Lang.bind(this, function() {
                 this._dockState = State.HIDDEN;
+                // Remove queued barried removal if any
+                if (this._removeBarrierTimeoutId > 0)
+                    Mainloop.source_remove(this._removeBarrierTimeoutId);
                 this._updateBarrier();
             })
         });
@@ -1284,7 +1291,7 @@ const DockedDash = new Lang.Class({
             if (Main.overview.visible && Main.overview.viewSelector.getActivePage() !== ViewSelector.ViewPage.WINDOWS)
                 return false;
 
-            let activeWs = global.screen.get_active_workspace();
+            let activeWs = Utils.DisplayWrapper.getWorkspaceManager().get_active_workspace();
             let direction = null;
 
             switch (event.get_scroll_direction()) {
@@ -1577,7 +1584,7 @@ const WorkspaceIsolation = new Lang.Class({
 
         this._allDocks.forEach(function(dock) {
             this._signalsHandler.addWithLabel('isolation', [
-                global.screen,
+                Utils.DisplayWrapper.getScreen(),
                 'restacked',
                 Lang.bind(dock.dash, dock.dash._queueRedisplay)
             ], [
@@ -1590,7 +1597,7 @@ const WorkspaceIsolation = new Lang.Class({
             // might migrate from one monitor to another without triggering 'restacked'
             if (this._settings.get_boolean('isolate-monitors'))
                 this._signalsHandler.addWithLabel('isolation', [
-                    global.screen,
+                    Utils.DisplayWrapper.getScreen(),
                     'window-entered-monitor',
                     Lang.bind(dock.dash, dock.dash._queueRedisplay)
                 ]);
@@ -1601,13 +1608,13 @@ const WorkspaceIsolation = new Lang.Class({
         function IsolatedOverview() {
             // These lines take care of Nautilus for icons on Desktop
             let windows = this.get_windows().filter(function(w) {
-                return w.get_workspace().index() == global.screen.get_active_workspace_index();
+                return w.get_workspace().index() == Utils.DisplayWrapper.getWorkspaceManager().get_active_workspace_index();
             });
             if (windows.length == 1)
                 if (windows[0].skip_taskbar)
                     return this.open_new_window(-1);
 
-            if (this.is_on_workspace(global.screen.get_active_workspace()))
+            if (this.is_on_workspace(Utils.DisplayWrapper.getWorkspaceManager().get_active_workspace()))
                 return Main.activateWindow(windows[0]);
             return this.open_new_window(-1);
         }
@@ -1636,6 +1643,7 @@ var DockManager = new Lang.Class({
     Name: 'DashToDock.DockManager',
 
     _init: function() {
+        this._remoteModel = new LauncherAPI.LauncherEntryRemoteModel();
         this._settings = Convenience.getSettings('org.gnome.shell.extensions.dash-to-dock');
         this._oldDash = Main.overview._dash;
         /* Array of all the docks created */
@@ -1660,7 +1668,7 @@ var DockManager = new Lang.Class({
         // Connect relevant signals to the toggling function
         this._signalsHandler = new Utils.GlobalSignalsHandler();
         this._signalsHandler.add([
-            global.screen,
+            Utils.DisplayWrapper.getMonitorManager(),
             'monitors-changed',
             Lang.bind(this, this._toggle)
         ], [
@@ -1688,6 +1696,14 @@ var DockManager = new Lang.Class({
 
     _createDocks: function() {
 
+        // If there are no monitors (headless configurations, but it can also happen temporary while disconnecting
+        // and reconnecting monitors), just do nothing. When a monitor will be connected we we'll be notified and
+        // and thus create the docks. This prevents pointing trying to access monitors throughout the code, were we
+        // are assuming that at least the primary monitor is present.
+        if (Main.layoutManager.monitors.length <= 0) {
+            return;
+        }
+
         this._preferredMonitorIndex = this._settings.get_int('preferred-monitor');
         // In case of multi-monitor, we consider the dock on the primary monitor to be the preferred (main) one
         // regardless of the settings
@@ -1706,7 +1722,7 @@ var DockManager = new Lang.Class({
         }
 
         // First we create the main Dock, to get the extra features to bind to this one
-        let dock = new DockedDash(this._settings, this._preferredMonitorIndex);
+        let dock = new DockedDash(this._settings, this._remoteModel, this._preferredMonitorIndex);
         this._mainShowAppsButton = dock.dash.showAppsButton;
         this._allDocks.push(dock);
 
@@ -1724,7 +1740,7 @@ var DockManager = new Lang.Class({
             for (let iMon = 0; iMon < nMon; iMon++) {
                 if (iMon == this._preferredMonitorIndex)
                     continue;
-                let dock = new DockedDash(this._settings, iMon);
+                let dock = new DockedDash(this._settings, this._remoteModel, iMon);
                 this._allDocks.push(dock);
                 // connect app icon into the view selector
                 dock.dash.showAppsButton.connect('notify::checked', Lang.bind(this, this._onShowAppsButtonToggled));
@@ -1887,6 +1903,7 @@ var DockManager = new Lang.Class({
         this._deleteDocks();
         this._revertPanelCorners();
         this._restoreDash();
+        this._remoteModel.destroy();
     },
 
     /**

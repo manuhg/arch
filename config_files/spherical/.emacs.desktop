@@ -1,0 +1,43 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Jul 31 09:34:49 2018
+;; Desktop file format version 208
+;; Emacs version 26.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23391 57313 439383 433000) (desktop . "208") "gk1000@spherical" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "Monospace 11") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#DCDCCC") (background-color . "#3F3F3F") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#FFFFEF") (sticky) (environment) (frameset--id . "E703-5735-1DBC-1567") (frameset--mini t . t) (height . 53) (width . 209) (modeline . t) (unsplittable) (left + -1) (top . 26) (icon-name) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 49) (min-height-ignore . 4) (min-width-ignore . 18) (min-height-safe . 2) (min-width-safe . 6) (min-pixel-height . 144) (min-pixel-width . 441) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 162) (min-pixel-height-safe . 36) (min-pixel-width-safe . 54)) hc (pixel-width . 1920) (pixel-height . 940) (total-width . 213) (total-height . 52) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 261) (pixel-height . 940) (total-width . 29) (total-height . 52) (normal-height . 1.0) (normal-width . 0.34441489361702127) (parameters (window-side . left) (window-slot . 0)) (buffer " *NeoTree*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated . t) (point . 81) (start . 1))) (hc (last . t) (pixel-width . 1659) (pixel-height . 940) (total-width . 184) (total-height . 52) (normal-height . 1.0) (normal-width . 0.6555851063829787) (combination-limit . t) (leaf (pixel-width . 831) (pixel-height . 940) (total-width . 92) (total-height . 52) (normal-height . 1.0) (normal-width . 0.5) (buffer "App.js" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 549) (start . 1))) (vc (last . t) (pixel-width . 828) (pixel-height . 940) (total-width . 92) (total-height . 52) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 828) (pixel-height . 472) (total-width . 92) (total-height . 26) (normal-height . 0.5) (normal-width . 1.0) (buffer "App.js" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 514) (start . 1))) (leaf (last . t) (pixel-width . 828) (pixel-height . 468) (total-width . 92) (total-height . 26) (normal-height . 0.5) (normal-width . 1.0) (buffer "*shell*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 237) (start . 1)))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("space" "mod" "<hr" "hr" "card" "return" "App" "Fa" "App" "MT" "hr" "js2" "eslint" "spell" "-d" "stat"))
+(setq register-alist nil)
+(setq file-name-history '("/home/gk1000/.emacs.d/" "/home/gk1000/dev/agdial/src/" "/home/gk1000/dev/libfsort/" "/home/gk1000/dev/agdial/src/App.js" "/home/gk1000/dev/agdial/src/resources/scripts/preprocess.sh" "/home/gk1000/dev/agdial/src/components/Tiles.js" "/home/gk1000/dev/agdial/" "/home/gk1000/keys/algolia.py" "/home/gk1000/AgDial_assets/agl/.gitignore" "/home/gk1000/dev/manu/" "/home/gk1000/dev/agdial/.gitignore" "/home/gk1000/dev/manu/.gitignore" "/home/gk1000/arch/setup_shell.sh" "/home/gk1000/.config/Code/User/settings.json" "/home/gk1000/arch/setup_shell.sh" "/home/gk1000/dev/" "/home/gk1000/AgDial_assets/upload_assets.sh" "/home/gk1000/dev/agdial/.gitignore" "/home/gk1000/dev/agdial/k.css" "/home/gk1000/arch/setup_shell.sh" "/home/gk1000/.config/hotkeys/synapse.hotkeys" "/home/gk1000/.config/i3/config" "/home/gk1000/dev/agdial/purify.js" "/home/gk1000/dev/agdial/package.json" "/home/gk1000/dev/hhh/package.json" "/home/gk1000/dev/hhh/src/index.js" "/home/gk1000/dev/hhh/package.json" "/home/gk1000/dev/agdial/src/resources/pricing.css" "Pricing.js" "/home/gk1000/dev/agdial/src/components/MTab.js" "/home/gk1000/.zshrc" "/home/gk1000/dev/agdial/package.json" "/home/gk1000/.emacs.d/personal/preload/" "/home/gk1000/.emacs.d/personal/emacs_config.el" "/home/gk1000/.emacs.d/core/prelude-custom.el" "/home/gk1000/dev/agdial/.prettierrc" "/home/gk1000/dev/agdial/.babelrc" "/home/gk1000/.config/i3/config" "/home/gk1000/.config/nitrogen/nitrogen.cfg" "/home/gk1000/dev/agdial/build.js" "/home/gk1000/dev/agdial/firestore.rules" "/home/gk1000/dev/agdial/.gitignore" "/etc/sysctl.conf" "/home/gk1000/dev/agdial/src/index.js" "/home/gk1000/dev/agdial/README.md" "/home/gk1000/scripts/" "/home/gk1000/dev/aa.sh" "/home/gk1000/scripts/cloneall.py" "/home/gk1000/dev/cloneall.py" "/home/gk1000/scripts/cloneall.py" "/home/gk1000/dev/clonefromcloud.sh" "/home/gk1000/dev/cloneall.py" "/home/gk1000/dev/pmw/package.json" "/home/gk1000/dev/pmw/.gitignore" "/home/gk1000/dev/pmw/README.md" "/home/gk1000/dev/pickir/.gitignore" "/home/gk1000/dev/insta_retrieve/.env" "/home/gk1000/dev/pmw/webpack.config.js" "/home/gk1000/dev/insta_retrieve/index.html" "/home/gk1000/dev/insta_retrieve/.gitignore" "/home/gk1000/dev/insta_retrieve/index.html" "/home/gk1000/dev/insta_retrieve/src/" "/home/gk1000/dev/insta_retrieve/src/index.css" "/home/gk1000/dev/insta_retrieve/" "/home/gk1000/dev/insta_retrieve/.gitignore" "/home/gk1000/.bashrc" "/home/gk1000/.zshrc" "/home/gk1000/try.py" "/home/gk1000/dev/dishq/dishq.py" "/home/gk1000/dev/dishq/dishq.ipynb" "/home/gk1000/Academics/cgvlab/8b.cpp" "/home/gk1000/Academics/cgvlab/7b.cpp" "/home/gk1000/Academics/cgvlab/7a.cpp" "/home/gk1000/Academics/cgvlab/6b.cpp" "/home/gk1000/Academics/cgvlab/6a.cpp" "/home/gk1000/Academics/cgvlab/5b.cpp" "/home/gk1000/Academics/cgvlab/4b.cpp" "/home/gk1000/Academics/cgvlab/5a.cpp" "/home/gk1000/Academics/cgvlab/4a.cpp" "/home/gk1000/Academics/cgvlab/3b.cpp" "/home/gk1000/Academics/cgvlab/3a.cpp" "/home/gk1000/Academics/cgvlab/2b.cpp" "/home/gk1000/Academics/cgvlab/2a.cpp" "/home/gk1000/Academics/cgvlab/1a.cpp" "/home/gk1000/Academics/cgvlab/1b.cpp" "/home/gk1000/Academics/cgvlab/" "/home/gk1000/Academics/cgvlab/pgm4b.cpp" "/home/gk1000/" "/home/gk1000/dev/learn/clj/src/gola/core.clj" "/home/gk1000/dev/learn/clj/" "/home/gk1000/dev/learn/clj/src/gola/core.clj" "/home/gk1000/dev/libfsort/src/tsne_wrapper.cpp" "/home/gk1000/.emacs.d/core/prelude-global-keybindings.el" "/home/gk1000/dev/libfsort/src/libfsort.cpp" "/home/gk1000/dev/libfsort/src/CMakeLists.txt" "/home/gk1000/dev/libfsort/CMakeLists.txt" "/home/gk1000/devloka/caffe/CMakeLists.txt" "/home/gk1000/dev/libfsort/src/build.sh" "/home/gk1000/dev/libfsort/src/build.sh"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/gk1000/dev/agdial/src/App.js"
+  "App.js"
+  'js2-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode smartparens-mode volatile-highlights-mode projectile-mode anzu-mode whitespace-mode undo-tree-mode diff-hl-mode editorconfig-mode ivy-mode company-mode flycheck-mode TeX-PDF-mode js2-imenu-extras-mode)
+  514
+  '(514 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 23391 57310 676698 711000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "src"
+  'dired-mode
+  '(beacon-mode which-key-mode prelude-mode global-auto-revert-mode volatile-highlights-mode projectile-mode anzu-mode editorconfig-mode ivy-mode company-mode TeX-PDF-mode diff-hl-dired-mode)
+  292
+  '(nil nil)
+  t
+  '("/home/gk1000/dev/agdial/src/")
+  '((buffer-display-time 23391 57180 157687 156000))
+  '((mark-ring nil)))
+
