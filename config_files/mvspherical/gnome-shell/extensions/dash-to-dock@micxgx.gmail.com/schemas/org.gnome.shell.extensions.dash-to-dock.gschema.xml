@@ -7,7 +7,8 @@
     <value value='3' nick='cycle-windows'/>
     <value value='4' nick='minimize-or-overview'/>
     <value value='5' nick='previews'/>
-    <value value='6' nick='quit'/>
+    <value value='6' nick='minimize-or-previews'/>
+    <value value='7' nick='quit'/>
   </enum>
   <enum id='org.gnome.shell.extensions.dash-to-dock.scrollAction'>
     <value value='0' nick='do-nothing'/>
@@ -26,6 +27,22 @@
     <value value='0' nick='ALL_WINDOWS'/>
     <value value='1' nick='FOCUS_APPLICATION_WINDOWS'/>
     <value value='2' nick='MAXIMIZED_WINDOWS'/>
+  </enum>
+  <enum id='org.gnome.shell.extensions.dash-to-dock.transparency-mode'>
+    <value value='0' nick='DEFAULT'/>
+    <value value='1' nick='FIXED'/>
+    <value value='2' nick='ADAPTIVE'/>
+    <value value='3' nick='DYNAMIC'/>
+  </enum>
+    <enum id='org.gnome.shell.extensions.dash-to-dock.running-indicator-style'>
+    <value value='0' nick='DEFAULT'/>
+    <value value='1' nick='DOTS'/>
+    <value value='2' nick='SQUARES'/>
+    <value value='3' nick='DASHES'/>
+    <value value='4' nick='SEGMENTED'/>
+    <value value='5' nick='SOLID'/>
+    <value value='6' nick='CILIORA'/>
+    <value value='7' nick='METRO'/>
   </enum>
   <schema path="/org/gnome/shell/extensions/dash-to-dock/" id="org.gnome.shell.extensions.dash-to-dock">
     <key name="dock-position" enum="org.gnome.shell.extensions.dash-to-dock.position">
@@ -58,10 +75,35 @@
       <summary>Dash background color.</summary>
       <description>Customize the background color of the dash.</description>
     </key>
-    <key type="b" name="opaque-background">
+    <key name="transparency-mode" enum="org.gnome.shell.extensions.dash-to-dock.transparency-mode">
+      <default>'DEFAULT'</default>
+      <summary>Transparency mode for the dock</summary>
+      <description>FIXED: constant transparency. ADAPTIVE: lock state with the top panel when not hidden. DYNAMIC: dock takes the opaque style only when windows are close to it.</description>
+    </key>
+    <key name="running-indicator-style" enum="org.gnome.shell.extensions.dash-to-dock.running-indicator-style">
+      <default>'DEFAULT'</default>
+      <summary>...</summary>
+      <description>DEFAULT: .... DOTS: ....</description>
+    </key>
+    <key type="b" name="running-indicator-dominant-color">
       <default>false</default>
-      <summary>Dash background is opaque</summary>
-      <description>Makes the background of the dash opaque improving readability when in autohide mode.</description>
+      <summary>Use application icon dominant color for the indicator color</summary>
+      <description></description>
+    </key>
+    <key type="b" name="customize-alphas">
+      <default>false</default>
+      <summary>Manually set the min and max opacity</summary>
+      <description>For Adaptive and Dynamic modes, the min/max opacity values will be given by 'min-alpha' and 'max-alpha'.</description>
+    </key>
+    <key type="d" name="min-alpha">
+      <default>0.2</default>
+      <summary>Opacity of the dash background when free-floating</summary>
+      <description>Sets the opacity of the dash background when no windows are close.</description>
+    </key>
+    <key type="d" name="max-alpha">
+      <default>0.8</default>
+      <summary>Opacity of the dash background when windows are close.</summary>
+      <description>Sets the opacity of the dash background when windows are close.</description>
     </key>
     <key type="d" name="background-opacity">
       <default>0.8</default>
@@ -124,11 +166,6 @@
       <description>Apply customization to the dash appearance</description>
     </key>
     <key type="b" name="custom-theme-shrink">
-      <default>false</default>
-      <summary>TODO</summary>
-      <description>TODO</description>
-    </key>
-    <key type="b" name="custom-theme-running-dots">
       <default>false</default>
       <summary>TODO</summary>
       <description>TODO</description>
@@ -236,7 +273,7 @@
     </key>
     <key name="shift-click-action" enum="org.gnome.shell.extensions.dash-to-dock.clickAction">
       <default>'minimize'</default>
-      <summary>Action when shit+clicking on a running app</summary>
+      <summary>Action when shift+clicking on a running app</summary>
       <description>Set the action that is executed when shift+clicking on the icon of a running application</description>
     </key>
     <key name="middle-click-action" enum="org.gnome.shell.extensions.dash-to-dock.clickAction">

@@ -51,7 +51,7 @@ show-thousands=false
 button-mode='basic'
 target-units='degree'
 word-size=64
-window-position=(20, 92)
+window-position=(23, 15)
 number-format='automatic'
 angle-units='degrees'
 base=16
@@ -936,6 +936,7 @@ move-tab-left='<Primary><Shift>Left'
 foreground-color='rgb(211,215,207)'
 visible-name='gk1000_3'
 palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(111,125,130)', 'rgb(203,75,22)', 'rgb(71,153,0)', 'rgb(115,131,101)', 'rgb(110,148,170)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+default-size-columns=100
 cursor-shape='ibeam'
 use-system-font=false
 use-theme-colors=false
@@ -993,76 +994,79 @@ gtk-theme='Arc-Darker'
 clock-show-date=true
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany']
-
-[gnome/desktop/notifications/application/qbittorrent]
-application-id='qbittorrent.desktop'
-
-[gnome/desktop/notifications/application/org-gnome-nautilus]
-application-id='org.gnome.Nautilus.desktop'
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany', 'org-octave-octave', 'evince', 'org-gnome-evince', 'opera']
 
 [gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
 
-[gnome/desktop/notifications/application/google-chrome]
-application-id='google-chrome.desktop'
+[gnome/desktop/notifications/application/sublime-text]
+application-id='sublime_text.desktop'
 
-[gnome/desktop/notifications/application/brasero]
-application-id='brasero.desktop'
-
-[gnome/desktop/notifications/application/thunar]
-application-id='Thunar.desktop'
-
-[gnome/desktop/notifications/application/nautilus]
-application-id='nautilus.desktop'
-
-[gnome/desktop/notifications/application/filezilla]
-application-id='filezilla.desktop'
-
-[gnome/desktop/notifications/application/file-roller]
-application-id='file-roller.desktop'
+[gnome/desktop/notifications/application/qbittorrent]
+application-id='qbittorrent.desktop'
 
 [gnome/desktop/notifications/application/geany]
 application-id='geany.desktop'
 
-[gnome/desktop/notifications/application/visual-studio-code]
-application-id='visual-studio-code.desktop'
+[gnome/desktop/notifications/application/opera]
+application-id='opera.desktop'
 
 [gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-polari]
-application-id='org.gnome.Polari.desktop'
-
-[gnome/desktop/notifications/application/transmission-gtk]
-application-id='transmission-gtk.desktop'
-
-[gnome/desktop/notifications/application/sublime-text]
-application-id='sublime_text.desktop'
-
 [gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
+
+[gnome/desktop/notifications/application/keybase]
+application-id='keybase.desktop'
 
 [gnome/desktop/notifications/application/emacs]
 application-id='emacs.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-gedit]
-application-id='org.gnome.gedit.desktop'
+[gnome/desktop/notifications/application/org-pantheon-files]
+application-id='org.pantheon.files.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
-application-id='org.gnome.ChromeGnomeShell.desktop'
+[gnome/desktop/notifications/application/rhythmbox]
+application-id='rhythmbox.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-software]
-application-id='org.gnome.Software.desktop'
+[gnome/desktop/notifications/application/transmission-gtk]
+application-id='transmission-gtk.desktop'
+
+[gnome/desktop/notifications/application/visual-studio-code]
+application-id='visual-studio-code.desktop'
+
+[gnome/desktop/notifications/application/org-octave-octave]
+application-id='org.octave.Octave.desktop'
+
+[gnome/desktop/notifications/application/file-roller]
+application-id='file-roller.desktop'
+
+[gnome/desktop/notifications/application/thunar]
+application-id='Thunar.desktop'
 
 [gnome/desktop/notifications/application/ca-desrt-dconf-editor]
 application-id='ca.desrt.dconf-editor.desktop'
 
+[gnome/desktop/notifications/application/nautilus]
+application-id='nautilus.desktop'
+
+[gnome/desktop/notifications/application/org-gnome-evince]
+application-id='org.gnome.Evince.desktop'
+
 [gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
 
-[gnome/desktop/notifications/application/rhythmbox]
-application-id='rhythmbox.desktop'
+[gnome/desktop/notifications/application/brasero]
+application-id='brasero.desktop'
+
+[gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
+application-id='org.gnome.ChromeGnomeShell.desktop'
+
+[gnome/desktop/notifications/application/filezilla]
+application-id='filezilla.desktop'
+
+[gnome/desktop/notifications/application/evince]
+application-id='evince.desktop'
 
 [gnome/desktop/notifications/application/digiaqt-qtcreator-community]
 application-id='DigiaQt-qtcreator-community.desktop'
@@ -1070,11 +1074,20 @@ application-id='DigiaQt-qtcreator-community.desktop'
 [gnome/desktop/notifications/application/libreoffice-startcenter]
 application-id='libreoffice-startcenter.desktop'
 
-[gnome/desktop/notifications/application/org-pantheon-files]
-application-id='org.pantheon.files.desktop'
+[gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
 
-[gnome/desktop/notifications/application/keybase]
-application-id='keybase.desktop'
+[gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[gnome/desktop/notifications/application/org-gnome-polari]
+application-id='org.gnome.Polari.desktop'
+
+[gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
 
 [gnome/desktop/media-handling]
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media', 'x-content/blank-dvd']
@@ -1174,6 +1187,9 @@ screen-reader-enabled=false
 theme-name='__custom'
 event-sounds=true
 
+[gnome/desktop/datetime]
+automatic-timezone=true
+
 [gnome/desktop/background]
 picture-uri='file:///home/manu/Pictures/wpp/new_york_usa_night_city_shore_skyscrapers_118407_3840x2160.jpg'
 color-shading-type='solid'
@@ -1200,7 +1216,7 @@ remembered-plugins=''
 [gnome/file-roller/listing]
 sort-method='name'
 name-column-width=1029
-sort-type='descending'
+sort-type='ascending'
 list-mode='as-folder'
 show-path=false
 
@@ -1215,8 +1231,8 @@ recreate-folders=true
 
 [gnome/file-roller/ui]
 sidebar-width=200
-window-height=711
-window-width=1453
+window-height=698
+window-width=1366
 
 [gnome/todo]
 view='grid'
@@ -1252,30 +1268,42 @@ auto-save-timeout=60
 minimum-word-size=2
 overscroll=10
 
-[gnome/builder/editor/language/markdown]
-insert-spaces-instead-of-tabs=true
-trim-trailing-whitespace=false
-tab-width=4
-
-[gnome/builder/editor/language/python]
+[gnome/builder/editor/language/java]
 overwrite-braces=true
 insert-spaces-instead-of-tabs=true
 insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/markdown]
+insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
 tab-width=4
+trim-trailing-whitespace=false
 
 [gnome/builder/editor/language/automake]
 insert-spaces-instead-of-tabs=false
+insert-trailing-newline=true
 tab-width=8
 
 [gnome/builder/editor/language/makefile]
 insert-spaces-instead-of-tabs=false
+insert-trailing-newline=true
 tab-width=8
+
+[gnome/builder/editor/language/python]
+overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
+insert-matching-brace=true
+tab-width=4
 
 [gnome/builder/editor/language/rust]
 overwrite-braces=true
 insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
 insert-matching-brace=true
 tab-width=4
+right-margin-position=100
 
 [gnome/builder/editor/language/c-sharp]
 overwrite-braces=true
@@ -1296,29 +1324,41 @@ tab-width=2
 [gnome/builder/editor/language/js]
 overwrite-braces=true
 insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
 insert-matching-brace=true
 tab-width=2
 
 [gnome/builder/editor/language/ruby]
 overwrite-braces=true
 insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
 insert-matching-brace=true
 tab-width=2
 
 [gnome/builder/editor/language/python3]
 overwrite-braces=true
 insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
 insert-matching-brace=true
 tab-width=4
 
 [gnome/builder/editor/language/html]
 overwrite-braces=true
 insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
 insert-matching-brace=true
 tab-width=2
 
 [gnome/builder/editor/language/css]
 overwrite-braces=true
+insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
+insert-matching-brace=true
+tab-width=2
+
+[gnome/builder/editor/language/gradle]
+overwrite-braces=true
+auto-indent=true
 insert-spaces-instead-of-tabs=true
 insert-matching-brace=true
 tab-width=2
@@ -1328,6 +1368,7 @@ overwrite-braces=true
 auto-indent=true
 insert-spaces-instead-of-tabs=true
 insert-matching-brace=true
+insert-trailing-newline=true
 tab-width=2
 
 [gnome/builder/editor/language/cpp]
@@ -1341,6 +1382,7 @@ tab-width=4
 [gnome/builder/editor/language/vala]
 overwrite-braces=true
 insert-spaces-instead-of-tabs=true
+insert-trailing-newline=true
 insert-matching-brace=true
 tab-width=4
 
@@ -1353,9 +1395,8 @@ insert-matching-brace=true
 insert-trailing-newline=true
 tab-width=2
 
-[gnome/software]
-first-run=false
-check-timestamp=int64 1531109210
+[gnome/mutter]
+workspaces-only-on-primary=false
 
 [gnome/nautilus/preferences]
 search-view='icon-view'
@@ -1368,7 +1409,7 @@ default-sort-order='type'
 sidebar-width=164
 geometry='1061x643+23+15'
 maximized=false
-initial-size=(890, 550)
+initial-size=(995, 494)
 
 [gnome/nautilus/compression]
 default-compression-format='zip'
@@ -1389,10 +1430,17 @@ use-tree-view=true
 default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified_with_time', 'recency', 'starred']
 
 [gnome/shell]
-app-picker-view=uint32 0
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
 remember-mount-password=false
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop', 'vlc.desktop', 'evince.desktop']
+disable-user-extensions=false
+app-picker-view=uint32 0
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'opera.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop', 'vlc.desktop', 'evince.desktop']
+
+[gnome/shell/overrides]
+workspaces-only-on-primary=false
+
+[gnome/shell/calendar]
+show-weekdate=false
 
 [gnome/shell/extensions/user-theme]
 name=''
@@ -1406,19 +1454,14 @@ dock-position='LEFT'
 shortcut=['<Super>q']
 
 [gnome/shell/extensions/simplenetspeed]
-mode=4
-
-[gnome/shell/calendar]
-show-weekdate=false
-
-[gnome/shell/overrides]
-workspaces-only-on-primary=false
+mode=3
 
 [gnome/eog/view]
 background-color='rgb(0,0,0)'
 use-background-color=true
 
 [gnome/eog/ui]
+statusbar=false
 sidebar=true
 
 [gnome/nm-applet/eap/8d1f98a3-62af-494d-a13f-afc038032021]
@@ -1522,14 +1565,14 @@ flags=464
 iso-folder='/home/gk1000'
 
 [gnome/control-center]
-last-panel='background'
+last-panel='default-apps'
 
 [gnome/evince]
 document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [gnome/evince/default]
-window-ratio=(2.4861111111111112, 1.0083144368858654)
+window-ratio=(2.2945642679567295, 0.86390415367097384)
 continuous=true
 fullscreen=false
 show-sidebar=true
@@ -1649,11 +1692,15 @@ run-command-9=['disabled']
 [gnome/GWeather]
 temperature-unit='centigrade'
 
+[gnome/software]
+first-run=false
+check-timestamp=int64 1538301883
+
 [gtk/settings/file-chooser]
 sort-column='name'
 clock-format='12h'
 sidebar-width=414
-window-position=(0, 36)
+window-position=(0, 29)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)

@@ -1,5 +1,6 @@
 const Clutter = imports.gi.Clutter;
 const Lang = imports.lang;
+const Meta = imports.gi.Meta;
 const St = imports.gi.St;
 
 /**
@@ -31,7 +32,8 @@ const BasicHandler = new Lang.Class({
 
         // Skip first element of the arguments
         for (let i = 1; i < arguments.length; i++) {
-            this._storage[label].push( this._create(arguments[i]));
+            let item = this._storage[label];
+            item.push(this._create(arguments[i]));
         }
     },
 
@@ -219,3 +221,52 @@ function getPosition(settings) {
     }
     return position;
 }
+
+function drawRoundedLine(cr, x, y, width, height, isRoundLeft, isRoundRight, stroke, fill) {
+    if (height > width) {
+        y += Math.floor((height - width) / 2.0);
+        height = width;
+    }
+    
+    height = 2.0 * Math.floor(height / 2.0);
+    
+    var leftRadius = isRoundLeft ? height / 2.0 : 0.0;
+    var rightRadius = isRoundRight ? height / 2.0 : 0.0;
+    
+    cr.moveTo(x + width - rightRadius, y);
+    cr.lineTo(x + leftRadius, y);
+    if (isRoundLeft)
+        cr.arcNegative(x + leftRadius, y + leftRadius, leftRadius, -Math.PI/2, Math.PI/2);
+    else
+        cr.lineTo(x, y + height);
+    cr.lineTo(x + width - rightRadius, y + height);
+    if (isRoundRight)
+        cr.arcNegative(x + width - rightRadius, y + rightRadius, rightRadius, Math.PI/2, -Math.PI/2);
+    else
+        cr.lineTo(x + width, y);
+    cr.closePath();
+    
+    if (fill != null) {
+        cr.setSource(fill);
+        cr.fillPreserve();
+    }
+    if (stroke != null)
+        cr.setSource(stroke);
+    cr.stroke();
+}
+
+// This is wrapper to maintain compatibility with GNOME-Shell 3.30+ as well as
+// previous versions.
+var DisplayWrapper = {
+    getScreen: function() {
+        return global.screen || global.display;
+    },
+
+    getWorkspaceManager: function() {
+        return global.screen || global.workspace_manager;
+    },
+
+    getMonitorManager: function() {
+        return global.screen || Meta.MonitorManager.get();
+    }
+};
