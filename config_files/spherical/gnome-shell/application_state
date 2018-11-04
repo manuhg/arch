@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="opera.desktop" open-window-count="0" score="1102" last-seen="1537592343"/>
-    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="2" last-seen="1537116069"/>
-    <application id="firefox.desktop" open-window-count="0" score="200" last-seen="1537509211"/>
-    <application id="visual-studio-code.desktop" open-window-count="0" score="4614.806640625" last-seen="1536494066"/>
-    <application id="vlc.desktop" open-window-count="0" score="5265.3438110351562" last-seen="1537588727"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="1950.9544525146484" last-seen="1537592592"/>
-    <application id="eog.desktop" open-window-count="0" score="46" last-seen="1537454035"/>
-    <application id="google-chrome.desktop" open-window-count="1" score="22246.118835449219" last-seen="1537592447"/>
-    <application id="org.octave.Octave.desktop" open-window-count="0" score="343" last-seen="1537296681"/>
-    <application id="org.gnome.gedit.desktop" open-window-count="0" score="1" last-seen="1537524615"/>
-    <application id="brave-git.desktop" open-window-count="0" score="1319" last-seen="1537592594"/>
-    <application id="org.gnome.tweaks.desktop" open-window-count="1" score="11" last-seen="1537592595"/>
-    <application id="sublime_text.desktop" open-window-count="0" score="415.90625" last-seen="1537118273"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="0" score="6682.7708892822266" last-seen="1537592325"/>
+    <application id="opera.desktop" open-window-count="0" score="259.5" last-seen="1541233316"/>
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="28" last-seen="1541321455"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="0" last-seen="1541307400"/>
+    <application id="firefox.desktop" open-window-count="0" score="455.625" last-seen="1541305188"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="3" last-seen="1541085388"/>
+    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="15.375" last-seen="1541002273"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="2" score="2768.0610766410828" last-seen="1541337178"/>
+    <application id="vlc.desktop" open-window-count="0" score="2708.7607440948486" last-seen="1541336077"/>
+    <application id="synapse.desktop" open-window-count="0" score="0" last-seen="1541332534"/>
+    <application id="eog.desktop" open-window-count="0" score="235.28125" last-seen="1541313335"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="17577.409963607788" last-seen="1541337248"/>
+    <application id="sublime_text.desktop" open-window-count="0" score="143.875" last-seen="1541165292"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="4225.8365902900696" last-seen="1541337126"/>
+    <application id="org.gnome.Evince.desktop" open-window-count="0" score="111.5" last-seen="1541304046"/>
+    <application id="gnome-system-monitor.desktop" open-window-count="0" score="12" last-seen="1541307499"/>
   </context>
 </application-state>

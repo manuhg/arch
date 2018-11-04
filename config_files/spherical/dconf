@@ -258,15 +258,22 @@ clock-format='24h'
 cursor-theme='Obsidian'
 gtk-im-module='gtk-im-context-simple'
 scaling-factor=uint32 1
-clock-show-seconds=false
+clock-show-seconds=true
 icon-theme='Numix'
-toolkit-accessibility=false
+show-battery-percentage=false
 enable-animations=true
 gtk-theme='Arc-Darker'
 clock-show-date=true
+toolkit-accessibility=false
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany', 'gimp', 'org-octave-octave']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany', 'gimp', 'org-octave-octave', 'org-gnome-fileroller', 'opera', 'eog']
+
+[gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[gnome/desktop/notifications/application/geany]
+application-id='geany.desktop'
 
 [gnome/desktop/notifications/application/qbittorrent]
 application-id='qbittorrent.desktop'
@@ -274,71 +281,62 @@ application-id='qbittorrent.desktop'
 [gnome/desktop/notifications/application/sublime-text]
 application-id='sublime_text.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-nautilus]
-application-id='org.gnome.Nautilus.desktop'
-
-[gnome/desktop/notifications/application/firefox]
-application-id='firefox.desktop'
-
-[gnome/desktop/notifications/application/google-chrome]
-application-id='google-chrome.desktop'
-
-[gnome/desktop/notifications/application/thunar]
-application-id='Thunar.desktop'
-
-[gnome/desktop/notifications/application/visual-studio-code]
-application-id='visual-studio-code.desktop'
-
-[gnome/desktop/notifications/application/nautilus]
-application-id='nautilus.desktop'
-
-[gnome/desktop/notifications/application/filezilla]
-application-id='filezilla.desktop'
-
-[gnome/desktop/notifications/application/file-roller]
-application-id='file-roller.desktop'
-
-[gnome/desktop/notifications/application/geany]
-application-id='geany.desktop'
-
-[gnome/desktop/notifications/application/gimp]
-application-id='gimp.desktop'
+[gnome/desktop/notifications/application/opera]
+application-id='opera.desktop'
 
 [gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-polari]
-application-id='org.gnome.Polari.desktop'
-
-[gnome/desktop/notifications/application/transmission-gtk]
-application-id='transmission-gtk.desktop'
-
-[gnome/desktop/notifications/application/org-octave-octave]
-application-id='org.octave.Octave.desktop'
-
 [gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
+
+[gnome/desktop/notifications/application/keybase]
+application-id='keybase.desktop'
 
 [gnome/desktop/notifications/application/emacs]
 application-id='emacs.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-gedit]
-application-id='org.gnome.gedit.desktop'
+[gnome/desktop/notifications/application/org-pantheon-files]
+application-id='org.pantheon.files.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
-application-id='org.gnome.ChromeGnomeShell.desktop'
+[gnome/desktop/notifications/application/rhythmbox]
+application-id='rhythmbox.desktop'
 
-[gnome/desktop/notifications/application/org-gnome-software]
-application-id='org.gnome.Software.desktop'
+[gnome/desktop/notifications/application/transmission-gtk]
+application-id='transmission-gtk.desktop'
+
+[gnome/desktop/notifications/application/visual-studio-code]
+application-id='visual-studio-code.desktop'
+
+[gnome/desktop/notifications/application/org-octave-octave]
+application-id='org.octave.Octave.desktop'
+
+[gnome/desktop/notifications/application/file-roller]
+application-id='file-roller.desktop'
+
+[gnome/desktop/notifications/application/thunar]
+application-id='Thunar.desktop'
 
 [gnome/desktop/notifications/application/ca-desrt-dconf-editor]
 application-id='ca.desrt.dconf-editor.desktop'
 
+[gnome/desktop/notifications/application/nautilus]
+application-id='nautilus.desktop'
+
+[gnome/desktop/notifications/application/gimp]
+application-id='gimp.desktop'
+
+[gnome/desktop/notifications/application/eog]
+application-id='eog.desktop'
+
 [gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
 
-[gnome/desktop/notifications/application/rhythmbox]
-application-id='rhythmbox.desktop'
+[gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
+application-id='org.gnome.ChromeGnomeShell.desktop'
+
+[gnome/desktop/notifications/application/filezilla]
+application-id='filezilla.desktop'
 
 [gnome/desktop/notifications/application/digiaqt-qtcreator-community]
 application-id='DigiaQt-qtcreator-community.desktop'
@@ -346,11 +344,23 @@ application-id='DigiaQt-qtcreator-community.desktop'
 [gnome/desktop/notifications/application/libreoffice-startcenter]
 application-id='libreoffice-startcenter.desktop'
 
-[gnome/desktop/notifications/application/org-pantheon-files]
-application-id='org.pantheon.files.desktop'
+[gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
 
-[gnome/desktop/notifications/application/keybase]
-application-id='keybase.desktop'
+[gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[gnome/desktop/notifications/application/org-gnome-fileroller]
+application-id='org.gnome.FileRoller.desktop'
+
+[gnome/desktop/notifications/application/org-gnome-polari]
+application-id='org.gnome.Polari.desktop'
+
+[gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
 
 [gnome/desktop/media-handling]
 autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media', 'x-content/blank-dvd']
@@ -446,7 +456,7 @@ theme-name='__custom'
 event-sounds=true
 
 [gnome/desktop/background]
-picture-uri='file:///home/gk1000/Pictures/Wallpapers/new_york_usa_night_city_shore_skyscrapers_118407_3840x2160.jpg'
+picture-uri='file:///home/gk1000/Pictures/Wallpapers/62903274-interstellar-wallpapers.jpg'
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -535,11 +545,11 @@ default-sort-order='type'
 [gnome/nautilus/window-state]
 sidebar-width=164
 geometry='1061x643+23+15'
-maximized=false
-initial-size=(1105, 551)
+maximized=true
+initial-size=(1352, 755)
 
 [gnome/nautilus/compression]
-default-compression-format='zip'
+default-compression-format='tar.xz'
 
 [gnome/nautilus/icon-view]
 captions=['none', 'none', 'none']
@@ -554,11 +564,11 @@ volumes-visible=true
 default-visible-columns=['name', 'size', 'type', 'date_modified']
 default-zoom-level='small'
 use-tree-view=true
-default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified_with_time', 'recency', 'starred']
+default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'where', 'date_modified_with_time', 'recency', 'starred', 'detailed_type']
 
 [gnome/shell]
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
-remember-mount-password=false
+remember-mount-password=true
 disable-user-extensions=false
 app-picker-view=uint32 0
 favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'opera.desktop', 'brave-git.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop']
@@ -581,7 +591,7 @@ dock-position='LEFT'
 shortcut=['<Super>q']
 
 [gnome/shell/extensions/simplenetspeed]
-mode=0
+mode=2
 
 [gnome/eog/view]
 background-color='rgb(0,0,0)'
@@ -684,14 +694,14 @@ speed=22160
 flags=64
 
 [gnome/control-center]
-last-panel='keyboard'
+last-panel='background'
 
 [gnome/evince]
 document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [gnome/evince/default]
-window-ratio=(2.2325628275769382, 0.8813502951692026)
+window-ratio=(3.1372549019607843, 1.2752525252525253)
 continuous=true
 fullscreen=false
 show-sidebar=true
@@ -714,11 +724,14 @@ show-dependencies=false
 current-tab='resources'
 maximized=false
 show-whose-processes='user'
-window-state=(1056, 500, 23, 15)
+window-state=(1056, 568, 23, 15)
+update-interval=3000
 
 [gnome/gnome-system-monitor/disktreenew]
-col-6-visible=true
+col-4-width=0
 col-6-width=0
+col-6-visible=true
+col-4-visible=true
 
 [gnome/orca]
 active-profile=['Default', 'default']
@@ -740,13 +753,13 @@ temperature-unit='centigrade'
 
 [gnome/software]
 first-run=false
-check-timestamp=int64 1537586377
+check-timestamp=int64 1541303301
 
 [gtk/settings/file-chooser]
 sort-column='name'
 clock-format='12h'
 sidebar-width=159
-window-position=(0, 29)
+window-position=(277, 185)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)
@@ -756,8 +769,8 @@ sort-order='ascending'
 location-mode='path-bar'
 
 [gtk/settings/color-chooser]
-selected-color=(true, 0.99215686274509807, 0.96470588235294119, 0.8901960784313725, 1.0)
-custom-colors=[(0.99215686274509807, 0.96470588235294119, 0.8901960784313725, 1.0), (0.93333333333333335, 0.90980392156862744, 0.83529411764705885, 1.0), (0.57647058823529407, 0.63137254901960782, 0.63137254901960782, 1.0), (0.42352941176470588, 0.44313725490196076, 0.7686274509803922, 1.0), (0.43137254901960786, 0.58039215686274515, 0.66666666666666663, 1.0), (0.45098039215686275, 0.51372549019607838, 0.396078431372549, 1.0), (0.27843137254901962, 0.59999999999999998, 0.0, 1.0), (0.14509803921568629, 0.14117647058823529, 0.14117647058823529, 1.0)]
+selected-color=(true, 0.28627450980392155, 0.6588235294117647, 0.20784313725490197, 1.0)
+custom-colors=[(0.28627450980392155, 0.6588235294117647, 0.20784313725490197, 1.0), (0.99215686274509807, 0.96470588235294119, 0.8901960784313725, 1.0), (0.93333333333333335, 0.90980392156862744, 0.83529411764705885, 1.0), (0.57647058823529407, 0.63137254901960782, 0.63137254901960782, 1.0), (0.42352941176470588, 0.44313725490196076, 0.7686274509803922, 1.0), (0.43137254901960786, 0.58039215686274515, 0.66666666666666663, 1.0), (0.45098039215686275, 0.51372549019607838, 0.396078431372549, 1.0), (0.27843137254901962, 0.59999999999999998, 0.0, 1.0)]
 
 [compiz]
 existing-profiles=['Default', 'unity']
