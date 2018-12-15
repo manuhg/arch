@@ -1,20 +1,25 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="opera.desktop" open-window-count="0" score="259.5" last-seen="1541233316"/>
-    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="28" last-seen="1541321455"/>
-    <application id="gnome-control-center.desktop" open-window-count="0" score="0" last-seen="1541307400"/>
-    <application id="firefox.desktop" open-window-count="0" score="455.625" last-seen="1541305188"/>
-    <application id="visual-studio-code.desktop" open-window-count="0" score="3" last-seen="1541085388"/>
-    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="15.375" last-seen="1541002273"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="2" score="2768.0610766410828" last-seen="1541337178"/>
-    <application id="vlc.desktop" open-window-count="0" score="2708.7607440948486" last-seen="1541336077"/>
-    <application id="synapse.desktop" open-window-count="0" score="0" last-seen="1541332534"/>
-    <application id="eog.desktop" open-window-count="0" score="235.28125" last-seen="1541313335"/>
-    <application id="google-chrome.desktop" open-window-count="1" score="17577.409963607788" last-seen="1541337248"/>
-    <application id="sublime_text.desktop" open-window-count="0" score="143.875" last-seen="1541165292"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="4225.8365902900696" last-seen="1541337126"/>
-    <application id="org.gnome.Evince.desktop" open-window-count="0" score="111.5" last-seen="1541304046"/>
-    <application id="gnome-system-monitor.desktop" open-window-count="0" score="12" last-seen="1541307499"/>
+    <application id="opera.desktop" open-window-count="0" score="26.5" last-seen="1544448740"/>
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="2.5" last-seen="1544460217"/>
+    <application id="vinagre.desktop" open-window-count="0" score="8" last-seen="1544781899"/>
+    <application id="firefox.desktop" open-window-count="0" score="174.93603515625" last-seen="1544426509"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="38.25" last-seen="1544184889"/>
+    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="44.55615234375" last-seen="1544542568"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="689.63305108062923" last-seen="1544799203"/>
+    <application id="vlc.desktop" open-window-count="0" score="3752.1514091566205" last-seen="1544795100"/>
+    <application id="eog.desktop" open-window-count="0" score="36.6768798828125" last-seen="1544551222"/>
+    <application id="libreoffice-startcenter.desktop" open-window-count="0" score="2.25" last-seen="1544638981"/>
+    <application id="qbittorrent.desktop" open-window-count="0" score="3" last-seen="1544764194"/>
+    <application id="google-chrome.desktop" open-window-count="0" score="22010.888320170343" last-seen="1544799068"/>
+    <application id="org.gnome.Screenshot.desktop" open-window-count="0" score="0" last-seen="1544638954"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="30.25" last-seen="1544781187"/>
+    <application id="brave-git.desktop" open-window-count="0" score="307.25" last-seen="1544506182"/>
+    <application id="gimp.desktop" open-window-count="0" score="48" last-seen="1544551208"/>
+    <application id="sublime_text.desktop" open-window-count="0" score="51.10498046875" last-seen="1544782126"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="4069.7923304308206" last-seen="1544799164"/>
+    <application id="audacity.desktop" open-window-count="0" score="18" last-seen="1544456368"/>
+    <application id="org.gnome.Evince.desktop" open-window-count="0" score="260.224609375" last-seen="1544799187"/>
   </context>
 </application-state>

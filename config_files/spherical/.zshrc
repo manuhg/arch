@@ -111,6 +111,8 @@ alias ec='emacsclient -c'
 alias nano='et'
 alias pfm='prettier --single-quote --write "src/**/*.{js,jsx,json,css}"'
 alias count='~/scripts/count.py'
+alias xzdirs='find  -mindepth 1 -maxdepth 1 -type d -exec tar cvJf "{}".tar.xz "{}" \;'
+alias xzdlst='find  -mindepth 1 -maxdepth 1 -type d'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

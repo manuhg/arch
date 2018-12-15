@@ -38,7 +38,7 @@ show-thousands=false
 button-mode='advanced'
 target-units='degree'
 word-size=64
-window-position=(23, 15)
+window-position=(970, 20)
 number-format='automatic'
 angle-units='degrees'
 base=16
@@ -114,6 +114,10 @@ hinting='slight'
 [gnome/settings-daemon/peripherals/keyboard]
 numlock-state='on'
 
+[gnome/boxes]
+view='icon-view'
+window-maximized=true
+
 [gnome/simple-scan]
 save-directory='/home/gk1000/Desktop'
 document-type='photo'
@@ -169,8 +173,8 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gnome/gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/dev/agdial/src/resources'
-tree-view=true
+virtual-root='file:///home/gk1000/deeplabv3_pascal_trainval_2018_01_04/deeplabv3_pascal_trainval'
+tree-view=false
 root='file:///'
 
 [gnome/gedit/plugins]
@@ -181,8 +185,8 @@ search-for-entry=['https://www.pornhub.com/view_video.php?', 'sda3', '\\s+[0-9]+
 replace-with-entry=['{:name "', 'sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
 
 [gnome/gedit/state/window]
-size=(1366, 698)
-state=43908
+size=(532, 130)
+state=87168
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
@@ -267,7 +271,7 @@ clock-show-date=true
 toolkit-accessibility=false
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany', 'gimp', 'org-octave-octave', 'org-gnome-fileroller', 'opera', 'eog']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany', 'gimp', 'org-octave-octave', 'org-gnome-fileroller', 'opera', 'eog', 'wine', 'wine-programs-itunes-itunes']
 
 [gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -343,6 +347,12 @@ application-id='DigiaQt-qtcreator-community.desktop'
 
 [gnome/desktop/notifications/application/libreoffice-startcenter]
 application-id='libreoffice-startcenter.desktop'
+
+[gnome/desktop/notifications/application/wine-programs-itunes-itunes]
+application-id='wine-Programs-iTunes-iTunes.desktop'
+
+[gnome/desktop/notifications/application/wine]
+application-id='wine.desktop'
 
 [gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
@@ -545,11 +555,11 @@ default-sort-order='type'
 [gnome/nautilus/window-state]
 sidebar-width=164
 geometry='1061x643+23+15'
-maximized=true
-initial-size=(1352, 755)
+maximized=false
+initial-size=(1880, 975)
 
 [gnome/nautilus/compression]
-default-compression-format='tar.xz'
+default-compression-format='zip'
 
 [gnome/nautilus/icon-view]
 captions=['none', 'none', 'none']
@@ -571,7 +581,7 @@ enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-ext
 remember-mount-password=true
 disable-user-extensions=false
 app-picker-view=uint32 0
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'opera.desktop', 'brave-git.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop']
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'opera.desktop', 'brave-git.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'vinagre.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop', 'virtualbox.desktop']
 
 [gnome/shell/overrides]
 workspaces-only-on-primary=false
@@ -701,7 +711,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [gnome/evince/default]
-window-ratio=(3.1372549019607843, 1.2752525252525253)
+window-ratio=(3.118469174503657, 1.1935299985748895)
 continuous=true
 fullscreen=false
 show-sidebar=true
@@ -753,7 +763,7 @@ temperature-unit='centigrade'
 
 [gnome/software]
 first-run=false
-check-timestamp=int64 1541303301
+check-timestamp=int64 1544757318
 
 [gtk/settings/file-chooser]
 sort-column='name'
