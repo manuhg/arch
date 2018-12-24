@@ -14,8 +14,9 @@ nc="\033[0m"
 #sudo pacman-key --refresh-keys && sudo pacman -Syyu
 #curl "https://pgp.mit.edu/pks/lookup?op=get&search=0x1EB2638FF56C0C53" -o - | gpg --import
 #nanobox pcmciautils qimageblitz
-pacman_packages=("hexedit" "python" "nitrogen" "opera"  "pass" "namcap" "testdisk" "rng-tools" "steghide" "foremost" "exiv2" "whois" "geoip" "virtualbox" "xsel" "ipython2" "htop" "nasm" "gcc" "php" "qemu" "geany" "vlc" "python-pip " "aircrack-ng " "automake" "rsync" "cmake" "ruby" "nodejs" "ruby-native-package-installer " "screenfetch" "powerline-vim " "unzip" "synapse" "encfs" "docker" "dmenu" "firefox" "thunar" "qbittorrent" "scrot" "ipython" "lshw" "go" "tmux" "gpg-crypter " "emacs" "curl" "powerline" "rxvt-unicode " "atom" "xxd" "gparted" "unrar" "sl" "powerline-fonts " "ttf-inconsolata " "awesome-terminal-fonts " "cups" "sublime-text " "gnome-tweak-tool " "gnome-shell-extensions " "arc-gtk-theme " "jdk8-openjdk " "libreoffice-fresh " "linux-hardened-headers " "rxvt-unicode-terminfo " "virtualbox-guest-iso " "flatpak-builder " "glfw-x11 " "strace" "dnstracer" "figlet" "cowsay" "banner" "cmatrix" "bazel" "cowfortune" "pavucontrol" "linux-hardened " "gdb" "strace" "rkhunter" "moreutils" "bind" "dnscrypt-proxy" "vim" )
-pacaur_packages=("visual-studio-code-bin" "brave-git" "ttf-ms-fonts" "google-chrome" "plymouth" "urxvt-fullscreen"  "urxvt-tabbedex" "rar" "multibootusb" "woeusb" "virtualbox-ext-oracle" "dmg2img" "nvm" "numix-circle-icon-theme-git" "numix-icon-theme-git" "gtk-theme-numix-solarized" "numix-folders-git" "toilet" "downgrade" "leiningen" "aic94xx-firmware" "wd719x-firmware" "chrome-remote-desktop")
+pacman_packages=("hexedit" "python" "vinagre" "nitrogen" "opera"  "pass" "namcap" "testdisk" "rng-tools" "steghide" "foremost" "exiv2" "whois" "geoip" "virtualbox" "xsel" "ipython2" "htop" "nasm" "gcc" "php" "gimp" "qemu" "geany" "vlc" "python-pip " "aircrack-ng " "automake" "rsync" "cmake" "ruby" "nodejs" "ruby-native-package-installer " "screenfetch" "powerline-vim " "unzip" "synapse" "encfs" "docker" "dmenu" "firefox" "thunar" "qbittorrent" "scrot" "ipython" "lshw" "go" "tmux" "gpg-crypter " "emacs" "curl" "powerline" "rxvt-unicode " "atom" "xxd" "gparted" "unrar" "sl" "powerline-fonts " "ttf-inconsolata " "awesome-terminal-fonts " "cups" "sublime-text " "gnome-tweak-tool " "gnome-shell-extensions " "arc-gtk-theme " "jdk8-openjdk " "libreoffice-fresh " "linux-hardened-headers " "rxvt-unicode-terminfo " "virtualbox-guest-iso " "flatpak-builder " "glfw-x11 " "strace" "dnstracer" "figlet" "cowsay" "banner" "cmatrix" "bazel" "cowfortune" "pavucontrol" "linux-hardened " "gdb" "strace" "rkhunter" "moreutils" "bind" "dnscrypt-proxy" "vim" )
+pacaur_packages=("visual-studio-code-bin" "ttf-ms-fonts" "google-chrome" "plymouth" "urxvt-fullscreen"  "urxvt-tabbedex" "rar" "multibootusb" "woeusb" "virtualbox-ext-oracle" "dmg2img" "nvm" "numix-circle-icon-theme-git" "numix-icon-theme-git" "gtk-theme-numix-solarized" "numix-folders-git" "toilet" "downgrade" "leiningen" "aic94xx-firmware" "wd719x-firmware" "chrome-remote-desktop")
+#"brave-git"
 sudo pacman -Syu haveged
 sudo systemctl start haveged
 sudo systemctl enable haveged
@@ -24,13 +25,14 @@ sudo rm -fr /etc/pacman.d/gnupg
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
 
-sudo pacman -S --noconfirm --needed expac wget yajl
-gpg --recv-keys --keyserver hkp://pgp.mit.edu 6689E64E3D3664BB 1EB2638FF56C0C53
-mkdir pacaur && cd pacaur
-curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
-makepkg -i PKGBUILD --noconfirm
-curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
-makepkg -i PKGBUILD --noconfirm
+#sudo pacman -S --noconfirm --needed expac wget yajl
+#gpg --recv-keys --keyserver hkp://pgp.mit.edu 6689E64E3D3664BB 1EB2638FF56C0C53
+#mkdir pacaur && cd pacaur
+#curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=cower
+#makepkg -i PKGBUILD --noconfirm
+#curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=pacaur
+#makepkg -i PKGBUILD --noconfirm
+./pacaur.sh
 
 
 #sublime text
@@ -39,10 +41,10 @@ sudo pacman-key --add sublimehq-pub.gpg && \
 sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 
-sudo pacman -Syu
-for ((i=1;i<=${#pacman_packages};i++)) do
-  echo $c1"pacman -S $pacman_packages[$i]"$nc && sudo pacman -S --needed $pacman_packages[$i]
-done
+#sudo pacman -Syu
+#for ((i=1;i<=${#pacman_packages};i++)) do
+#  echo $c1"pacman -S $pacman_packages[$i]"$nc && sudo pacman -S --needed --noconfirm $(echo ${ppak})#$pacman_packages[$i]
+#done
 # sudo pacman -Syu --noconfirm hexedit python nitrogen arduino namcap testdisk \
 # rng-tools steghide foremost exiv2 whois geoip virtualbox xsel ipython2 htop \
 # nasm gcc php qemu geany vlc python-pip aircrack-ng automake rsync cmake \
@@ -55,7 +57,7 @@ done
 # flatpak-builder glfw-x11 strace dnstracer figlet cowsay banner cmatrix bazel \
 # cowfortune pavucontrol linux-hardened gdb strace rkhunter moreutils bind
 
-
+echo $c1"pacman -Syu --needed $(echo ${pacman_packages})"$nc && sudo pacman -Syu --needed $(echo ${pacman_packages})
 sudo iptables -P INPUT DROP
 sudo iptables -P OUTPUT ACCEPT
 sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
@@ -85,18 +87,20 @@ chmod +x install.sh
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
 
-pacaur -Syu --aur
-for ((i=1;i<=${#pacaur_packages};i++)) do
-  echo $c1"pacaur -S --aur --noconfirm $pacaur_packages[$i]"$nc && pacaur -S --needed --aur --noconfirm $pacaur_packages[$i]
-done
-sudo pip install shodan
-sudo easy_install shodan
+
+#pacaur -Syu --aur
+#for ((i=1;i<=${#pacaur_packages};i++)) do
+#  echo $c1"pacaur -S --aur --noconfirm $pacaur_packages[$i]"$nc && pacaur -S --needed --aur --noconfirm $pacaur_packages[$i]
+#done
 # pacaur -Syu --aur --noconfirm visual-studio-code-bin google-chrome \
 #  plymouth urxvt-fullscreen urxvt-tabbedex rar multibootusb woeusb \
 #  virtualbox-ext-oracle dmg2img nvm numix-circle-icon-theme-git \
 #  numix-icon-theme-git gtk-theme-numix-solarized numix-folders-git \
 #  toilet downgrade leiningen aic94xx-firmware wd719x-firmware
 #unetbootin touchegg touchegg-gce-git rslsync gtkglext hfsprogs usbguard
+echo $c1"pacaur -Syu --needed $(echo ${pacman_packages})"$nc && pacaur -Syu --aur --needed $(echo ${pacaur_packages})
+sudo pip install shodan
+sudo easy_install shodan
 
 
 pacaur -Syu --aur --noconfirm apparmor apparmor-profiles
