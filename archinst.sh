@@ -15,6 +15,13 @@ nano /etc/pacman.d/mirrorlist
 pacstrap /mnt base base-devel
 genfstab -U /mnt >> /mnt/etc/fstab
 echo "tmpfs	/tmp		tmpfs	rw,nodev,nosuid,size=8G		0 0">>/mnt/etc/fstab
+
+#for in case of grub udev warnings
+mkdir /mnt/hostlvm
+mount --bind /run/lvm /mnt/hostlvm
+arch-chroot /mnt
+ln -s /hostlvm /run/lvm
+
 arch-chroot /mnt
 #ln -sf /etc/localtime /usr/share/zoneinfo/Asia/Kolkata
 timedatectl set-timezone Asia/Kolkata
@@ -31,7 +38,7 @@ passwd
 pacman -Syu intel-ucode grub efibootmgr os-prober
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Arch --debug
 grub-mkconfig -o /boot/grub/grub.cfg
-pacman -S dnsutils wireless_tools wpa_supplicant wpa_actiond dialog sudo zsh git openssh vim
+pacman -S dnsutils wireless_tools wpa_supplicant wpa_actiond dialog sudo zsh git openssh
 #systemctl enable net-autowireless.service
 exit
 reboot
@@ -48,12 +55,12 @@ visudo
 # alsamixer
 pacman -S alsa-utils  xorg-server xorg-xinit xorg-apps mesa
 #synaptics for laptop
-pacman -S xf86-video-intel xf86-input-mouse xf86-video-vesa xf86-libinput-synaptics 
-#xf86-video-vesa is generic & fallback driver xf86-input-synaptics 
+pacman -S xf86-video-intel xf86-input-mouse xf86-video-vesa xf86-input-libinput #xf86-libinput-synaptics
+#xf86-video-vesa is generic & fallback driver xf86-input-synaptics
 # kde5 plasma -sddm , gnome GDM , lightgdm -universal
 # pacman -Rcs => recursive remove
 #pacman -S sddm plasma kde-applications
-pacman -S gdm gnome gnome-extra i3-gaps i3lock i3status perl-json-xs perl-anyevent-i3 i3blocks 
+pacman -S gdm gnome gnome-extra i3-gaps i3lock i3status perl-json-xs perl-anyevent-i3 i3blocks
 #display-visor
 pacman -S network-manager-applet networkmanager dhclient
 #lightgdm i3
@@ -70,4 +77,3 @@ systemctl disable httpd
 # git clone ssh://gk1000@198.199.121.120:17/home/gk1000/dev.git ~/
 
 # ./install_rest_arch.sh
-
