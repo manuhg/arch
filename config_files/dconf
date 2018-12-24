@@ -31,14 +31,14 @@ color='rgb(239,242,209)'
 font='Cantarell 14'
 
 [gnome/calculator]
-target-currency='DZD'
+target-currency=''
 show-zeroes=false
-source-currency='DZD'
+source-currency=''
 show-thousands=false
-button-mode='advanced'
-target-units='degree'
+button-mode='basic'
+target-units='radian'
 word-size=64
-window-position=(970, 20)
+window-position=(23, 15)
 number-format='automatic'
 angle-units='degrees'
 base=16
@@ -91,7 +91,7 @@ sleep-inactive-battery-timeout=1800
 [gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 night-light-schedule-from=22.5
-night-light-enabled=false
+night-light-enabled=true
 night-light-last-coordinates=(12.9833, 77.583299999999994)
 
 [gnome/settings-daemon/plugins/media-keys]
@@ -113,6 +113,9 @@ hinting='slight'
 
 [gnome/settings-daemon/peripherals/keyboard]
 numlock-state='on'
+
+[gnome/settings-daemon/peripherals/mouse]
+locate-pointer=false
 
 [gnome/boxes]
 view='icon-view'
@@ -173,19 +176,19 @@ wrap-last-split-mode='word'
 show-tabs-mode='auto'
 
 [gnome/gedit/plugins/filebrowser]
-virtual-root='file:///home/gk1000/deeplabv3_pascal_trainval_2018_01_04/deeplabv3_pascal_trainval'
-tree-view=false
+virtual-root='file:///run/media/gk1000/Manu'
+tree-view=true
 root='file:///'
 
 [gnome/gedit/plugins]
 active-plugins=['filebrowser', 'docinfo', 'spell', 'modelines', 'time']
 
 [gnome/gedit/state/history-entry]
-search-for-entry=['https://www.pornhub.com/view_video.php?', 'sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>']
-replace-with-entry=['{:name "', 'sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
+search-for-entry=['sda3', '\\s+[0-9]+\\s([^\\s]+)', '\\s+[0-9]+\\s([^\\s])+', 'font size="4" style="font-size: 16pt"', 'style="border: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0.2cm; padding-right: 0.19cm"', "<p class=MsoNormal style='line-height:115%'><span lang=EN-US style='font-size:\r\n14.0pt;line-height:115%;font-family:\"Calibri\",sans-serif'>&nbsp;</span></p>", 'CD%201_files', '<p><b><u>', '<u><b><p>']
+replace-with-entry=['sdb3', '\\n\\1', '/doc_scripts/English/CD%201_files', '<h2h>']
 
 [gnome/gedit/state/window]
-size=(532, 130)
+size=(869, 568)
 state=87168
 bottom-panel-size=140
 side-panel-size=200
@@ -193,8 +196,8 @@ side-panel-active-page='GeditWindowDocumentsPanel'
 
 [gnome/baobab/ui]
 active-chart='treemap'
-window-state=43908
-window-size=(1377, 883)
+window-state=87168
+window-size=(960, 600)
 
 [gnome/terminal/legacy]
 new-terminal-mode='tab'
@@ -210,9 +213,9 @@ next-tab='<Shift>Right'
 move-tab-left='<Primary><Shift>Left'
 
 [gnome/terminal/legacy/profiles:/:98e1fe04-8e5a-49c5-a383-acd78823e520]
-foreground-color='rgb(211,215,207)'
-visible-name='gk1000_3'
-palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(111,125,130)', 'rgb(203,75,22)', 'rgb(71,153,0)', 'rgb(115,131,101)', 'rgb(110,148,170)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+foreground-color='rgb(131,148,150)'
+visible-name='gk1000'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(70,169,238)', 'rgb(236,0,72)', 'rgb(42,161,152)', 'rgb(148,163,165)', 'rgb(88,110,117)', 'rgb(203,75,22)', 'rgb(69,120,7)', 'rgb(181,137,0)', 'rgb(54,150,217)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(100,105,189)']
 cursor-shape='ibeam'
 use-system-font=false
 use-theme-colors=false
@@ -221,7 +224,7 @@ use-theme-transparency=false
 use-theme-background=false
 bold-color-same-as-fg=true
 bold-color='#9494a3a3a5a5'
-background-color='rgb(37,36,36)'
+background-color='rgb(0,0,0)'
 
 [gnome/terminal/legacy/profiles:/:03552f37-3e02-41d3-8b0d-bd4a8ed55a9c]
 foreground-color='#838394949696'
@@ -250,28 +253,42 @@ bold-color-same-as-fg=true
 background-color='rgb(39,36,36)'
 
 [gnome/terminal/legacy/profiles:]
-list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55a9c']
+list=['98e1fe04-8e5a-49c5-a383-acd78823e520', '03552f37-3e02-41d3-8b0d-bd4a8ed55a9c', 'fa87b451-d1db-4156-8822-f37d9d6e1143']
+default='98e1fe04-8e5a-49c5-a383-acd78823e520'
+
+[gnome/terminal/legacy/profiles:/:fa87b451-d1db-4156-8822-f37d9d6e1143]
+foreground-color='rgb(0,0,0)'
+visible-name='mcwhite'
+palette=['rgb(255,255,255)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(236,0,72)', 'rgb(42,161,152)', 'rgb(148,163,165)', 'rgb(88,110,117)', 'rgb(203,75,22)', 'rgb(76,129,12)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(108,113,196)']
+cursor-shape='ibeam'
+use-system-font=false
+use-theme-colors=false
+font='Monospace 11'
+bold-color-same-as-fg=true
+bold-color='#9494a3a3a5a5'
+background-color='rgb(255,255,255)'
 
 [gnome/documents]
 window-maximized=true
 
 [gnome/desktop/interface]
 text-scaling-factor=1.0
+gtk-key-theme='Default'
 cursor-size=24
 clock-format='24h'
-cursor-theme='Obsidian'
+cursor-theme='Adwaita'
 gtk-im-module='gtk-im-context-simple'
 scaling-factor=uint32 1
-clock-show-seconds=true
+clock-show-seconds=false
 icon-theme='Numix'
 show-battery-percentage=false
 enable-animations=true
-gtk-theme='Arc-Darker'
+gtk-theme='Arc-Dark'
 clock-show-date=true
 toolkit-accessibility=false
 
 [gnome/desktop/notifications]
-application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase', 'org-gnome-polari', 'google-chrome', 'sublime-text', 'org-gnome-terminal', 'org-gnome-gedit', 'emacs', 'digiaqt-qtcreator-community', 'libreoffice-startcenter', 'visual-studio-code', 'geany', 'gimp', 'org-octave-octave', 'org-gnome-fileroller', 'opera', 'eog', 'wine', 'wine-programs-itunes-itunes']
+application-children=['firefox', 'vlc', 'filezilla', 'org-gnome-nautilus', 'transmission-gtk', 'org-gnome-software', 'rhythmbox', 'org-gnome-chromegnomeshell', 'file-roller', 'nautilus', 'ca-desrt-dconf-editor', 'qbittorrent', 'thunar', 'gnome-network-panel', 'keybase']
 
 [gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -404,6 +421,9 @@ secondary-color='#000000000000'
 [gnome/desktop/peripherals/touchpad]
 tap-to-click=true
 
+[gnome/desktop/peripherals/mouse]
+accel-profile='default'
+
 [gnome/desktop/calendar]
 show-weekdate=false
 
@@ -450,7 +470,7 @@ move-to-workspace-down=['<Shift><Control><Alt>Down']
 toggle-shaded=['<Control><Alt>s']
 minimize=['<Control><Alt>KP_0']
 lower=['disabled']
-activate-window-menu=['<Primary><Alt>space']
+activate-window-menu=['<Alt>space']
 maximize-vertically=['disabled']
 move-to-workspace-up=['<Shift><Control><Alt>Up']
 move-to-workspace-right=['<Shift><Control><Alt>Right']
@@ -466,7 +486,7 @@ theme-name='__custom'
 event-sounds=true
 
 [gnome/desktop/background]
-picture-uri='file:///home/gk1000/Pictures/Wallpapers/62903274-interstellar-wallpapers.jpg'
+picture-uri='file:///home/gk1000/Pictures/Wallpapers/macOS-Sierra-wallpaper.jpg'
 color-shading-type='solid'
 primary-color='#000000'
 picture-options='zoom'
@@ -502,8 +522,8 @@ recreate-folders=true
 
 [gnome/file-roller/ui]
 sidebar-width=200
-window-height=663
-window-width=773
+window-height=512
+window-width=1291
 
 [gnome/todo]
 view='grid'
@@ -541,25 +561,26 @@ overscroll=10
 
 [gnome/mutter]
 dynamic-workspaces=true
+overlay-key='Super_L'
 focus-change-on-pointer-rest=true
 attach-modal-dialogs=true
 edge-tiling=true
 
 [gnome/nautilus/preferences]
-search-view='icon-view'
+search-view='list-view'
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
 sort-directories-first=true
 default-sort-order='type'
 
 [gnome/nautilus/window-state]
-sidebar-width=164
-geometry='1061x643+23+15'
+sidebar-width=158
+geometry='918x545+23+15'
 maximized=false
-initial-size=(1880, 975)
+initial-size=(1834, 929)
 
 [gnome/nautilus/compression]
-default-compression-format='zip'
+default-compression-format='tar.xz'
 
 [gnome/nautilus/icon-view]
 captions=['none', 'none', 'none']
@@ -574,14 +595,14 @@ volumes-visible=true
 default-visible-columns=['name', 'size', 'type', 'date_modified']
 default-zoom-level='small'
 use-tree-view=true
-default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'where', 'date_modified_with_time', 'recency', 'starred', 'detailed_type']
+default-column-order=['name', 'size', 'type', 'date_modified', 'date_accessed', 'owner', 'group', 'permissions', 'mime_type', 'where']
 
 [gnome/shell]
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'simplenetspeed@biji.extension']
-remember-mount-password=true
+remember-mount-password=false
 disable-user-extensions=false
-app-picker-view=uint32 0
-favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'opera.desktop', 'brave-git.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'vinagre.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'emacs.desktop', 'virtualbox.desktop']
+app-picker-view=uint32 1
+favorite-apps=['google-chrome.desktop', 'firefox.desktop', 'opera.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'visual-studio-code.desktop', 'sublime_text.desktop', 'vlc.desktop', 'emacs.desktop']
 
 [gnome/shell/overrides]
 workspaces-only-on-primary=false
@@ -590,18 +611,27 @@ workspaces-only-on-primary=false
 show-weekdate=false
 
 [gnome/shell/extensions/user-theme]
-name=''
+name='Arc'
 
 [gnome/shell/extensions/dash-to-dock]
-apply-custom-theme=false
-force-straight-corner=false
+show-apps-at-top=false
 dock-fixed=false
+force-straight-corner=false
+hot-keys=false
+multi-monitor=false
+custom-background-color=false
+scroll-action='cycle-windows'
+apply-custom-theme=false
 unity-backlit-items=false
-dock-position='LEFT'
+dock-position='BOTTOM'
+custom-theme-shrink=true
+running-indicator-style='DEFAULT'
+background-color='#ffffff'
 shortcut=['<Super>q']
+isolate-workspaces=false
 
 [gnome/shell/extensions/simplenetspeed]
-mode=2
+mode=1
 
 [gnome/eog/view]
 background-color='rgb(0,0,0)'
@@ -711,7 +741,7 @@ document-directory=@ms 'file:///home/gk1000/ceokar'
 pictures-directory=@ms 'file:///home/gk1000'
 
 [gnome/evince/default]
-window-ratio=(3.118469174503657, 1.1935299985748895)
+window-ratio=(2.2320261437908497, 0.93560606060606055)
 continuous=true
 fullscreen=false
 show-sidebar=true
@@ -756,20 +786,20 @@ include-pointer=false
 include-border=true
 border-effect='none'
 delay=0
-last-save-directory='file:///home/gk1000'
+last-save-directory='file:///home/gk1000/Desktop'
 
 [gnome/GWeather]
 temperature-unit='centigrade'
 
 [gnome/software]
 first-run=false
-check-timestamp=int64 1544757318
+check-timestamp=int64 1545647540
 
 [gtk/settings/file-chooser]
 sort-column='name'
 clock-format='12h'
 sidebar-width=159
-window-position=(277, 185)
+window-position=(26, 23)
 show-size-column=true
 show-hidden=false
 window-size=(1366, 693)
@@ -779,8 +809,8 @@ sort-order='ascending'
 location-mode='path-bar'
 
 [gtk/settings/color-chooser]
-selected-color=(true, 0.28627450980392155, 0.6588235294117647, 0.20784313725490197, 1.0)
-custom-colors=[(0.28627450980392155, 0.6588235294117647, 0.20784313725490197, 1.0), (0.99215686274509807, 0.96470588235294119, 0.8901960784313725, 1.0), (0.93333333333333335, 0.90980392156862744, 0.83529411764705885, 1.0), (0.57647058823529407, 0.63137254901960782, 0.63137254901960782, 1.0), (0.42352941176470588, 0.44313725490196076, 0.7686274509803922, 1.0), (0.43137254901960786, 0.58039215686274515, 0.66666666666666663, 1.0), (0.45098039215686275, 0.51372549019607838, 0.396078431372549, 1.0), (0.27843137254901962, 0.59999999999999998, 0.0, 1.0)]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.70333333333333337, 0.69864444444444451, 0.69864444444444451, 1.0), (0.0, 0.16862745098039217, 0.21176470588235294, 1.0), (0.39220000000000005, 0.41196136363636365, 0.7400000000000001, 1.0), (0.42352941176470588, 0.44313725490196076, 0.7686274509803922, 1.0), (0.27377777777777779, 0.66107493540051665, 0.93333333333333335, 1.0), (0.21250000000000002, 0.58684593023255804, 0.85000000000000009, 1.0), (0.14901960784313725, 0.54509803921568623, 0.82352941176470584, 1.0), (0.26986837606837616, 0.47000000000000003, 0.028200000000000027, 1.0)]
 
 [compiz]
 existing-profiles=['Default', 'unity']
