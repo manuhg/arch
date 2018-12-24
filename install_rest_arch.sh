@@ -104,6 +104,8 @@ pacaur -Syu --aur --noconfirm apparmor apparmor-profiles
 pacaur -S clamav clamtk clamtk-gnome brave-git thunar-sendto-clamtk clamav-unofficial-sigs && \
  sudo freshclam && clamav-unofficial-sigs.sh --install-all && clamav-unofficial-sigs.sh
 
+systemctl enable --now dnscrypt-proxy.service
+
 #discord
 #redshiftgui-bin \
 #sudo chmod 644 /usr/share/applications/* -v
