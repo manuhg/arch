@@ -1,5 +1,3 @@
-HookyQR.minify
-Zignd.html-css-class-completion
 Atom.rc-beautify
 austin.code-gnu-global
 be5invis.vscode-custom-css
@@ -12,6 +10,7 @@ eg2.tslint
 esbenp.prettier-vscode
 felixfbecker.php-debug
 hiro-sun.vscode-emacs
+HookyQR.minify
 Hridoy.jquery-snippets
 ikappas.phpcs
 joshpeng.sublime-babel-vscode
@@ -26,3 +25,4 @@ shakram02.bash-beautify
 Shan.code-settings-sync
 tht13.python
 xaver.clang-format
+Zignd.html-css-class-completion
