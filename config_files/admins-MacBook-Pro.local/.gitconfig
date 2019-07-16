@@ -1,0 +1,10 @@
+[user]
+	name = manuhg
+	email = manu.hegde@udaan.com
+[alias]
+	pushall = !git remote | xargs -L1 git push
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

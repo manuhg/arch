@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="opera.desktop" open-window-count="0" score="9260.5" last-seen="1538304517"/>
+    <application id="vinagre.desktop" open-window-count="0" score="742" last-seen="1538229534"/>
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="17" last-seen="1537877306"/>
+    <application id="firefox.desktop" open-window-count="0" score="501" last-seen="1538145863"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="76696102.375" last-seen="1536549784"/>
+    <application id="org.gnome.Calculator.desktop" open-window-count="0" score="3" last-seen="1538058142"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="986.375" last-seen="1538304540"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="1" last-seen="1538239128"/>
+    <application id="vlc.desktop" open-window-count="0" score="2334.5" last-seen="1538162618"/>
+    <application id="eog.desktop" open-window-count="0" score="0" last-seen="1538067419"/>
+    <application id="libreoffice-startcenter.desktop" open-window-count="0" score="16" last-seen="1538106119"/>
+    <application id="qbittorrent.desktop" open-window-count="0" score="581" last-seen="1538159456"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="6906" last-seen="1538304383"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="0" last-seen="1538138175"/>
+    <application id="org.gnome.tweaks.desktop" open-window-count="0" score="24" last-seen="1538065687"/>
+    <application id="sublime_text.desktop" open-window-count="0" score="794" last-seen="1538143228"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="3357.625" last-seen="1538304521"/>
+    <application id="emacs.desktop" open-window-count="0" score="0" last-seen="1537924542"/>
+    <application id="org.gnome.Totem.desktop" open-window-count="0" score="0" last-seen="1537985483"/>
+    <application id="chrome-gbchcmhmhahfdphkhkmpfmihenigjmpp-Default.desktop" open-window-count="0" score="91" last-seen="1538229537"/>
+    <application id="org.gnome.Evince.desktop" open-window-count="1" score="184" last-seen="1538304537"/>
+  </context>
+</application-state>
