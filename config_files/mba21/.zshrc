@@ -59,3 +59,9 @@ export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/lib/pkgconfig"
 export GEM_HOME=$HOME/Software/ruby
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/manu/dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/manu/dev/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/manu/dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/manu/dev/google-cloud-sdk/completion.zsh.inc'; fi
