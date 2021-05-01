@@ -42,7 +42,8 @@ alias ed='emacs --daemon'
 alias et='emacsclient -t'
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
-alias nano='et'
+
+#alias nano='et'
 alias pfm='prettier --single-quote --write "src/**/*.{js,jsx,json,css}"'
 
 export NVM_DIR="$HOME/.nvm"
