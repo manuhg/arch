@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="1" last-seen="1513771326"/>
+    <application id="gnome-control-center.desktop" open-window-count="0" score="7" last-seen="1513765628"/>
+    <application id="visual-studio-code.desktop" open-window-count="0" score="6414" last-seen="1512655142"/>
+    <application id="vlc.desktop" open-window-count="0" score="71" last-seen="1513768214"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="126" last-seen="1513899350"/>
+    <application id="geany.desktop" open-window-count="0" score="247" last-seen="1513782296"/>
+    <application id="synapse.desktop" open-window-count="0" score="2" last-seen="1513898126"/>
+    <application id="eog.desktop" open-window-count="0" score="23" last-seen="1513781142"/>
+    <application id="libreoffice-startcenter.desktop" open-window-count="0" score="146" last-seen="1513876729"/>
+    <application id="steam.desktop" open-window-count="0" score="100" last-seen="1513768211"/>
+    <application id="google-chrome.desktop" open-window-count="0" score="16936" last-seen="1513898382"/>
+    <application id="eclipse.desktop" open-window-count="0" score="35" last-seen="1513865811"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="35" last-seen="1513857558"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="13873" last-seen="1513899279"/>
+    <application id="evince.desktop" open-window-count="0" score="4488" last-seen="1513898231"/>
+  </context>
+</application-state>

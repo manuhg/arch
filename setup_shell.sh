@@ -51,15 +51,6 @@ elif [ $1 = "backup" ] ; then
         fi
 
     done
-    [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
-
-    for ((j=1;j<=${#dconfs};j++)) do
-        dconf dump /org/$dconfs[$i] > $cnfdir/dconf$dconfs[$i]
-        dconf dump /org/$dconfs[$i] > $dir/dconf$dconfs[$i]
-        ((k=k+1))
-        echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $cnfdir/dconf$dconfs[$i]$nc"
-        echo $c1"dconf dump /org/$dconfs[$i]$nc >$c2 $dir/dconf$dconfs[$i]$nc"
-    done
 
     # dconf dump /org/gnome/ > $cnfdir/dconfgnome
     # dconf dump /org/gnome/ > $dir/dconfgnome
@@ -75,7 +66,7 @@ elif [ $1 = "backup" ] ; then
 elif [ $1 = "restore" ] ; then
     echo $c1"Installing vscode extensions"$nc
     cat $cnfdir/vscode_extensions| xargs -L 1 code --install-extension
-    [ -d ~/.config/xfce4 ] && cp -rapv $dir/xfce4 ~/.config/
+
     for ((i=1;i<=${#files};i++)) do
         if [[ -d  $fdirs[$i] && -f $dir/$files[$i] ]] ;then
           cp -v $dir/$files[$i] $fdirs[$i]/$files[$i] && ((k=k+1))
@@ -89,13 +80,6 @@ elif [ $1 = "restore" ] ; then
     done
     # [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || \
     # dconf load /org/gnome/ < $cnfdir/dconfgnome  && ((k=k+1))
-   for ((j=1;j<=${#dconfs};j++)) do
-        dconf load /org/$dconfs[$i] < $cnfdir/dconf$dconfs[$i]
-        dconf load /org/$dconfs[$i] < $dir/dconf$dconfs[$i]
-        ((k=k+1))
-        echo $c1"dconf load /org/$dconfs[$i]$nc < $c2 $cnfdir/dconf$dconfs[$i]$nc"
-        echo $c1"dconf load /org/$dconfs[$i]$nc < $c2 $dir/dconf$dconfs[$i]$nc"
-    done
     echo $c1"Restoring gnome settings"$nc
     echo "$c2$bold$k "$c2"Config items restored $nc"
 
@@ -104,17 +88,13 @@ elif [ $1 = "install" ] ; then
 
     sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
     git clone git://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/plugins/zsh-autosuggestions
-    git clone https://github.com/numixproject/numix-folders.git && \
-    cp numix-folders.sh numix-folders/numix-folders && \
-    chmod +x numix-folders/numix-folders && cd numix-folders && \
-    sudo ./numix-folders -t 6 blue && cd .. && \
-    rm -rf numix-folders
+    
     echo $c1"Installing vscode extensions$nc"
     #go get -u mvdan.cc/sh/cmd/shfmt
     cp $cnfdir/.histfile ~/
     echo $c1"$cnfdir/.histfile -> ~/"$nc
     cat $cnfdir/vscode_extensions| xargs -L 1 code --install-extension
-    [ -d ~/.config/xfce4 ] && cp -rapv ~/.config/xfce4 $dir/
+    
     for ((i=1;i<=${#edirs};i++)) do
         [[ -d $dir/$edf[$i] ]] && cp -rap $dir/$edf[$i] $edirs[$i]/ && ((k=k+1)) && \
         echo $c1"'$dir/$edf[$i]'$nc -> $c2'$edirs[$i]/'"$nc
@@ -126,7 +106,7 @@ elif [ $1 = "install" ] ; then
          echo $rc"$files[$i] not copied since $fdirs[$i] does not exist"$nc
         fi
     done
-    [[  -f $dir/dconfgnome ]] && dconf load /org/gnome/ < $dir/dconfgnome || dconf load /org/gnome/ < $cnfdir/dconfgnome
+    
     ((k=k+1))
     echo $c1"Restoring gnome settings "$nc
     echo "$c2$bold$k "$c2"Config items copied $nc"
@@ -139,4 +119,3 @@ elif [ $1 = "install" ] ; then
     git config  --global alias.pushall '!git remote | xargs -L1 git push'
 
 fi
-[ ! -d ~/dev ] && mkdir ~/dev && cd ~/dev && ~/arch/cloneall.py
