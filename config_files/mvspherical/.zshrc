@@ -43,6 +43,7 @@ alias gpoma='git push origin master'
 alias afml='cd ~/dev/UW-dev/CAM/afm_lambda'
 alias afmr='cd ~/dev/UW-dev/CAM/afm-react-frontend'
 alias tbd='cd /Volumes/OVERFLOW/telegram-dekstop-build'
+alias gph='git push origin head'
 if [ -f '/Users/manu/dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/manu/dev/google-cloud-sdk/path.zsh.inc'; fi
 
 if [ -f '/Users/manu/dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/manu/dev/google-cloud-sdk/completion.zsh.inc'; fi
@@ -86,3 +87,8 @@ if [ -f '/Users/manu/dev/farmTV-service/google-cloud-sdk/completion.zsh.inc' ]; 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+
+source ~/.cargo/env
+export CAM_ENV=local
+alias mvsc='./misc/move_screenshots.sh'
