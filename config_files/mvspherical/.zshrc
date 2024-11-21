@@ -96,7 +96,7 @@ alias gfo='git fetch origin'
 alias gpom='git push origin main'
 alias gpoma='git push origin master'
 alias gph='git push origin head'
-
+alias dev='~/dev/'
 ##
 ## UW
 ##
