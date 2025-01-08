@@ -83,8 +83,9 @@ eval "$(rbenv init -)"
 ##
 ## Aliases and variables 
 ##
-
-alias mvsc='./misc/move_screenshots.sh'
+alias cprj='cd  ~/dev/UW/cap_prj'
+alias llms='cd /Volumes/OVERFLOW/0.UW-Capstone/LLM-weights'
+alias mvsc='~/misc/move_screenshots.sh'
 alias b64d='base64 -d <<<'
 alias gs='git status'
 alias ga='git add -A'
@@ -92,6 +93,7 @@ alias gi='git ls-files . --ignored --exclude-standard --others'
 alias notes='cd ~/notes'
 alias ocnotes='cd ~/Library/CloudStorage/OneDrive-Personal/notes/e-medulu'
 alias icnotes='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/notes/e-medulu/'
+alias icloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
 alias gfo='git fetch origin'
 alias gpom='git push origin main'
 alias gpoma='git push origin master'
